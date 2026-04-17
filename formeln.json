@@ -2,325 +2,600 @@
   {
     "slug": "newton-zweites-gesetz",
     "name": "Newtons zweites Gesetz",
-    "symbol": "F = ma",
     "latex": "F = m \\cdot a",
+    "symbol": "F = ma",
     "kategorie": "physik",
     "unterkategorie": "Mechanik",
-    "beschreibung": "Die Kraft, die auf einen Körper wirkt, entspricht dem Produkt aus Masse und Beschleunigung.",
-    "einheiten": "F in Newton [N] = [kg·m/s²], m in Kilogramm [kg], a in [m/s²]",
+    "beschreibung": "Das zweite Newtonsche Gesetz beschreibt den Zusammenhang zwischen Kraft, Masse und Beschleunigung eines Körpers.",
+    "einheiten": "F in Newton [N] = [kg·m/s²] · m in Kilogramm [kg] · a in m/s²",
     "variablen": [
-      { "symbol": "F", "bedeutung": "Kraft", "einheit": "N (Newton)" },
-      { "symbol": "m", "bedeutung": "Masse", "einheit": "kg" },
-      { "symbol": "a", "bedeutung": "Beschleunigung", "einheit": "m/s²" }
+      {
+        "symbol": "F",
+        "bedeutung": "Kraft",
+        "einheit": "N (Newton)"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse des Körpers",
+        "einheit": "kg (Kilogramm)"
+      },
+      {
+        "symbol": "a",
+        "bedeutung": "Beschleunigung",
+        "einheit": "m/s²"
+      }
     ],
-    "hintergrund": "Isaac Newton formulierte 1687 in seinen Principia Mathematica drei Grundgesetze der Mechanik. Das zweite Gesetz beschreibt quantitativ die Beziehung zwischen Kraft, Masse und Beschleunigung und ist das Fundament der klassischen Mechanik.",
-    "beispiel": "Ein Auto der Masse m = 1.200 kg soll mit a = 3 m/s² beschleunigen. Benötigte Kraft: F = 1.200 kg × 3 m/s² = 3.600 N.",
-    "anwendung": "Fahrzeugdynamik, Raumfahrt, Robotik, Biomechanik, Maschinenbau",
-    "quellen": ["Newton, I. (1687). Principia Mathematica.", "Halliday, Resnick & Walker (2013). Fundamentals of Physics."],
-    "verwandte": ["gravitationsgesetz", "energie-kinetisch"],
+    "hintergrund": "Isaac Newton formulierte 1687 in seinen \"Philosophiae Naturalis Principia Mathematica\" die drei Grundgesetze der klassischen Mechanik. Das zweite Gesetz (lex secunda) lautet: Vis impressa est mutatio motus — die einwirkende Kraft ist gleich der Änderung des Bewegungszustands. In moderner Vektorform: F⃗ = m·a⃗, wobei bei konstanter Masse F⃗ = dp⃗/dt = d(mv⃗)/dt = m·dv⃗/dt = m·a⃗.",
+    "beispiel": "Ein Auto der Masse m = 1.200 kg beschleunigt mit a = 3 m/s². Die nötige Antriebskraft beträgt: F = 1.200 kg × 3 m/s² = 3.600 N.",
+    "anwendung": "Fahrzeugdynamik, Raumfahrt (Raketenantrieb), Biomechanik (Ganganalyse), Materialprüfung",
+    "quellen": [
+      "Newton, I. (1687). Philosophiae Naturalis Principia Mathematica.",
+      "Halliday, D., Resnick, R., & Walker, J. (2018). Fundamentals of Physics. Wiley."
+    ],
+    "verwandte": [
+      "impuls-formel",
+      "energie-kinetisch",
+      "gravitationsgesetz"
+    ],
+    "abiturRelevant": true,
     "schwierigkeit": "grundlegend"
   },
   {
     "slug": "gravitationsgesetz",
     "name": "Newtonsches Gravitationsgesetz",
+    "latex": "F_G = G \\cdot \\frac{m_1 \\cdot m_2}{r^2}",
     "symbol": "F = G·m₁m₂/r²",
-    "latex": "F = G \\frac{m_1 m_2}{r^2}",
     "kategorie": "physik",
     "unterkategorie": "Gravitation",
-    "beschreibung": "Zwei Massen ziehen sich gegenseitig mit einer Kraft an, die proportional zum Produkt ihrer Massen und umgekehrt proportional zum Quadrat ihres Abstands ist.",
-    "einheiten": "F in [N], G = 6,674×10⁻¹¹ N·m²/kg², m₁, m₂ in [kg], r in [m]",
+    "beschreibung": "Das Gravitationsgesetz beschreibt die anziehende Kraft zwischen zwei Massen in Abhängigkeit ihres Abstands.",
+    "einheiten": "F in N · G = 6,674×10⁻¹¹ N·m²/kg² · m in kg · r in m",
     "variablen": [
-      { "symbol": "F", "bedeutung": "Gravitationskraft", "einheit": "N" },
-      { "symbol": "G", "bedeutung": "Gravitationskonstante", "einheit": "6,674×10⁻¹¹ N·m²/kg²" },
-      { "symbol": "m₁", "bedeutung": "Masse 1", "einheit": "kg" },
-      { "symbol": "m₂", "bedeutung": "Masse 2", "einheit": "kg" },
-      { "symbol": "r", "bedeutung": "Abstand der Massenmittelpunkte", "einheit": "m" }
+      {
+        "symbol": "F_G",
+        "bedeutung": "Gravitationskraft",
+        "einheit": "N"
+      },
+      {
+        "symbol": "G",
+        "bedeutung": "Gravitationskonstante (6,674×10⁻¹¹)",
+        "einheit": "N·m²/kg²"
+      },
+      {
+        "symbol": "m₁, m₂",
+        "bedeutung": "Massen der Körper",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Abstand zwischen den Massenmittelpunkten",
+        "einheit": "m"
+      }
     ],
-    "hintergrund": "Newton erkannte 1687, dass dieselbe Kraft, die einen Apfel zu Boden zieht, auch den Mond auf seiner Bahn hält. Das Gravitationsgesetz war der erste universale Naturgesetze.",
-    "beispiel": "Gravitationskraft zwischen Erde (m₁=5,97×10²⁴ kg) und Mond (m₂=7,35×10²² kg) bei r=3,84×10⁸ m: F ≈ 1,98×10²⁰ N.",
-    "anwendung": "Astronomie, Satellitenphysik, GPS-Korrektur, Raumfahrtnavigation",
-    "quellen": ["Newton, I. (1687). Principia Mathematica.", "Cavendish H. (1798). Experiments to determine the density of the Earth."],
-    "verwandte": ["newton-zweites-gesetz", "energie-potentiell"],
-    "schwierigkeit": "grundlegend"
-  },
-  {
-    "slug": "relativistische-energie",
-    "name": "Relativistische Energie",
-    "symbol": "E = mc²",
-    "latex": "E = mc^2",
-    "kategorie": "physik",
-    "unterkategorie": "Relativitätstheorie",
-    "beschreibung": "Energie und Masse sind äquivalent und ineinander umwandelbar. Jede ruhende Masse m besitzt eine Ruheenergie E.",
-    "einheiten": "E in Joule [J], m in Kilogramm [kg], c = 2,998×10⁸ m/s",
-    "variablen": [
-      { "symbol": "E", "bedeutung": "Energie", "einheit": "J (Joule)" },
-      { "symbol": "m", "bedeutung": "Ruhemasse", "einheit": "kg" },
-      { "symbol": "c", "bedeutung": "Lichtgeschwindigkeit im Vakuum", "einheit": "2,998×10⁸ m/s" }
+    "hintergrund": "Newton leitete das Gravitationsgesetz 1687 aus Keplers Planetengesetzen ab. Die Gravitationskonstante G wurde erst 1798 von Henry Cavendish experimentell bestimmt.",
+    "beispiel": "Gewichtskraft auf der Erdoberfläche: F = 6,674×10⁻¹¹ × (6×10²⁴ × 70) / (6,371×10⁶)² ≈ 686 N für eine Person von 70 kg.",
+    "anwendung": "Planetenbewegung, Raumfahrt (Startfenster, Orbitalmanöver), Geodäsie, GPS-Kalibrierung",
+    "quellen": [
+      "Newton, I. (1687). Principia Mathematica.",
+      "Cavendish, H. (1798). Experiments to determine the density of the Earth."
     ],
-    "hintergrund": "Einstein leitete 1905 in seiner speziellen Relativitätstheorie ab, dass Masse und Energie dasselbe physikalische Phänomen sind. Diese Formel ist die berühmteste Gleichung der Physik.",
-    "beispiel": "1 g Masse (m = 0,001 kg) entspricht: E = 0,001 × (3×10⁸)² = 9×10¹³ J ≈ 21,5 Kilotonnen TNT-Äquivalent.",
-    "anwendung": "Kernphysik, Kernkraftwerke, Atombombe, PET-Scanner in der Medizin, Sonnenenergie",
-    "quellen": ["Einstein, A. (1905). Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig? Annalen der Physik."],
-    "verwandte": ["lorentz-faktor", "heisenberg-unschaerfe"],
-    "schwierigkeit": "fortgeschritten"
-  },
-  {
-    "slug": "schroedinger-gleichung",
-    "name": "Schrödinger-Gleichung",
-    "symbol": "iℏ∂Ψ/∂t = ĤΨ",
-    "latex": "i\\hbar\\frac{\\partial}{\\partial t}\\Psi = \\hat{H}\\Psi",
-    "kategorie": "physik",
-    "unterkategorie": "Quantenmechanik",
-    "beschreibung": "Die zeitabhängige Schrödinger-Gleichung beschreibt die Zeitentwicklung des Quantenzustands (Wellenfunktion Ψ) eines quantenmechanischen Systems.",
-    "einheiten": "ℏ = 1,055×10⁻³⁴ J·s, Ĥ = Hamilton-Operator [J], Ψ = Wellenfunktion",
-    "variablen": [
-      { "symbol": "i", "bedeutung": "Imaginäre Einheit", "einheit": "dimensionslos" },
-      { "symbol": "ℏ", "bedeutung": "Reduziertes Plancksches Wirkungsquantum", "einheit": "J·s" },
-      { "symbol": "Ψ", "bedeutung": "Wellenfunktion", "einheit": "normiert" },
-      { "symbol": "Ĥ", "bedeutung": "Hamilton-Operator (Gesamtenergie)", "einheit": "J" }
+    "verwandte": [
+      "newton-zweites-gesetz",
+      "kreisbewegung",
+      "energie-potentiell"
     ],
-    "hintergrund": "Erwin Schrödinger formulierte 1926 die grundlegende Gleichung der Quantenmechanik. Sie beschreibt, wie sich der Quantenzustand eines physikalischen Systems über die Zeit verändert.",
-    "beispiel": "Für das Wasserstoffatom liefert die zeitunabhängige Schrödinger-Gleichung die diskreten Energieniveaus: Eₙ = −13,6 eV/n².",
-    "anwendung": "Atomphysik, Molekülchemie, Halbleitertechnik, Quantencomputing, Laserphysik",
-    "quellen": ["Schrödinger, E. (1926). Quantisierung als Eigenwertproblem. Annalen der Physik.", "Griffiths, D. (2005). Introduction to Quantum Mechanics."],
-    "verwandte": ["heisenberg-unschaerfe", "planck-relation", "relativistische-energie"],
-    "schwierigkeit": "universitaet"
-  },
-  {
-    "slug": "heisenberg-unschaerfe",
-    "name": "Heisenberg'sche Unschärferelation",
-    "symbol": "ΔxΔp ≥ ℏ/2",
-    "latex": "\\Delta x \\cdot \\Delta p \\geq \\frac{\\hbar}{2}",
-    "kategorie": "physik",
-    "unterkategorie": "Quantenmechanik",
-    "beschreibung": "Ort und Impuls eines Teilchens können nicht gleichzeitig beliebig genau gemessen werden. Das Produkt der Messunschärfen ist mindestens ℏ/2.",
-    "einheiten": "Δx in [m], Δp in [kg·m/s], ℏ = 1,055×10⁻³⁴ J·s",
-    "variablen": [
-      { "symbol": "Δx", "bedeutung": "Ortsunschärfe", "einheit": "m" },
-      { "symbol": "Δp", "bedeutung": "Impulsunschärfe", "einheit": "kg·m/s" },
-      { "symbol": "ℏ", "bedeutung": "Reduziertes Plancksches Wirkungsquantum", "einheit": "1,055×10⁻³⁴ J·s" }
-    ],
-    "hintergrund": "Werner Heisenberg trat 1927 mit dieser fundamentalen Aussage hervor: Die Unschärfe ist keine Limitation der Messtechnik, sondern ein fundamentales Prinzip der Natur.",
-    "beispiel": "Für ein Elektron mit Δx = 1 Å = 10⁻¹⁰ m: Δp ≥ ℏ/(2·Δx) = 5,3×10⁻²⁵ kg·m/s → Δv ≥ 5,8×10⁵ m/s.",
-    "anwendung": "Grundlage jeder Quantentechnologie: Elektronenmikroskop, Transistor, Quantencomputer, MRI",
-    "quellen": ["Heisenberg, W. (1927). Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik. Zeitschrift für Physik."],
-    "verwandte": ["schroedinger-gleichung", "planck-relation"],
-    "schwierigkeit": "universitaet"
-  },
-  {
-    "slug": "boltzmann-entropie",
-    "name": "Boltzmann-Entropie",
-    "symbol": "S = k·ln W",
-    "latex": "S = k_B \\ln W",
-    "kategorie": "physik",
-    "unterkategorie": "Thermodynamik",
-    "beschreibung": "Die Entropie eines Systems ist proportional zum Logarithmus der Anzahl W der möglichen Mikrozustände. kB ist die Boltzmann-Konstante.",
-    "einheiten": "S in [J/K], kB = 1,381×10⁻²³ J/K, W = Anzahl Mikrozustände (dimensionslos)",
-    "variablen": [
-      { "symbol": "S", "bedeutung": "Entropie", "einheit": "J/K" },
-      { "symbol": "kB", "bedeutung": "Boltzmann-Konstante", "einheit": "1,381×10⁻²³ J/K" },
-      { "symbol": "W", "bedeutung": "Anzahl der Mikrozustände", "einheit": "dimensionslos" }
-    ],
-    "hintergrund": "Ludwig Boltzmann entwickelte 1872–1877 die statistische Mechanik. Seine Entropieformel verknüpft makroskopische Thermodynamik mit mikroskopischer Statistik. Sie ist auf Boltzmanns Grabstein eingraviert.",
-    "beispiel": "Gas mit W = 10²³ Mikrozuständen: S = 1,381×10⁻²³ × ln(10²³) = 1,381×10⁻²³ × 52,9 ≈ 7,3×10⁻²² J/K.",
-    "anwendung": "Thermodynamik, Informationstheorie (Shannon-Entropie), Materialwissenschaft, Astrophysik (schwarze Löcher)",
-    "quellen": ["Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie. Wien. Ber.", "Fermi, E. (1956). Thermodynamics."],
-    "verwandte": ["lorentz-faktor", "planck-relation"],
-    "schwierigkeit": "fortgeschritten"
-  },
-  {
-    "slug": "lorentz-faktor",
-    "name": "Lorentz-Faktor",
-    "symbol": "γ = 1/√(1−v²/c²)",
-    "latex": "\\gamma = \\frac{1}{\\sqrt{1 - \\frac{v^2}{c^2}}}",
-    "kategorie": "physik",
-    "unterkategorie": "Relativitätstheorie",
-    "beschreibung": "Der Lorentz-Faktor γ beschreibt, wie stark Längenkontraktion, Zeitdilatation und relativistische Massenzunahme bei Geschwindigkeit v im Vergleich zur Lichtgeschwindigkeit c sind.",
-    "einheiten": "γ dimensionslos, v in [m/s], c = 2,998×10⁸ m/s",
-    "variablen": [
-      { "symbol": "γ", "bedeutung": "Lorentz-Faktor", "einheit": "dimensionslos (≥1)" },
-      { "symbol": "v", "bedeutung": "Relativgeschwindigkeit", "einheit": "m/s" },
-      { "symbol": "c", "bedeutung": "Lichtgeschwindigkeit", "einheit": "2,998×10⁸ m/s" }
-    ],
-    "hintergrund": "Hendrik Antoon Lorentz und Henri Poincaré entwickelten den Faktor um 1900, Einstein integrierte ihn 1905 in die spezielle Relativitätstheorie als fundamentalen Ausdruck der Raumzeit-Geometrie.",
-    "beispiel": "Für v = 0,9c: γ = 1/√(1−0,81) = 1/√0,19 ≈ 2,29 → Zeit vergeht 2,29× langsamer.",
-    "anwendung": "GPS-Satellitenkorrekturen, Teilchenbeschleuniger (CERN), kosmische Strahlung, Astrophysik",
-    "quellen": ["Einstein, A. (1905). Zur Elektrodynamik bewegter Körper. Annalen der Physik.", "Taylor & Wheeler (1992). Spacetime Physics."],
-    "verwandte": ["relativistische-energie", "heisenberg-unschaerfe"],
-    "schwierigkeit": "fortgeschritten"
-  },
-  {
-    "slug": "planck-relation",
-    "name": "Planck-Relation",
-    "symbol": "E = hf",
-    "latex": "E = h \\cdot f",
-    "kategorie": "physik",
-    "unterkategorie": "Quantenmechanik",
-    "beschreibung": "Die Energie eines Photons ist proportional zu seiner Frequenz. h ist das Plancksche Wirkungsquantum.",
-    "einheiten": "E in [J] oder [eV], h = 6,626×10⁻³⁴ J·s, f in [Hz] = [1/s]",
-    "variablen": [
-      { "symbol": "E", "bedeutung": "Photonenenergie", "einheit": "J oder eV" },
-      { "symbol": "h", "bedeutung": "Plancksches Wirkungsquantum", "einheit": "6,626×10⁻³⁴ J·s" },
-      { "symbol": "f", "bedeutung": "Frequenz des Lichts", "einheit": "Hz" }
-    ],
-    "hintergrund": "Max Planck postulierte 1900 die Quantisierung der Energie um das Ultraviolett-Katastrophen-Problem zu lösen. Diese Formel begründete die Quantenmechanik und brachte Planck den Nobelpreis 1918.",
-    "beispiel": "Sichtbares Licht, λ = 500 nm, f = c/λ = 6×10¹⁴ Hz: E = 6,626×10⁻³⁴ × 6×10¹⁴ = 3,98×10⁻¹⁹ J = 2,48 eV.",
-    "anwendung": "Laserphysik, Photoeffekt (Solarzellen), LED-Technologie, Spektroskopie, Röntgenphysik",
-    "quellen": ["Planck, M. (1901). Über das Gesetz der Energieverteilung im Normalspektrum. Annalen der Physik."],
-    "verwandte": ["heisenberg-unschaerfe", "schroedinger-gleichung"],
-    "schwierigkeit": "fortgeschritten"
-  },
-  {
-    "slug": "ohmsches-gesetz",
-    "name": "Ohmsches Gesetz",
-    "symbol": "U = R·I",
-    "latex": "U = R \\cdot I",
-    "kategorie": "physik",
-    "unterkategorie": "Elektrodynamik",
-    "beschreibung": "Die Spannung U an einem ohmschen Widerstand R ist proportional zum Strom I, der durch ihn fließt.",
-    "einheiten": "U in Volt [V], R in Ohm [Ω], I in Ampere [A]",
-    "variablen": [
-      { "symbol": "U", "bedeutung": "Elektrische Spannung", "einheit": "V (Volt)" },
-      { "symbol": "R", "bedeutung": "Elektrischer Widerstand", "einheit": "Ω (Ohm)" },
-      { "symbol": "I", "bedeutung": "Elektrische Stromstärke", "einheit": "A (Ampere)" }
-    ],
-    "hintergrund": "Georg Simon Ohm veröffentlichte 1827 die Beziehung zwischen Spannung und Strom. Das Gesetz gilt für ohmsche Widerstände (lineare Bauelemente) bei konstanter Temperatur.",
-    "beispiel": "Widerstand R = 100 Ω, Strom I = 0,05 A: U = 100 × 0,05 = 5 V.",
-    "anwendung": "Elektronik, Schaltkreisdesign, Elektromotoren, Sicherheitstechnik, Hauselektrik",
-    "quellen": ["Ohm, G.S. (1827). Die galvanische Kette, mathematisch bearbeitet.", "Griffiths, D. (1999). Introduction to Electrodynamics."],
-    "verwandte": ["coulomb-gesetz"],
-    "schwierigkeit": "grundlegend"
-  },
-  {
-    "slug": "ideales-gasgesetz-physik",
-    "name": "Ideales Gasgesetz",
-    "symbol": "pV = nRT",
-    "latex": "pV = nRT",
-    "kategorie": "physik",
-    "unterkategorie": "Thermodynamik",
-    "beschreibung": "Das ideale Gasgesetz beschreibt den Zusammenhang zwischen Druck, Volumen, Stoffmenge und Temperatur eines idealen Gases.",
-    "einheiten": "p in Pascal [Pa], V in Liter [L] oder m³, n in Mol [mol], R = 8,314 J/(mol·K), T in Kelvin [K]",
-    "variablen": [
-      { "symbol": "p", "bedeutung": "Druck", "einheit": "Pa" },
-      { "symbol": "V", "bedeutung": "Volumen", "einheit": "m³ oder L" },
-      { "symbol": "n", "bedeutung": "Stoffmenge", "einheit": "mol" },
-      { "symbol": "R", "bedeutung": "Universelle Gaskonstante", "einheit": "8,314 J/(mol·K)" },
-      { "symbol": "T", "bedeutung": "Absolute Temperatur", "einheit": "K" }
-    ],
-    "hintergrund": "Das ideale Gasgesetz kombiniert die Gesetze von Boyle, Charles und Gay-Lussac. Es gilt für verdünnte Gase bei denen Molekülvolumen und intermolekulare Wechselwirkungen vernachlässigbar sind.",
-    "beispiel": "1 mol Gas bei T = 273 K und p = 101.325 Pa: V = nRT/p = 1×8,314×273/101325 ≈ 22,4 L (Molvolumen).",
-    "anwendung": "Chemische Verfahrenstechnik, Meteorologie, Motorentechnik, Tauchen, Raumfahrt",
-    "quellen": ["Atkins, P. & de Paula, J. (2014). Physical Chemistry.", "Callen, H.B. (1985). Thermodynamics."],
-    "verwandte": ["boltzmann-entropie"],
-    "schwierigkeit": "grundlegend"
-  },
-  {
-    "slug": "coulomb-gesetz",
-    "name": "Coulombsches Gesetz",
-    "symbol": "F = kq₁q₂/r²",
-    "latex": "F = k_e \\frac{q_1 q_2}{r^2}",
-    "kategorie": "physik",
-    "unterkategorie": "Elektrodynamik",
-    "beschreibung": "Die elektrostatische Kraft zwischen zwei Punktladungen ist proportional zum Produkt der Ladungen und umgekehrt proportional zum Quadrat ihres Abstands.",
-    "einheiten": "F in [N], ke = 8,99×10⁹ N·m²/C², q in Coulomb [C], r in [m]",
-    "variablen": [
-      { "symbol": "F", "bedeutung": "Elektrostatische Kraft", "einheit": "N" },
-      { "symbol": "ke", "bedeutung": "Coulomb-Konstante", "einheit": "8,99×10⁹ N·m²/C²" },
-      { "symbol": "q₁, q₂", "bedeutung": "Elektrische Ladungen", "einheit": "C (Coulomb)" },
-      { "symbol": "r", "bedeutung": "Abstand der Ladungen", "einheit": "m" }
-    ],
-    "hintergrund": "Charles-Augustin de Coulomb maß 1785 mit seiner Drehwaage die zwischen Ladungen wirkenden Kräfte. Das Gesetz ist das elektrische Analogon zum Gravitationsgesetz.",
-    "beispiel": "Zwei Ladungen q₁ = q₂ = 1 μC = 10⁻⁶ C, r = 1 m: F = 8,99×10⁹ × (10⁻⁶)²/1² = 8,99×10⁻³ N.",
-    "anwendung": "Elektrotechnik, Atommodelle, Ionenbindung in der Chemie, Display-Technologie",
-    "quellen": ["Coulomb, C.A. (1785). Premier mémoire sur l'électricité et le magnétisme.", "Griffiths, D. (1999). Introduction to Electrodynamics."],
-    "verwandte": ["ohmsches-gesetz", "gravitationsgesetz"],
+    "abiturRelevant": true,
     "schwierigkeit": "grundlegend"
   },
   {
     "slug": "energie-kinetisch",
     "name": "Kinetische Energie",
-    "symbol": "E_kin = ½mv²",
-    "latex": "E_{kin} = \\frac{1}{2}mv^2",
+    "latex": "E_{kin} = \\frac{1}{2} m v^2",
+    "symbol": "Ekin = ½mv²",
     "kategorie": "physik",
-    "unterkategorie": "Mechanik",
-    "beschreibung": "Die kinetische Energie ist die Energie, die ein Körper aufgrund seiner Bewegung besitzt.",
-    "einheiten": "E in Joule [J], m in Kilogramm [kg], v in [m/s]",
+    "unterkategorie": "Energielehre",
+    "beschreibung": "Die kinetische Energie ist die Bewegungsenergie eines Körpers der Masse m mit Geschwindigkeit v.",
+    "einheiten": "E in Joule [J] = [kg·m²/s²] · m in kg · v in m/s",
     "variablen": [
-      { "symbol": "E_kin", "bedeutung": "Kinetische Energie", "einheit": "J (Joule)" },
-      { "symbol": "m", "bedeutung": "Masse", "einheit": "kg" },
-      { "symbol": "v", "bedeutung": "Geschwindigkeit", "einheit": "m/s" }
+      {
+        "symbol": "E_kin",
+        "bedeutung": "Kinetische Energie",
+        "einheit": "J (Joule)"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "v",
+        "bedeutung": "Geschwindigkeit",
+        "einheit": "m/s"
+      }
     ],
-    "hintergrund": "Die Formel für kinetische Energie entstand durch Integration von F = ma über den Weg. Gottfried Wilhelm Leibniz erkannte bereits 1686 das Konzept der vis viva (lebendige Kraft).",
-    "beispiel": "Auto (m=1500 kg) bei v=27,8 m/s (100 km/h): E_kin = ½ × 1500 × 27,8² ≈ 579.000 J ≈ 579 kJ.",
-    "anwendung": "Fahrzeugsicherheit (Crashtest), Windenergie, Strömungsmechanik, Sport-Biomechanik",
-    "quellen": ["Halliday, Resnick & Walker (2013). Fundamentals of Physics.", "Feynman, R. (1963). The Feynman Lectures on Physics."],
-    "verwandte": ["newton-zweites-gesetz", "energie-potentiell"],
+    "hintergrund": "Abgeleitet durch Integration von F = ma über den Weg: W = ∫F·ds = ∫ma·ds = m∫v·dv = ½mv². Das ist auch die Arbeit, die nötig ist, um einen Körper von 0 auf v zu beschleunigen.",
+    "beispiel": "Ein Auto (m = 1.500 kg) bei v = 100 km/h = 27,8 m/s: E_kin = ½ × 1.500 × 27,8² ≈ 579 kJ — entspricht dem Einschlag einer kleinen Granate.",
+    "anwendung": "Unfallrekonstruktion, Windenergie (E ∝ v³ nach Betz), Teilchenphysik, Crash-Tests",
+    "quellen": [
+      "Feynman, R., Leighton, R., & Sands, M. (1963). The Feynman Lectures on Physics."
+    ],
+    "verwandte": [
+      "energie-potentiell",
+      "newton-zweites-gesetz",
+      "arbeit-leistung"
+    ],
+    "abiturRelevant": true,
     "schwierigkeit": "grundlegend"
   },
   {
     "slug": "energie-potentiell",
-    "name": "Potentielle Energie (Gravitation)",
-    "symbol": "E_pot = mgh",
-    "latex": "E_{pot} = mgh",
+    "name": "Potentielle Energie (Lagehöhe)",
+    "latex": "E_{pot} = m \\cdot g \\cdot h",
+    "symbol": "Epot = mgh",
     "kategorie": "physik",
-    "unterkategorie": "Mechanik",
-    "beschreibung": "Die gravitative potentielle Energie ist die Energie, die ein Körper aufgrund seiner Höhe h über einem Referenzniveau besitzt.",
-    "einheiten": "E in Joule [J], m in [kg], g ≈ 9,81 m/s², h in [m]",
+    "unterkategorie": "Energielehre",
+    "beschreibung": "Die potentielle Energie (Lageenergie) eines Körpers der Masse m in der Höhe h im homogenen Gravitationsfeld g.",
+    "einheiten": "E in J · m in kg · g = 9,81 m/s² · h in m",
     "variablen": [
-      { "symbol": "E_pot", "bedeutung": "Potentielle Energie", "einheit": "J (Joule)" },
-      { "symbol": "m", "bedeutung": "Masse", "einheit": "kg" },
-      { "symbol": "g", "bedeutung": "Erdbeschleunigung", "einheit": "9,81 m/s²" },
-      { "symbol": "h", "bedeutung": "Höhe über Referenzniveau", "einheit": "m" }
+      {
+        "symbol": "E_pot",
+        "bedeutung": "Potentielle Energie",
+        "einheit": "J"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Erdbeschleunigung (9,81 m/s²)",
+        "einheit": "m/s²"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Höhe über Referenzniveau",
+        "einheit": "m"
+      }
     ],
-    "hintergrund": "Potentielle Energie ist gespeicherte Energie. Bei Umwandlung in kinetische Energie gilt der Energieerhaltungssatz: E_kin + E_pot = const.",
-    "beispiel": "Stein (m=0,5 kg) aus h=10 m fallen lassen: E_pot = 0,5 × 9,81 × 10 = 49,05 J → v beim Aufprall: v = √(2E/m) = √(2×49,05/0,5) ≈ 14 m/s.",
-    "anwendung": "Wasserkraftwerke, Mechanik, Katapulte, Pendel, Architekturstatik",
-    "quellen": ["Halliday, Resnick & Walker (2013). Fundamentals of Physics."],
-    "verwandte": ["energie-kinetisch", "newton-zweites-gesetz"],
+    "hintergrund": "Gilt exakt nur in homogenen Gravitationsfeldern (Näherung auf Erdoberfläche). Für große Höhen: E_pot = -G·M·m/r (allgemeine Form). Der Energieerhaltungssatz: E_kin + E_pot = const. (für konservative Kräfte).",
+    "beispiel": "Bergsteiger (m = 80 kg) auf 3.000 m Höhe: E_pot = 80 × 9,81 × 3.000 ≈ 2,35 MJ — Energie eines Sprengstoffpakets.",
+    "anwendung": "Pumpspeicherkraftwerke, Fallturm-Experimente, Brückenstatik, Raumfahrt",
+    "quellen": [
+      "Tipler, P.A., & Llewellyn, R.A. (2020). Modern Physics. Freeman."
+    ],
+    "verwandte": [
+      "energie-kinetisch",
+      "gravitationsgesetz",
+      "arbeit-leistung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend"
+  },
+  {
+    "slug": "coulomb-gesetz",
+    "name": "Coulombsches Gesetz",
+    "latex": "F = k_e \\cdot \\frac{q_1 \\cdot q_2}{r^2}",
+    "symbol": "F = ke·q₁q₂/r²",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Das Coulombsche Gesetz beschreibt die elektrostatische Kraft zwischen zwei Punktladungen.",
+    "einheiten": "F in N · k_e = 8,99×10⁹ N·m²/C² · q in C (Coulomb) · r in m",
+    "variablen": [
+      {
+        "symbol": "F",
+        "bedeutung": "Elektrostatische Kraft",
+        "einheit": "N"
+      },
+      {
+        "symbol": "k_e",
+        "bedeutung": "Coulomb-Konstante (8,99×10⁹)",
+        "einheit": "N·m²/C²"
+      },
+      {
+        "symbol": "q₁, q₂",
+        "bedeutung": "Elektrische Ladungen",
+        "einheit": "C (Coulomb)"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Abstand zwischen den Ladungen",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Charles-Augustin de Coulomb bestimmte 1785 das Gesetz mit einer Torsionswaage. Analog zum Gravitationsgesetz (1/r²-Abhängigkeit), aber: Vorzeichen entscheiden über Anziehung (ungleich) oder Abstoßung (gleich). k_e = 1/(4πε₀), wobei ε₀ = 8,854×10⁻¹² F/m die Permittivität des Vakuums ist.",
+    "beispiel": "Zwei Protonen im Abstand r = 10⁻¹⁵ m (Atomkerngröße): F = 8,99×10⁹ × (1,6×10⁻¹⁹)² / (10⁻¹⁵)² ≈ 230 N — erklärt, warum Kernkräfte so stark sein müssen.",
+    "anwendung": "Chemische Bindung, Festkörperphysik, Elektronik (Halbleiter), Massenspektrometrie",
+    "quellen": [
+      "Griffiths, D.J. (2017). Introduction to Electrodynamics. Cambridge."
+    ],
+    "verwandte": [
+      "maxwell-gleichungen",
+      "lorentzkraft",
+      "bohr-modell"
+    ],
+    "abiturRelevant": true,
     "schwierigkeit": "grundlegend"
   },
   {
     "slug": "lorentzkraft",
     "name": "Lorentzkraft",
-    "symbol": "F = q(v×B)",
-    "latex": "\\vec{F} = q(\\vec{v} \\times \\vec{B})",
+    "latex": "\\vec{F} = q \\cdot (\\vec{v} \\times \\vec{B})",
+    "symbol": "F = q(v × B)",
     "kategorie": "physik",
     "unterkategorie": "Elektrodynamik",
-    "beschreibung": "Eine bewegte Ladung q in einem Magnetfeld B erfährt eine Kraft F senkrecht zu ihrer Bewegungsrichtung v und zum Magnetfeld.",
-    "einheiten": "F in [N], q in [C], v in [m/s], B in Tesla [T]",
+    "beschreibung": "Die Lorentzkraft beschreibt die Kraft auf eine bewegte elektrische Ladung in einem Magnetfeld.",
+    "einheiten": "F in N · q in C · v in m/s · B in T (Tesla)",
     "variablen": [
-      { "symbol": "F", "bedeutung": "Lorentzkraft (Vektor)", "einheit": "N" },
-      { "symbol": "q", "bedeutung": "Elektrische Ladung", "einheit": "C" },
-      { "symbol": "v", "bedeutung": "Geschwindigkeitsvektor der Ladung", "einheit": "m/s" },
-      { "symbol": "B", "bedeutung": "Magnetische Flussdichte", "einheit": "T (Tesla)" }
+      {
+        "symbol": "F⃗",
+        "bedeutung": "Lorentzkraft (Vektor)",
+        "einheit": "N"
+      },
+      {
+        "symbol": "q",
+        "bedeutung": "Elektrische Ladung",
+        "einheit": "C"
+      },
+      {
+        "symbol": "v⃗",
+        "bedeutung": "Geschwindigkeit der Ladung",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "B⃗",
+        "bedeutung": "Magnetische Flussdichte",
+        "einheit": "T (Tesla)"
+      }
     ],
-    "hintergrund": "Hendrik Antoon Lorentz formulierte die vollständige Kraft auf eine bewegte Ladung im kombinierten elektrischen und magnetischen Feld. Der magnetische Anteil ist das Kreuzprodukt v×B.",
-    "beispiel": "Proton (q=1,6×10⁻¹⁹ C) bei v=10⁶ m/s in B=1 T: F = 1,6×10⁻¹⁹ × 10⁶ × 1 = 1,6×10⁻¹³ N.",
-    "anwendung": "Elektromotoren, Generatoren, MRT (Magnetresonanztomographie), Massenspektrometer, Teilchenbeschleuniger",
-    "quellen": ["Griffiths, D. (1999). Introduction to Electrodynamics.", "Jackson, J.D. (1999). Classical Electrodynamics."],
-    "verwandte": ["coulomb-gesetz", "ohmsches-gesetz"],
+    "hintergrund": "Hendrik Antoon Lorentz formulierte 1895 die vollständige Gleichung F = q(E + v×B). Die Richtung ist durch die Rechte-Hand-Regel bestimmt: Zeiger = v⃗, Mittelfinger = B⃗, Daumen = F⃗ (positive Ladung).",
+    "beispiel": "Elektron (q = -1,6×10⁻¹⁹ C) bewegt sich mit v = 10⁶ m/s senkrecht zu B = 0,1 T: |F| = 1,6×10⁻¹⁹ × 10⁶ × 0,1 = 1,6×10⁻¹⁴ N.",
+    "anwendung": "Elektromotoren, Cyclotron/MRT, Massenspektrometer, Kompass",
+    "quellen": [
+      "Jackson, J.D. (1998). Classical Electrodynamics. Wiley."
+    ],
+    "verwandte": [
+      "coulomb-gesetz",
+      "induktion-faraday",
+      "maxwell-gleichungen"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "wirkungsgrad-carnot",
+    "name": "Carnot-Wirkungsgrad",
+    "latex": "\\eta_{Carnot} = 1 - \\frac{T_{kalt}}{T_{warm}}",
+    "symbol": "η = 1 − T_k/T_w",
+    "kategorie": "physik",
+    "unterkategorie": "Thermodynamik",
+    "beschreibung": "Der Carnot-Wirkungsgrad gibt den maximal möglichen Wirkungsgrad einer Wärmekraftmaschine zwischen zwei Temperaturniveaus an.",
+    "einheiten": "η dimensionslos (0 bis 1) · T in Kelvin [K]",
+    "variablen": [
+      {
+        "symbol": "η",
+        "bedeutung": "Wirkungsgrad",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "T_warm",
+        "bedeutung": "Temperatur des heißen Reservoirs",
+        "einheit": "K"
+      },
+      {
+        "symbol": "T_kalt",
+        "bedeutung": "Temperatur des kalten Reservoirs",
+        "einheit": "K"
+      }
+    ],
+    "hintergrund": "Nicolas Léonard Sadi Carnot beschrieb 1824 den idealisierten Kreisprozess. Der 2. Hauptsatz: Kein realer Prozess kann η = 1 erreichen, da T_kalt > 0 K. Ein Dampfkraftwerk mit T_warm = 600°C = 873 K und T_kalt = 30°C = 303 K erreicht maximal η = 1 − 303/873 ≈ 65%.",
+    "beispiel": "Modernes Steinkohlekraftwerk: T_warm ≈ 600°C (873 K), T_kalt ≈ 30°C (303 K). η_max = 1 − 303/873 = 65%. Realer Wirkungsgrad: ~45%.",
+    "anwendung": "Kraftwerkstechnik, Kältemaschinen (umgekehrt), Klimaanlagen, Motorenbewertung",
+    "quellen": [
+      "Carnot, S. (1824). Réflexions sur la puissance motrice du feu.",
+      "Callen, H.B. (1985). Thermodynamics. Wiley."
+    ],
+    "verwandte": [
+      "hauptsaetze-thermodynamik",
+      "entropie-clausius",
+      "innere-energie"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "de-broglie-wellenlaenge",
+    "name": "De-Broglie-Wellenlänge",
+    "latex": "\\lambda = \\frac{h}{p} = \\frac{h}{mv}",
+    "symbol": "λ = h/p",
+    "kategorie": "physik",
+    "unterkategorie": "Quantenphysik",
+    "beschreibung": "Die De-Broglie-Wellenlänge beschreibt die Wellennatur von Materieteilchen — Welle-Teilchen-Dualismus.",
+    "einheiten": "λ in m · h = 6,626×10⁻³⁴ J·s · p in kg·m/s",
+    "variablen": [
+      {
+        "symbol": "λ",
+        "bedeutung": "De-Broglie-Wellenlänge",
+        "einheit": "m"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Plancksches Wirkungsquantum (6,626×10⁻³⁴ J·s)",
+        "einheit": "J·s"
+      },
+      {
+        "symbol": "p",
+        "bedeutung": "Impuls des Teilchens (= mv)",
+        "einheit": "kg·m/s"
+      }
+    ],
+    "hintergrund": "Louis de Broglie postulierte 1924 in seiner Dissertation, dass alle Materie Welleneigenschaften besitzt (Analogie zu Photonen: p = h/λ → λ = h/p). Experimentell bestätigt durch Davisson-Germer-Experiment (1927): Elektronenbeugung an Nickelkristall.",
+    "beispiel": "Elektron mit v = 10⁶ m/s: λ = 6,626×10⁻³⁴ / (9,11×10⁻³¹ × 10⁶) ≈ 0,73 nm — Größenordnung von Atomabständen → Elektronenmikroskop möglich.",
+    "anwendung": "Elektronenmikroskopie (0,1 Å Auflösung), Neutronenstreuung, Quantencomputing",
+    "quellen": [
+      "de Broglie, L. (1924). Thèse de doctorat, Université de Paris.",
+      "Davisson, C., & Germer, L.H. (1927). Nature."
+    ],
+    "verwandte": [
+      "heisenberg-unschaerfe",
+      "bohr-modell",
+      "photoeffekt"
+    ],
+    "abiturRelevant": true,
     "schwierigkeit": "fortgeschritten"
   },
   {
     "slug": "photoeffekt-einstein",
     "name": "Photoeffekt (Einstein)",
-    "symbol": "E_kin = hf − W",
-    "latex": "E_{kin} = hf - W",
+    "latex": "E_{kin} = h \\cdot f - W_A",
+    "symbol": "Ekin = hf − WA",
+    "kategorie": "physik",
+    "unterkategorie": "Quantenphysik",
+    "beschreibung": "Der Photoeffekt beschreibt die Emission von Elektronen aus einer Metalloberfläche bei Bestrahlung mit Licht.",
+    "einheiten": "E in J · h = 6,626×10⁻³⁴ J·s · f in Hz · W_A in J (Elektronenvolt: eV)",
+    "variablen": [
+      {
+        "symbol": "E_kin",
+        "bedeutung": "Kinetische Energie des emittierten Elektrons",
+        "einheit": "J oder eV"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Plancksches Wirkungsquantum",
+        "einheit": "J·s"
+      },
+      {
+        "symbol": "f",
+        "bedeutung": "Frequenz des einfallenden Lichts",
+        "einheit": "Hz"
+      },
+      {
+        "symbol": "W_A",
+        "bedeutung": "Austrittsarbeit (materialspezifisch)",
+        "einheit": "J oder eV"
+      }
+    ],
+    "hintergrund": "Albert Einstein erklärte 1905 den von Hertz beobachteten Photoeffekt durch die Quantenhypothese (Photonen mit E = hf). Hierfür erhielt er 1921 den Nobelpreis — nicht für die Relativitätstheorie.",
+    "beispiel": "Natrium (W_A = 2,28 eV), beleuchtet mit UV-Licht f = 8×10¹⁴ Hz: E_kin = (6,626×10⁻³⁴ × 8×10¹⁴) / 1,6×10⁻¹⁹ − 2,28 ≈ 1,03 eV.",
+    "anwendung": "Solarzellen, Photodetektoren, Nachtsichtgeräte, Digitalkameras (CCD)",
+    "quellen": [
+      "Einstein, A. (1905). Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. Annalen der Physik."
+    ],
+    "verwandte": [
+      "de-broglie-wellenlaenge",
+      "bohr-modell",
+      "heisenberg-unschaerfe"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "induktion-faraday",
+    "name": "Faradayssches Induktionsgesetz",
+    "latex": "U_{ind} = -N \\cdot \\frac{d\\Phi}{dt}",
+    "symbol": "U = −N·dΦ/dt",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Das Faradaysche Induktionsgesetz beschreibt die Entstehung einer Spannung durch Änderung des magnetischen Flusses.",
+    "einheiten": "U in V (Volt) · N dimensionslos · Φ in Wb (Weber = V·s)",
+    "variablen": [
+      {
+        "symbol": "U_ind",
+        "bedeutung": "Induzierte Spannung",
+        "einheit": "V"
+      },
+      {
+        "symbol": "N",
+        "bedeutung": "Windungszahl der Spule",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "Φ",
+        "bedeutung": "Magnetischer Fluss (= B·A·cos θ)",
+        "einheit": "Wb = V·s"
+      }
+    ],
+    "hintergrund": "Michael Faraday entdeckte 1831 experimentell die elektromagnetische Induktion. Das Minuszeichen (Lenzsche Regel) besagt: Die induzierte Spannung wirkt ihrer Ursache entgegen — Energieerhaltung.",
+    "beispiel": "Spule mit N = 200 Windungen. Magnetfluss ändert sich von 0 auf 50 mWb in 0,1 s: U = −200 × (0,05/0,1) = −100 V.",
+    "anwendung": "Elektromotoren, Generatoren, Transformatoren, Induktionskochfeld",
+    "quellen": [
+      "Faraday, M. (1831). Experimental Researches in Electricity. Philosophical Transactions of the Royal Society."
+    ],
+    "verwandte": [
+      "lorentzkraft",
+      "maxwell-gleichungen",
+      "selbstinduktion"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "hookes-gesetz",
+    "name": "Hookesches Gesetz (Federkraft)",
+    "latex": "F = k \\cdot x",
+    "symbol": "F = k·x",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Das Hookesche Gesetz beschreibt die lineare Beziehung zwischen Federkraft und Auslenkung — Grundlage für Schwingungen, Federmanometer und Werkstoffmechanik.",
+    "einheiten": "F in Newton [N], k in N/m, x in Meter [m]",
+    "variablen": [
+      {
+        "symbol": "F",
+        "bedeutung": "Federkraft (rücktreibende Kraft)",
+        "einheit": "N"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Federkonstante (Steifigkeit des Systems)",
+        "einheit": "N/m"
+      },
+      {
+        "symbol": "x",
+        "bedeutung": "Auslenkung aus der Ruhelage",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Robert Hooke (1678) entdeckte: Die Kraft einer Feder ist proportional zur Auslenkung. Gilt nur im elastischen Bereich, bis zur Proportionalitätsgrenze. Die Federkonstante k charakterisiert die Steifigkeit des Systems. Gespeicherte Federenergie: E = ½kx².",
+    "beispiel": "Eine Feder mit k = 200 N/m wird um x = 0,05 m (5 cm) gedehnt: F = 200 · 0,05 = 10 N. Gespeicherte Energie: E = ½ · 200 · 0,0025 = 0,25 J.",
+    "anwendung": "Federmanometer, Schwingungssysteme, Werkstoffprüfung, Seismographen, Federwaagen, Stoßdämpfer",
+    "quellen": [
+      "Hooke, R. (1678). De Potentia Restitutiva. London."
+    ],
+    "verwandte": [
+      "newton-zweites-gesetz",
+      "energie-kinetisch",
+      "energie-potentiell"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "grundlegend"
+  },
+  {
+    "slug": "waermekapazitaet",
+    "name": "Wärmekapazität — Q = m·c·ΔT",
+    "latex": "Q = m \\cdot c \\cdot \\Delta T",
+    "symbol": "Q = m·c·ΔT",
+    "kategorie": "physik",
+    "unterkategorie": "Thermodynamik",
+    "beschreibung": "Die Formel der spezifischen Wärmekapazität beschreibt, wie viel Wärmeenergie ein Stoff aufnimmt — essenziell für Kalorimetrie, Reaktionsenthalpien und Wärmetransport.",
+    "einheiten": "Q in Joule [J], m in kg, c in J/(kg·K), ΔT in Kelvin [K]",
+    "variablen": [
+      {
+        "symbol": "Q",
+        "bedeutung": "Wärmemenge (aufgenommene / abgegebene Energie)",
+        "einheit": "J"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse des Stoffes",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "c",
+        "bedeutung": "Spezifische Wärmekapazität (Wasser: 4182 J/(kg·K))",
+        "einheit": "J/(kg·K)"
+      },
+      {
+        "symbol": "ΔT",
+        "bedeutung": "Temperaturänderung (T₂ − T₁)",
+        "einheit": "K"
+      }
+    ],
+    "hintergrund": "Wasser hat eine außergewöhnlich hohe Wärmekapazität (c = 4182 J/(kg·K)) — deshalb reguliert es das Klima. Metalle haben niedrige c-Werte (Eisen: 450 J/(kg·K)). Kalorimetrie nutzt diese Formel zur Bestimmung von Reaktionswärmen.",
+    "beispiel": "500 g Wasser (c = 4182 J/(kg·K)) werden von 20 °C auf 60 °C erhitzt: Q = 0,5 · 4182 · 40 = 83 640 J ≈ 83,6 kJ.",
+    "anwendung": "Kalorimetrie, Reaktionsenthalpie-Bestimmung, Wärmeleitung, Klimaphysik, Heizungstechnik",
+    "quellen": [
+      "Atkins, P.W. & de Paula, J. (2013). Physikalische Chemie. Wiley-VCH."
+    ],
+    "verwandte": [
+      "ideales-gasgesetz",
+      "gibbs-energie",
+      "wirkungsgrad-carnot"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "grundlegend"
+  },
+  {
+    "slug": "brechungsgesetz-snellius",
+    "name": "Snelliussches Brechungsgesetz",
+    "latex": "n_1 \\cdot \\sin(\\alpha_1) = n_2 \\cdot \\sin(\\alpha_2)",
+    "symbol": "n₁·sin(α₁) = n₂·sin(α₂)",
+    "kategorie": "physik",
+    "unterkategorie": "Optik",
+    "beschreibung": "Das Brechungsgesetz nach Snellius beschreibt, wie Lichtstrahlen beim Übergang zwischen zwei Medien gebrochen werden — Grundlage für Linsen, Glasfaser und Optik.",
+    "einheiten": "n dimensionslos, α in Grad [°] oder Radiant [rad]",
+    "variablen": [
+      {
+        "symbol": "n₁",
+        "bedeutung": "Brechungsindex des ersten Mediums",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "n₂",
+        "bedeutung": "Brechungsindex des zweiten Mediums",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "α₁",
+        "bedeutung": "Einfallswinkel (zur Normalen)",
+        "einheit": "°"
+      },
+      {
+        "symbol": "α₂",
+        "bedeutung": "Brechungswinkel (zur Normalen)",
+        "einheit": "°"
+      }
+    ],
+    "hintergrund": "Willebrord Snell (1621) formulierte das Gesetz aus Fermats Prinzip der kürzesten Zeit. Totalreflexion tritt auf, wenn n₁ > n₂ und der Einfallswinkel den kritischen Winkel überschreitet: α_krit = arcsin(n₂/n₁). Glasfaserkabel basieren auf diesem Prinzip.",
+    "beispiel": "Licht von Luft (n₁ = 1,00) in Glas (n₂ = 1,50), α₁ = 30°: sin(α₂) = (1,00/1,50)·sin(30°) = 0,333 → α₂ = arcsin(0,333) ≈ 19,5°.",
+    "anwendung": "Optische Linsen, Prismen, Glasfaserkabel, Endoskopie, Regenbogen-Physik, Lichtmikroskopie",
+    "quellen": [
+      "Born, M. & Wolf, E. (1999). Principles of Optics, 7th Ed. Cambridge University Press."
+    ],
+    "verwandte": [
+      "de-broglie-wellenlaenge",
+      "lorentzkraft",
+      "photoeffekt-einstein"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "fortgeschritten"
+  },
+  {
+    "slug": "heisenberg-unschaerfe",
+    "name": "Heisenbergsche Unschärferelation",
+    "latex": "\\Delta x \\cdot \\Delta p \\geq \\frac{\\hbar}{2}",
+    "symbol": "Δx · Δp ≥ ℏ/2",
     "kategorie": "physik",
     "unterkategorie": "Quantenmechanik",
-    "beschreibung": "Beim photoelektrischen Effekt gibt ein Photon der Energie hf seine Energie an ein Elektron ab. Die kinetische Energie des herausgelösten Elektrons ist hf minus die Austrittsarbeit W.",
-    "einheiten": "E_kin, hf, W in Joule [J] oder eV",
+    "beschreibung": "Die Unschärferelation setzt eine fundamentale Grenze für die gleichzeitige Bestimmbarkeit von Ort und Impuls — kein Messproblem, sondern eine Eigenschaft der Quantennatur.",
+    "einheiten": "Δx in m, Δp in kg·m/s, ℏ = h/(2π) ≈ 1,055 × 10⁻³⁴ J·s",
     "variablen": [
-      { "symbol": "E_kin", "bedeutung": "Kinetische Energie des Elektrons", "einheit": "J oder eV" },
-      { "symbol": "h", "bedeutung": "Plancksches Wirkungsquantum", "einheit": "6,626×10⁻³⁴ J·s" },
-      { "symbol": "f", "bedeutung": "Frequenz des Lichts", "einheit": "Hz" },
-      { "symbol": "W", "bedeutung": "Austrittsarbeit des Materials", "einheit": "J oder eV" }
+      {
+        "symbol": "Δx",
+        "bedeutung": "Standardabweichung des Ortes",
+        "einheit": "m"
+      },
+      {
+        "symbol": "Δp",
+        "bedeutung": "Standardabweichung des Impulses",
+        "einheit": "kg·m/s"
+      },
+      {
+        "symbol": "ℏ",
+        "bedeutung": "Reduziertes Plancksches Wirkungsquantum (h/2π)",
+        "einheit": "J·s"
+      }
     ],
-    "hintergrund": "Einstein erklärte 1905 den Photoeffekt durch die Annahme, dass Licht aus Quanten (Photonen) besteht. Für diese Arbeit erhielt er 1921 den Nobelpreis für Physik.",
-    "beispiel": "UV-Licht f=10¹⁵ Hz auf Natrium (W=2,3 eV=3,68×10⁻¹⁹ J): hf=6,63×10⁻¹⁹ J → E_kin=2,95×10⁻¹⁹ J ≈ 1,84 eV.",
-    "anwendung": "Solarzellen, Photomultiplier, CCD-Kameras, Röntgendiagnostik",
-    "quellen": ["Einstein, A. (1905). Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. Annalen der Physik."],
-    "verwandte": ["planck-relation", "heisenberg-unschaerfe"],
-    "schwierigkeit": "fortgeschritten"
+    "hintergrund": "Werner Heisenberg (1927) zeigte: Je genauer der Ort, desto unschärfer der Impuls — und umgekehrt. Dies ist fundamental, nicht messtechnisch bedingt. Energie-Zeit-Unschärfe: ΔE·Δt ≥ ℏ/2.",
+    "beispiel": "Elektron (m = 9,11×10⁻³¹ kg), Ort auf Δx = 10⁻¹⁰ m lokalisiert: Δp ≥ ℏ/(2·Δx) = 1,055×10⁻³⁴/(2·10⁻¹⁰) ≈ 5,3×10⁻²⁵ kg·m/s. Geschwindigkeits-Unschärfe: Δv ≈ 5,8×10⁵ m/s.",
+    "anwendung": "Quantenchemie, Tunneleffekt, Atomstruktur, MRI-Spektroskopie, Halbleiter-Physik",
+    "quellen": [
+      "Heisenberg, W. (1927). Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik. Zeitschrift für Physik, 43, 172–198."
+    ],
+    "verwandte": [
+      "de-broglie-wellenlaenge",
+      "photoeffekt-einstein",
+      "normalverteilung"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "universitaet"
   }
 ]
