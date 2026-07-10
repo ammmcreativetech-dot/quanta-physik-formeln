@@ -29,16 +29,54 @@
     "beispiel": "Ein Auto der Masse m = 1.200 kg beschleunigt mit a = 3 m/s². Die nötige Antriebskraft beträgt: F = 1.200 kg × 3 m/s² = 3.600 N.",
     "anwendung": "Fahrzeugdynamik, Raumfahrt (Raketenantrieb), Biomechanik (Ganganalyse), Materialprüfung",
     "quellen": [
-      "Newton, I. (1687). Philosophiae Naturalis Principia Mathematica.",
-      "Halliday, D., Resnick, R., & Walker, J. (2018). Fundamentals of Physics. Wiley."
+      "Newton, I. (1687). Principia Mathematica. London: Royal Society.",
+      "Halliday, D., Resnick, R., & Krane, K.S. (2002). Physik. Wiley-VCH."
     ],
     "verwandte": [
-      "impuls-formel",
       "energie-kinetisch",
-      "gravitationsgesetz"
+      "gravitationsgesetz",
+      "hookes-gesetz"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+      "https://de.wikipedia.org/wiki/Zweites_Newtonsches_Gesetz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "F=ma",
+      "F = m*a",
+      "F = m·a",
+      "f=ma",
+      "F gleich m mal a",
+      "Kraft gleich Masse mal Beschleunigung",
+      "Newtons 2. Gesetz",
+      "Newton's second law",
+      "Kraftformel Physik",
+      "zweites Newtonsches Gesetz"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/newton-zweites-gesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt in Inertialsystemen der klassischen Mechanik und bei konstanter Masse. Bei sehr hohen Geschwindigkeiten oder variabler Masse muss die Impulsform F = dp/dt verwendet werden.",
+      "schritte": [
+        "Starte mit p = m·v und F = dp/dt.",
+        "Ist m konstant, gilt dp/dt = m·dv/dt = m·a."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Beschleunigung aus Kraft und Masse",
+        "latex": "a = \\frac{F}{m}",
+        "hinweis": "Je größer die Masse, desto kleiner ist bei gleicher Kraft die Beschleunigung."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Masse in Gramm einsetzen oder Kraft und Gewichtskraft verwechseln.",
+        "korrektur": "Masse immer in kg einsetzen; Gewichtskraft ist nur ein Spezialfall F_G = m·g."
+      }
+    ]
   },
   {
     "slug": "gravitationsgesetz",
@@ -80,11 +118,47 @@
     ],
     "verwandte": [
       "newton-zweites-gesetz",
-      "kreisbewegung",
-      "energie-potentiell"
+      "energie-potentiell",
+      "energie-kinetisch"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+      "https://doi.org/10.1098/rstl.1798.0022"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "F=G*m1*m2/r^2",
+      "F=Gm1m2/r2",
+      "G m1 m2 r2",
+      "Gravitationskraft Formel",
+      "Newtons Gravitationsgesetz",
+      "law of gravitation",
+      "Schwerkraft Formel",
+      "FG = G m1 m2 durch r2"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/gravitationsgesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt für punktförmige Massen oder kugelsymmetrische Körper außerhalb ihrer Oberfläche. Der Abstand r wird zwischen den Massenmittelpunkten gemessen.",
+      "schritte": [
+        "Planetenbewegung verlangt eine zum Zentrum gerichtete Kraft.",
+        "Die Proportionalitäten F ∝ m₁, F ∝ m₂ und F ∝ 1/r² werden durch G zur Gleichung."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Abstand aus Kraft und Massen",
+        "latex": "r = \\sqrt{\\frac{G m_1 m_2}{F_G}}",
+        "hinweis": "Nur mit dem Betrag der Kraft rechnen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "r als Oberflächenabstand statt Mittelpunktabstand verwenden.",
+        "korrektur": "Bei Kugeln zählt der Abstand der Mittelpunkte."
+      }
+    ]
   },
   {
     "slug": "energie-kinetisch",
@@ -121,10 +195,45 @@
     "verwandte": [
       "energie-potentiell",
       "newton-zweites-gesetz",
-      "arbeit-leistung"
+      "hookes-gesetz"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Kinetic_energy"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Ekin=0.5*m*v^2",
+      "E=1/2 mv^2",
+      "E=½mv²",
+      "E = m*v^2/2",
+      "½mv²",
+      "kinetische Energie Formel",
+      "Bewegungsenergie berechnen",
+      "kinetic energy formula"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/energie-kinetisch",
+    "herleitung": {
+      "gueltigkeit": "Klassische Formel für nichtrelativistische Geschwindigkeiten. Bei v nahe c ist die relativistische Energieform nötig.",
+      "schritte": [
+        "Arbeit ist W = ∫F ds.",
+        "Mit F = m·a und a ds = v dv ergibt sich W = m∫v dv = 1/2 mv²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Geschwindigkeit aus Energie",
+        "latex": "v = \\sqrt{\\frac{2 E_{kin}}{m}}",
+        "hinweis": "Der Zusammenhang ist quadratisch: doppelte Geschwindigkeit bedeutet vierfache Energie."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Geschwindigkeit in km/h direkt einsetzen.",
+        "korrektur": "Vor dem Einsetzen immer in m/s umrechnen."
+      }
+    ]
   },
   {
     "slug": "energie-potentiell",
@@ -166,10 +275,45 @@
     "verwandte": [
       "energie-kinetisch",
       "gravitationsgesetz",
-      "arbeit-leistung"
+      "newton-zweites-gesetz"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Potential_energy"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E=mgh",
+      "Epot=m*g*h",
+      "m*g*h",
+      "m mal g mal h",
+      "mgh Formel",
+      "Lageenergie Formel",
+      "potenzielle Energie berechnen",
+      "potential energy formula"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/energie-potentiell",
+    "herleitung": {
+      "gueltigkeit": "Gilt im näherungsweise homogenen Gravitationsfeld nahe der Erdoberfläche und für eine frei gewählte Bezugshöhe.",
+      "schritte": [
+        "Gewichtskraft: F_G = m·g.",
+        "Hubarbeit bei konstanter Kraft: W = F_G·h = m·g·h."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Höhe aus Energie",
+        "latex": "h = \\frac{E_{pot}}{m g}",
+        "hinweis": "Die Nullhöhe ist frei wählbar; nur Energiedifferenzen sind physikalisch entscheidend."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "h absolut statt relativ zum gewählten Bezugsniveau interpretieren.",
+        "korrektur": "Vor jeder Rechnung das Nullniveau festlegen."
+      }
+    ]
   },
   {
     "slug": "coulomb-gesetz",
@@ -209,12 +353,46 @@
       "Griffiths, D.J. (2017). Introduction to Electrodynamics. Cambridge."
     ],
     "verwandte": [
-      "maxwell-gleichungen",
       "lorentzkraft",
-      "bohr-modell"
+      "induktion-faraday",
+      "nernst-gleichung"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Coulomb%27s_law"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "F=k*q1*q2/r^2",
+      "F=kq1q2/r2",
+      "k q1 q2 r2",
+      "Coulombkraft Formel",
+      "elektrische Kraft Ladungen",
+      "Coulomb's law",
+      "elektrostatische Kraft berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/coulomb-gesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt für ruhende Punktladungen oder kugelsymmetrische Ladungsverteilungen im Vakuum beziehungsweise mit angepasster Permittivität im Medium.",
+      "schritte": [
+        "Das Feld einer Punktladung ist proportional zu q/r².",
+        "Die Kraft auf die zweite Ladung ist F = q·E und damit proportional zu q₁q₂/r²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Abstand aus Kraft und Ladungen",
+        "latex": "r = \\sqrt{\\frac{k_e |q_1 q_2|}{|F|}}",
+        "hinweis": "Vorzeichen beschreibt Richtung; für Beträge absolute Werte nutzen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Anziehung und Abstoßung nur aus der Formel ohne Vorzeichenlogik ablesen.",
+        "korrektur": "Gleiche Vorzeichen stoßen ab, unterschiedliche ziehen an."
+      }
+    ]
   },
   {
     "slug": "lorentzkraft",
@@ -256,10 +434,44 @@
     "verwandte": [
       "coulomb-gesetz",
       "induktion-faraday",
-      "maxwell-gleichungen"
+      "brechungsgesetz-snellius"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Lorentz_force"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "F=q*v*B",
+      "F = qvB",
+      "F = q v B sin alpha",
+      "F=qvB sinα",
+      "magnetische Kraft auf Ladung",
+      "Lorentz force",
+      "Lorentzkraft berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/lorentzkraft",
+    "herleitung": {
+      "gueltigkeit": "Gilt für bewegte Ladungen im Magnetfeld; die magnetische Kraft steht senkrecht zu Geschwindigkeit und Magnetfeld.",
+      "schritte": [
+        "Der Betrag lautet |F| = |q|·v·B·sin(α).",
+        "Die Richtung ergibt sich aus der Rechte-Hand-Regel, bei negativer Ladung entgegengesetzt."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Magnetfeld aus Kraft",
+        "latex": "B = \\frac{|F|}{|q| v \\sin(\\alpha)}",
+        "hinweis": "Bei paralleler Bewegung ist sin(α)=0 und es wirkt keine magnetische Kraft."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Das Vorzeichen der Ladung bei der Richtung ignorieren.",
+        "korrektur": "Rechte-Hand-Regel gilt direkt für positive Ladungen; bei Elektronen Richtung umkehren."
+      }
+    ]
   },
   {
     "slug": "wirkungsgrad-carnot",
@@ -295,12 +507,47 @@
       "Callen, H.B. (1985). Thermodynamics. Wiley."
     ],
     "verwandte": [
-      "hauptsaetze-thermodynamik",
-      "entropie-clausius",
-      "innere-energie"
+      "waermekapazitaet",
+      "ideales-gasgesetz",
+      "gibbs-energie"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Carnot_cycle",
+      "https://en.wikipedia.org/wiki/Carnot%27s_theorem_(thermodynamics)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "eta=1-Tc/Th",
+      "η = 1 - T2/T1",
+      "Wirkungsgrad Carnot Formel",
+      "ideale Wärmekraftmaschine",
+      "Carnot efficiency",
+      "Carnot Wirkungsgrad berechnen",
+      "eta Carnot Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/wirkungsgrad-carnot",
+    "herleitung": {
+      "gueltigkeit": "Gilt für reversible ideale Kreisprozesse zwischen zwei Wärmereservoirs. Temperaturen müssen absolut in Kelvin eingesetzt werden.",
+      "schritte": [
+        "Wirkungsgrad: η = 1 - Q_kalt/Q_warm.",
+        "Für Carnot gilt Q_kalt/Q_warm = T_kalt/T_warm."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kalte Temperatur aus Wirkungsgrad",
+        "latex": "T_{kalt} = T_{warm}(1-\\eta)",
+        "hinweis": "Nur mit Kelvin rechnen; Celsius führt zu falschen Verhältnissen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Temperaturen in °C einsetzen.",
+        "korrektur": "Immer zuerst in Kelvin umrechnen."
+      }
+    ]
   },
   {
     "slug": "de-broglie-wellenlaenge",
@@ -337,11 +584,46 @@
     ],
     "verwandte": [
       "heisenberg-unschaerfe",
-      "bohr-modell",
-      "photoeffekt"
+      "photoeffekt-einstein",
+      "brechungsgesetz-snellius"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Matter_wave",
+      "https://doi.org/10.1038/119558a0"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "lambda=h/p",
+      "λ=h/mv",
+      "λ = h / (m*v)",
+      "de Broglie Wellenlänge Formel",
+      "Materiewelle Formel",
+      "de Broglie wavelength",
+      "Welle-Teilchen-Dualismus Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/de-broglie-wellenlaenge",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Materieteilchen mit Impuls p. Die Form h/(mv) ist nichtrelativistisch.",
+      "schritte": [
+        "Für Photonen gilt p = h/λ.",
+        "Die Materiewellen-Hypothese setzt deshalb λ = h/p."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Impuls aus Wellenlänge",
+        "latex": "p = \\frac{h}{\\lambda}",
+        "hinweis": "Kleine Wellenlänge bedeutet großer Impuls."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "h mit ℏ verwechseln.",
+        "korrektur": "Diese Formel nutzt h; ℏ = h/(2π) erscheint in anderen Quantenformeln."
+      }
+    ]
   },
   {
     "slug": "photoeffekt-einstein",
@@ -382,11 +664,47 @@
     ],
     "verwandte": [
       "de-broglie-wellenlaenge",
-      "bohr-modell",
-      "heisenberg-unschaerfe"
+      "heisenberg-unschaerfe",
+      "coulomb-gesetz"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Photoelectric_effect"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E=h*f",
+      "E=hν",
+      "E=h*nu",
+      "E = hf",
+      "Ekin=hf-WA",
+      "Photoeffekt Formel Einstein",
+      "Photonenenergie",
+      "photoelectric effect formula",
+      "Planck Einstein Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/photoeffekt-einstein",
+    "herleitung": {
+      "gueltigkeit": "Gilt für den äußeren Photoeffekt bei Photonenenergie oberhalb der Austrittsarbeit des Materials.",
+      "schritte": [
+        "Photonenenergie: E = h·f.",
+        "Energieerhaltung: h·f = W_A + E_kin."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Grenzfrequenz",
+        "latex": "f_g = \\frac{W_A}{h}",
+        "hinweis": "Unterhalb dieser Frequenz treten keine Photoelektronen aus, egal wie intensiv das Licht ist."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Intensität statt Frequenz für die Elektronenenergie verantwortlich machen.",
+        "korrektur": "Die Energie pro Photon ist h·f; Intensität zählt Photonen pro Zeit."
+      }
+    ]
   },
   {
     "slug": "induktion-faraday",
@@ -422,11 +740,45 @@
     ],
     "verwandte": [
       "lorentzkraft",
-      "maxwell-gleichungen",
-      "selbstinduktion"
+      "coulomb-gesetz",
+      "brechungsgesetz-snellius"
     ],
     "abiturRelevant": true,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "U=n*dPhi/dt",
+      "Uind = -n dΦ/dt",
+      "U=-N dPhi/dt",
+      "Induktionsspannung Formel",
+      "Faradaysches Induktionsgesetz",
+      "elektromagnetische Induktion",
+      "Faraday's law"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/induktion-faraday",
+    "herleitung": {
+      "gueltigkeit": "Gilt für zeitlich veränderlichen magnetischen Fluss durch eine Leiterschleife oder Spule.",
+      "schritte": [
+        "Magnetischer Fluss: Φ = B·A·cos(θ).",
+        "Die induzierte Spannung ist proportional zur Flussänderung pro Zeit und zur Windungszahl."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Flussänderungsrate",
+        "latex": "\\frac{d\\Phi}{dt} = -\\frac{U_{ind}}{N}",
+        "hinweis": "Das Vorzeichen gibt die Gegenwirkung an; Beträge werden oft separat betrachtet."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Nur B betrachten und Fläche oder Winkeländerung vergessen.",
+        "korrektur": "Entscheidend ist Φ = B·A·cos(θ), also die gesamte Flussänderung."
+      }
+    ]
   },
   {
     "slug": "hookes-gesetz",
@@ -466,7 +818,42 @@
       "energie-potentiell"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Hooke%27s_law"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "F=-k*x",
+      "F = k*x",
+      "F = -kx",
+      "Federkraft Formel",
+      "Federkonstante berechnen",
+      "Hooke's law",
+      "Hookesches Gesetz",
+      "Federkraft Auslenkung"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/hookes-gesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt nur im linearen elastischen Bereich vor plastischer Verformung oder Materialbruch.",
+      "schritte": [
+        "Experimentell ergibt sich ein linearer F-x-Zusammenhang.",
+        "Die Steigung der Geraden ist die Federkonstante k."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Auslenkung aus Kraft",
+        "latex": "x = \\frac{F}{k}",
+        "hinweis": "Je größer k, desto steifer die Feder."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Hooke außerhalb des elastischen Bereichs verwenden.",
+        "korrektur": "Bei großen Dehnungen oder plastischer Verformung ist die lineare Formel nicht gültig."
+      }
+    ]
   },
   {
     "slug": "waermekapazitaet",
@@ -511,7 +898,42 @@
       "wirkungsgrad-carnot"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "grundlegend"
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/W%C3%A4rmekapazit%C3%A4t"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Q=m*c*delta T",
+      "Q=mcΔT",
+      "Q = m c ΔT",
+      "Q = m*c*(T2-T1)",
+      "Wärmemenge Formel",
+      "spezifische Wärmekapazität Formel",
+      "specific heat capacity formula",
+      "Wärmemenge berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/waermekapazitaet",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Temperaturänderungen ohne Phasenübergang; c kann temperatur- und materialabhängig sein.",
+      "schritte": [
+        "Spezifische Wärmekapazität ist Energie pro kg und Kelvin.",
+        "Multiplikation mit m und ΔT liefert Q = m·c·ΔT."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Spezifische Wärmekapazität bestimmen",
+        "latex": "c = \\frac{Q}{m\\Delta T}",
+        "hinweis": "ΔT in Kelvin und °C hat gleiche Schrittweite."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Vorzeichen von ΔT ohne Kontext deuten.",
+        "korrektur": "Erwärmen: Q positiv; Abkühlen: Q negativ, wenn Vorzeichen betrachtet werden."
+      }
+    ]
   },
   {
     "slug": "brechungsgesetz-snellius",
@@ -556,7 +978,42 @@
       "photoeffekt-einstein"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "fortgeschritten"
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Snell%27s_law"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "n1*sin(a1)=n2*sin(a2)",
+      "n1 sinα1 = n2 sinα2",
+      "n1 sin alpha1 = n2 sin alpha2",
+      "Brechungsgesetz Optik",
+      "Snell's law",
+      "Snellius Gesetz",
+      "Lichtbrechung Formel",
+      "Brechungsindex Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/brechungsgesetz-snellius",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Strahlenoptik an glatten Grenzflächen zwischen homogenen Medien.",
+      "schritte": [
+        "In Medien ist die Lichtgeschwindigkeit c/n.",
+        "Minimierung der Laufzeit an der Grenzfläche führt zu n₁ sin α₁ = n₂ sin α₂."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Brechungswinkel",
+        "latex": "\\alpha_2 = \\arcsin\\left(\\frac{n_1}{n_2}\\sin\\alpha_1\\right)",
+        "hinweis": "Winkel werden zum Lot gemessen, nicht zur Oberfläche."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Winkel zur Oberfläche statt zum Lot messen.",
+        "korrektur": "Snellius-Winkel sind immer Lotwinkel."
+      }
+    ]
   },
   {
     "slug": "heisenberg-unschaerfe",
@@ -596,6 +1053,3646 @@
       "normalverteilung"
     ],
     "abiturRelevant": false,
-    "schwierigkeit": "universitaet"
+    "schwierigkeit": "universitaet",
+    "quellenLinks": [
+      "https://doi.org/10.1007/BF01397280"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "delta x * delta p >= hbar/2",
+      "Δx Δp ≥ ℏ/2",
+      "dx*dp >= h/4pi",
+      "Heisenbergsche Unschärferelation",
+      "Unschärfeprinzip Formel",
+      "uncertainty principle",
+      "Heisenberg Unsicherheitsprinzip"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/heisenberg-unschaerfe",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Quantenzustände und beschreibt Standardabweichungen nicht Messgerätefehler.",
+      "schritte": [
+        "Eine Wellenfunktion mit enger Ortsverteilung braucht viele Wellenzahlen.",
+        "Da p = ℏk gilt, wird daraus eine größere Impulsunschärfe."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Minimale Impulsunschärfe",
+        "latex": "\\Delta p \\geq \\frac{\\hbar}{2\\Delta x}",
+        "hinweis": "Die Ungleichung gibt eine untere Grenze, keinen exakten Wert für jeden Zustand."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Unschärfe als Messungenauigkeit deuten.",
+        "korrektur": "Sie ist eine fundamentale Eigenschaft des Quantenzustands."
+      }
+    ]
+  },
+  {
+    "slug": "ohmsches-gesetz",
+    "name": "Ohmsches Gesetz",
+    "latex": "U = R \\cdot I",
+    "symbol": "U = R·I",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrizitätslehre",
+    "beschreibung": "Das Ohmsche Gesetz verknüpft Spannung, Widerstand und Stromstärke: Die Spannung an einem ohmschen Leiter ist proportional zur Stromstärke.",
+    "einheiten": "U in Volt [V] · R in Ohm [Ω] = [V/A] · I in Ampere [A]",
+    "variablen": [
+      {
+        "symbol": "U",
+        "bedeutung": "Elektrische Spannung",
+        "einheit": "V (Volt)"
+      },
+      {
+        "symbol": "R",
+        "bedeutung": "Elektrischer Widerstand",
+        "einheit": "Ω (Ohm)"
+      },
+      {
+        "symbol": "I",
+        "bedeutung": "Elektrische Stromstärke",
+        "einheit": "A (Ampere)"
+      }
+    ],
+    "hintergrund": "Georg Simon Ohm fand den Zusammenhang 1826 durch systematische Messungen an Metalldrähten. Das Gesetz gilt für ohmsche Leiter, bei denen R konstant ist — vor allem Metalle bei konstanter Temperatur. Glühlampen, Dioden oder Halbleiter sind keine ohmschen Leiter: Ihre Kennlinie ist gekrümmt, R hängt dort vom Arbeitspunkt ab.",
+    "beispiel": "Durch einen Widerstand R = 220 Ω fließt der Strom I = 0,05 A. Die anliegende Spannung: U = 220 Ω × 0,05 A = 11 V.",
+    "anwendung": "Schaltungsdimensionierung, Vorwiderstände für LEDs, Messtechnik (Multimeter), Fehlersuche in Stromkreisen",
+    "quellen": [
+      "Ohm, G.S. (1827). Die galvanische Kette, mathematisch bearbeitet. Berlin: Riemann."
+    ],
+    "verwandte": [
+      "elektrische-leistung",
+      "widerstand-reihen-parallel",
+      "induktion-faraday"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Ohmsches_Gesetz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "U=R*I",
+      "U=RI",
+      "R=U/I",
+      "I=U/R",
+      "URI Formel",
+      "Ohmsches Gesetz Formel",
+      "Spannung Strom Widerstand",
+      "Ohm's law",
+      "Widerstand berechnen Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/ohmsches-gesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt für ohmsche Leiter, bei denen der Widerstand konstant ist — vor allem Metalle bei konstanter Temperatur. Bei Glühlampen, Dioden und Halbleitern ist die Kennlinie gekrümmt, dort gilt R = U/I nur punktweise.",
+      "schritte": [
+        "Messreihen zeigen: U und I wachsen im gleichen Verhältnis, U/I = konstant.",
+        "Diese Konstante heißt Widerstand R, also U = R·I."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Stromstärke aus Spannung und Widerstand",
+        "latex": "I = \\frac{U}{R}",
+        "hinweis": "Größerer Widerstand bedeutet bei gleicher Spannung kleineren Strom."
+      },
+      {
+        "ziel": "Widerstand aus Spannung und Strom",
+        "latex": "R = \\frac{U}{I}",
+        "hinweis": "So misst ein Multimeter indirekt den Widerstand."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Milliampere direkt einsetzen, ohne in Ampere umzurechnen.",
+        "korrektur": "Vor dem Rechnen mA durch 1000 teilen: 50 mA = 0,05 A."
+      },
+      {
+        "fehler": "Das Gesetz auf Glühlampen oder Dioden anwenden.",
+        "korrektur": "Nur ohmsche Leiter haben konstantes R; sonst gilt R = U/I nur im Arbeitspunkt."
+      },
+      {
+        "fehler": "U, R und I beim Umstellen vertauschen.",
+        "korrektur": "Merkdreieck nutzen: U oben, R und I unten — abdecken, was gesucht ist."
+      }
+    ]
+  },
+  {
+    "slug": "elektrische-leistung",
+    "name": "Elektrische Leistung",
+    "latex": "P = U \\cdot I",
+    "symbol": "P = U·I",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrizitätslehre",
+    "beschreibung": "Die elektrische Leistung ist das Produkt aus Spannung und Stromstärke — sie gibt an, wie viel Energie ein Gerät pro Sekunde umsetzt.",
+    "einheiten": "P in Watt [W] = [V·A] · U in Volt [V] · I in Ampere [A]",
+    "variablen": [
+      {
+        "symbol": "P",
+        "bedeutung": "Elektrische Leistung",
+        "einheit": "W (Watt)"
+      },
+      {
+        "symbol": "U",
+        "bedeutung": "Elektrische Spannung",
+        "einheit": "V"
+      },
+      {
+        "symbol": "I",
+        "bedeutung": "Elektrische Stromstärke",
+        "einheit": "A"
+      }
+    ],
+    "hintergrund": "Leistung ist Energieumsatz pro Zeit: P = E/t. Mit dem Ohmschen Gesetz folgen die Varianten P = U²/R und P = I²·R — letztere beschreibt die Verlustwärme in Leitungen (Joulesche Wärme). Die Stromrechnung zählt Energie in Kilowattstunden: 1 kWh = 3,6×10⁶ J.",
+    "beispiel": "Ein Wasserkocher zieht am 230-V-Netz den Strom I = 8,7 A: P = 230 V × 8,7 A ≈ 2.000 W = 2 kW.",
+    "anwendung": "Geräteauslegung im Haushalt, Sicherungsdimensionierung, Stromkostenrechnung (kWh), Auslegung von Leitungsquerschnitten",
+    "quellen": [
+      "Halliday, D., Resnick, R., & Walker, J. (2017). Halliday Physik. Wiley-VCH."
+    ],
+    "verwandte": [
+      "ohmsches-gesetz",
+      "leistung-mechanisch",
+      "kondensator-energie"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Elektrische_Leistung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P=U*I",
+      "P=UI",
+      "P=U^2/R",
+      "P=I^2*R",
+      "Watt Formel",
+      "elektrische Leistung berechnen",
+      "electric power formula",
+      "Leistung Spannung Strom"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/elektrische-leistung",
+    "herleitung": {
+      "gueltigkeit": "P = U·I gilt allgemein für Gleichstrom; bei Wechselstrom beschreibt es die Momentanleistung, im Mittel kommt der Leistungsfaktor cos(φ) hinzu. Die Varianten P = U²/R und P = I²R setzen einen ohmschen Verbraucher voraus.",
+      "schritte": [
+        "Energie pro Ladung mal Ladung pro Zeit: P = (E/Q)·(Q/t) = U·I.",
+        "Mit U = R·I folgen P = I²·R und P = U²/R."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Stromstärke aus Leistung und Spannung",
+        "latex": "I = \\frac{P}{U}",
+        "hinweis": "So bestimmst du, ob eine Sicherung (z. B. 16 A) ausreicht."
+      },
+      {
+        "ziel": "Leistung aus Widerstand und Spannung",
+        "latex": "P = \\frac{U^2}{R}",
+        "hinweis": "Nützlich, wenn kein Strom gegeben ist — nur für ohmsche Verbraucher."
+      },
+      {
+        "ziel": "Energie aus Leistung und Zeit",
+        "latex": "E = P \\cdot t",
+        "hinweis": "Grundlage der Stromkostenrechnung in Kilowattstunden."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Leistung (Watt) mit Energie (Wattstunden/Joule) verwechseln.",
+        "korrektur": "Leistung ist die Rate; Energie = Leistung × Zeit."
+      },
+      {
+        "fehler": "P = U²/R auf nicht-ohmsche Verbraucher anwenden.",
+        "korrektur": "Die Varianten mit R gelten nur, wenn R konstant ist."
+      },
+      {
+        "fehler": "kW und W beim Einsetzen mischen.",
+        "korrektur": "Vor dem Rechnen alles in Watt umrechnen: 2 kW = 2.000 W."
+      }
+    ]
+  },
+  {
+    "slug": "widerstand-reihen-parallel",
+    "name": "Reihen- und Parallelschaltung von Widerständen",
+    "latex": "R_{ges} = R_1 + R_2 \\qquad \\frac{1}{R_{ges}} = \\frac{1}{R_1} + \\frac{1}{R_2}",
+    "symbol": "Rges = R₁+R₂ ; 1/Rges = 1/R₁+1/R₂",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrizitätslehre",
+    "beschreibung": "In Reihe addieren sich die Widerstände, parallel addieren sich ihre Kehrwerte — der Parallelwiderstand ist immer kleiner als der kleinste Einzelwiderstand.",
+    "einheiten": "R_ges in Ohm [Ω] · R₁ in Ohm [Ω] · R₂ in Ohm [Ω]",
+    "variablen": [
+      {
+        "symbol": "R_ges",
+        "bedeutung": "Gesamtwiderstand (Ersatzwiderstand)",
+        "einheit": "Ω"
+      },
+      {
+        "symbol": "R₁, R₂",
+        "bedeutung": "Einzelwiderstände",
+        "einheit": "Ω"
+      }
+    ],
+    "hintergrund": "Beide Regeln folgen aus den Kirchhoffschen Gesetzen: In Reihe fließt durch alle Widerstände derselbe Strom, die Teilspannungen addieren sich. Parallel liegt an allen dieselbe Spannung, die Teilströme addieren sich. Für zwei parallele Widerstände gilt die Produktform R_ges = R₁·R₂/(R₁+R₂).",
+    "beispiel": "R₁ = 100 Ω und R₂ = 300 Ω: In Reihe R_ges = 400 Ω. Parallel: 1/R_ges = 1/100 + 1/300 = 4/300, also R_ges = 75 Ω.",
+    "anwendung": "Spannungsteiler, Haushaltsinstallation (Steckdosen parallel), Messbereichserweiterung, Lastverteilung in Netzteilen",
+    "quellen": [
+      "Kirchhoff, G. (1845). Ueber den Durchgang eines elektrischen Stromes durch eine Ebene. Annalen der Physik."
+    ],
+    "verwandte": [
+      "ohmsches-gesetz",
+      "elektrische-leistung",
+      "kondensator-kapazitaet"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Reihen-_und_Parallelschaltung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Rges=R1+R2",
+      "1/Rges=1/R1+1/R2",
+      "Parallelschaltung Widerstand Formel",
+      "Reihenschaltung Widerstand",
+      "Ersatzwiderstand berechnen",
+      "resistors in series and parallel",
+      "Gesamtwiderstand Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/widerstand-reihen-parallel",
+    "herleitung": {
+      "gueltigkeit": "Gilt für ohmsche Widerstände im Gleichstromkreis. In Reihe fließt überall derselbe Strom, parallel liegt überall dieselbe Spannung an. Bei Wechselstrom mit Spulen und Kondensatoren müssen komplexe Widerstände addiert werden.",
+      "schritte": [
+        "Reihe: U_ges = U₁ + U₂ = I·R₁ + I·R₂ = I·(R₁+R₂), also R_ges = R₁ + R₂.",
+        "Parallel: I_ges = I₁ + I₂ = U/R₁ + U/R₂, also 1/R_ges = 1/R₁ + 1/R₂."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Parallelwiderstand als Produktform",
+        "latex": "R_{ges} = \\frac{R_1 \\cdot R_2}{R_1 + R_2}",
+        "hinweis": "Gilt nur für genau zwei Widerstände — schneller als die Kehrwertform."
+      },
+      {
+        "ziel": "Fehlender Widerstand in der Reihenschaltung",
+        "latex": "R_2 = R_{ges} - R_1",
+        "hinweis": "So dimensionierst du einen Vorwiderstand."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Bei der Parallelschaltung die Kehrwertsumme als Ergebnis stehen lassen.",
+        "korrektur": "Am Ende den Kehrwert bilden: R_ges = 1/(1/R₁ + 1/R₂)."
+      },
+      {
+        "fehler": "Erwarten, dass der Parallelwiderstand zwischen R₁ und R₂ liegt.",
+        "korrektur": "Er ist immer kleiner als der kleinste Einzelwiderstand — das ist der Plausibilitätscheck."
+      },
+      {
+        "fehler": "Reihen- und Parallelregel vertauschen.",
+        "korrektur": "Merksatz: Reihe = eine Bahn, Widerstände addieren; parallel = mehrere Wege, Strom teilt sich, Widerstand sinkt."
+      }
+    ]
+  },
+  {
+    "slug": "gleichmaessig-beschleunigte-bewegung",
+    "name": "Gleichmäßig beschleunigte Bewegung (Weg-Zeit-Gesetz)",
+    "latex": "s = \\frac{1}{2} a t^2 + v_0 t",
+    "symbol": "s = ½at² + v₀t",
+    "kategorie": "physik",
+    "unterkategorie": "Kinematik",
+    "beschreibung": "Das Weg-Zeit-Gesetz gibt die zurückgelegte Strecke bei konstanter Beschleunigung an — der Weg wächst quadratisch mit der Zeit.",
+    "einheiten": "s in Metern [m] · a in m/s² · t in Sekunden [s] · v₀ in m/s",
+    "variablen": [
+      {
+        "symbol": "s",
+        "bedeutung": "Zurückgelegter Weg",
+        "einheit": "m"
+      },
+      {
+        "symbol": "a",
+        "bedeutung": "Konstante Beschleunigung",
+        "einheit": "m/s²"
+      },
+      {
+        "symbol": "t",
+        "bedeutung": "Zeit",
+        "einheit": "s"
+      },
+      {
+        "symbol": "v₀",
+        "bedeutung": "Anfangsgeschwindigkeit",
+        "einheit": "m/s"
+      }
+    ],
+    "hintergrund": "Galileo Galilei fand um 1604 mit Fallrinnen-Experimenten, dass der Weg quadratisch mit der Zeit wächst. Mathematisch ist s(t) das Integral der Geschwindigkeit v(t) = a·t + v₀. Ohne Zeit hilft die zeitfreie Gleichung v² = v₀² + 2·a·s. Der freie Fall ist der Spezialfall a = g.",
+    "beispiel": "Ein Auto fährt aus dem Stand (v₀ = 0) mit a = 2 m/s² an. Nach t = 5 s: s = ½ × 2 × 5² = 25 m.",
+    "anwendung": "Anfahr- und Bremswegberechnung, Unfallanalyse, Start- und Landebahnauslegung, Fahrassistenzsysteme",
+    "quellen": [
+      "Galilei, G. (1638). Discorsi e dimostrazioni matematiche. Leiden: Elzevir."
+    ],
+    "verwandte": [
+      "geschwindigkeit-beschleunigung",
+      "freier-fall",
+      "newton-zweites-gesetz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Gleichm%C3%A4%C3%9Fig_beschleunigte_Bewegung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "s=1/2*a*t^2",
+      "s=0.5at²+v0t",
+      "s = ½at²",
+      "Weg-Zeit-Gesetz",
+      "gleichmäßig beschleunigte Bewegung Formel",
+      "Bewegungsgleichung Beschleunigung",
+      "uniformly accelerated motion",
+      "Beschleunigung Weg berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/gleichmaessig-beschleunigte-bewegung",
+    "herleitung": {
+      "gueltigkeit": "Gilt nur bei konstanter Beschleunigung entlang einer Geraden. Bei veränderlicher Beschleunigung (z. B. mit Luftwiderstand) muss integriert werden; für reine Richtungsänderungen gilt die Kreisbewegung.",
+      "schritte": [
+        "Geschwindigkeit: v(t) = a·t + v₀ (Gerade im v-t-Diagramm).",
+        "Fläche unter der Geraden bis t: Rechteck v₀·t plus Dreieck ½·a·t² — zusammen s = ½at² + v₀t."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Zeit aus dem Weg (bei v₀ = 0)",
+        "latex": "t = \\sqrt{\\frac{2s}{a}}",
+        "hinweis": "Nur für Start aus der Ruhe; sonst quadratische Gleichung lösen."
+      },
+      {
+        "ziel": "Beschleunigung aus Weg und Zeit (v₀ = 0)",
+        "latex": "a = \\frac{2s}{t^2}",
+        "hinweis": "So wertet man Fahrversuche und Fallrinnen-Experimente aus."
+      },
+      {
+        "ziel": "Zeitfreie Gleichung",
+        "latex": "v^2 = v_0^2 + 2as",
+        "hinweis": "Verbindet Geschwindigkeit und Weg, wenn die Zeit nicht gegeben ist."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Faktor ½ vergessen oder t nicht quadrieren.",
+        "korrektur": "s wächst quadratisch: doppelte Zeit bedeutet vierfachen Weg."
+      },
+      {
+        "fehler": "Den Term v₀t weglassen, obwohl eine Anfangsgeschwindigkeit gegeben ist.",
+        "korrektur": "Nur bei Start aus der Ruhe gilt s = ½at²."
+      },
+      {
+        "fehler": "Geschwindigkeit in km/h mit Wegen in Metern mischen.",
+        "korrektur": "km/h durch 3,6 teilen, bevor eingesetzt wird."
+      }
+    ]
+  },
+  {
+    "slug": "geschwindigkeit-beschleunigung",
+    "name": "Geschwindigkeit-Zeit-Gesetz",
+    "latex": "v = a \\cdot t + v_0",
+    "symbol": "v = a·t + v₀",
+    "kategorie": "physik",
+    "unterkategorie": "Kinematik",
+    "beschreibung": "Das Geschwindigkeit-Zeit-Gesetz beschreibt, wie die Geschwindigkeit bei konstanter Beschleunigung linear mit der Zeit wächst.",
+    "einheiten": "v in m/s · a in m/s² · t in Sekunden [s] · v₀ in m/s",
+    "variablen": [
+      {
+        "symbol": "v",
+        "bedeutung": "Geschwindigkeit zur Zeit t",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "a",
+        "bedeutung": "Konstante Beschleunigung",
+        "einheit": "m/s²"
+      },
+      {
+        "symbol": "t",
+        "bedeutung": "Zeit",
+        "einheit": "s"
+      },
+      {
+        "symbol": "v₀",
+        "bedeutung": "Anfangsgeschwindigkeit",
+        "einheit": "m/s"
+      }
+    ],
+    "hintergrund": "Beschleunigung ist definiert als Geschwindigkeitsänderung pro Zeit: a = Δv/Δt. Ist a konstant, wächst v linear — im v-t-Diagramm eine Gerade mit Steigung a. Die Fläche unter der Geraden ist der zurückgelegte Weg, so hängen v-t- und Weg-Zeit-Gesetz zusammen. Bremsen ist der Fall a < 0.",
+    "beispiel": "Ein Zug fährt mit v₀ = 10 m/s und beschleunigt mit a = 1,5 m/s² für t = 8 s: v = 1,5 × 8 + 10 = 22 m/s (79 km/h).",
+    "anwendung": "Beschleunigungsmessung (0-auf-100-Zeit), Bremsverzögerung, Aufzugssteuerung, Sportanalyse (Sprintstart)",
+    "quellen": [
+      "Tipler, P.A., & Mosca, G. (2015). Physik für Wissenschaftler und Ingenieure. Springer Spektrum."
+    ],
+    "verwandte": [
+      "gleichmaessig-beschleunigte-bewegung",
+      "freier-fall",
+      "impuls"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Beschleunigung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "v=a*t",
+      "v=at+v0",
+      "v = a·t + v₀",
+      "Geschwindigkeit-Zeit-Gesetz",
+      "Endgeschwindigkeit berechnen",
+      "Beschleunigung Formel Zeit",
+      "velocity time formula",
+      "a=v/t umstellen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/geschwindigkeit-beschleunigung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für konstante Beschleunigung entlang einer Geraden. Bremsen wird mit negativem a beschrieben. Bei veränderlichem a gilt die Beziehung nur noch differentiell: a = dv/dt.",
+      "schritte": [
+        "Definition: a = Δv/Δt = (v − v₀)/t.",
+        "Nach v auflösen: v = a·t + v₀."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Zeit bis zu einer Zielgeschwindigkeit",
+        "latex": "t = \\frac{v - v_0}{a}",
+        "hinweis": "Zähler ist die Geschwindigkeitsänderung, nicht die Endgeschwindigkeit."
+      },
+      {
+        "ziel": "Beschleunigung aus zwei Geschwindigkeiten",
+        "latex": "a = \\frac{v - v_0}{t}",
+        "hinweis": "Negativer Wert bedeutet Bremsen (Verzögerung)."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "km/h direkt einsetzen.",
+        "korrektur": "Immer erst durch 3,6 in m/s umrechnen."
+      },
+      {
+        "fehler": "v₀ vergessen und v = a·t schreiben, obwohl der Körper schon fährt.",
+        "korrektur": "v = a·t gilt nur beim Start aus der Ruhe."
+      },
+      {
+        "fehler": "Beim Bremsen das Vorzeichen von a ignorieren.",
+        "korrektur": "Verzögerung als a < 0 einsetzen, sonst wird der Körper rechnerisch schneller."
+      }
+    ]
+  },
+  {
+    "slug": "freier-fall",
+    "name": "Freier Fall",
+    "latex": "h = \\frac{1}{2} g t^2",
+    "symbol": "h = ½gt²",
+    "kategorie": "physik",
+    "unterkategorie": "Kinematik",
+    "beschreibung": "Der freie Fall ist die gleichmäßig beschleunigte Bewegung ohne Luftwiderstand: Die Fallhöhe wächst quadratisch mit der Fallzeit.",
+    "einheiten": "h in Metern [m] · g = 9,81 m/s² · t in Sekunden [s]",
+    "variablen": [
+      {
+        "symbol": "h",
+        "bedeutung": "Fallhöhe (Fallstrecke)",
+        "einheit": "m"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Fallbeschleunigung (9,81 m/s²)",
+        "einheit": "m/s²"
+      },
+      {
+        "symbol": "t",
+        "bedeutung": "Fallzeit",
+        "einheit": "s"
+      }
+    ],
+    "hintergrund": "Galilei erkannte: Ohne Luftwiderstand fallen alle Körper gleich schnell, unabhängig von ihrer Masse. Der Apollo-15-Astronaut David Scott bestätigte das 1971 auf dem Mond mit Hammer und Feder. Der freie Fall ist der Spezialfall der gleichmäßig beschleunigten Bewegung mit a = g und v₀ = 0; die Aufprallgeschwindigkeit ist v = g·t = √(2·g·h).",
+    "beispiel": "Ein Stein fällt t = 2 s von einer Brücke: h = ½ × 9,81 × 2² = 19,62 m. Aufprallgeschwindigkeit: v = 9,81 × 2 = 19,62 m/s ≈ 71 km/h.",
+    "anwendung": "Falltürme für Mikrogravitation, Brunnentiefe per Stoppuhr, Stuntplanung, Werkstoff-Falltests",
+    "quellen": [
+      "Galilei, G. (1638). Discorsi e dimostrazioni matematiche. Leiden: Elzevir."
+    ],
+    "verwandte": [
+      "gleichmaessig-beschleunigte-bewegung",
+      "geschwindigkeit-beschleunigung",
+      "energie-potentiell"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Freier_Fall"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "h=1/2*g*t^2",
+      "h=0.5gt²",
+      "s = ½gt²",
+      "Fallhöhe berechnen",
+      "freier Fall Formel",
+      "Fallzeit Formel",
+      "free fall formula",
+      "Fallgeschwindigkeit berechnen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/freier-fall",
+    "herleitung": {
+      "gueltigkeit": "Gilt ohne Luftwiderstand und für Fallhöhen, bei denen g als konstant gelten kann. Bei Fallschirmspringern oder Papier dominiert die Luftreibung — dann fällt der Körper nicht mehr frei.",
+      "schritte": [
+        "Weg-Zeit-Gesetz: s = ½at² + v₀t.",
+        "Mit a = g, v₀ = 0 und s = h folgt h = ½gt²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Fallzeit aus der Höhe",
+        "latex": "t = \\sqrt{\\frac{2h}{g}}",
+        "hinweis": "Die Fallzeit wächst nur mit der Wurzel der Höhe."
+      },
+      {
+        "ziel": "Aufprallgeschwindigkeit aus der Höhe",
+        "latex": "v = \\sqrt{2gh}",
+        "hinweis": "Folgt auch direkt aus dem Energieerhaltungssatz mgh = ½mv²."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Annehmen, dass schwere Körper schneller fallen.",
+        "korrektur": "Ohne Luftwiderstand fallen alle Körper gleich schnell — die Masse kürzt sich heraus."
+      },
+      {
+        "fehler": "Doppelte Fallzeit mit doppelter Höhe gleichsetzen.",
+        "korrektur": "h wächst quadratisch: doppelte Zeit bedeutet vierfache Höhe."
+      },
+      {
+        "fehler": "Fallzeit und Aufprallgeschwindigkeit mit v = h/t verknüpfen.",
+        "korrektur": "h/t ist nur die Durchschnittsgeschwindigkeit; am Boden gilt v = g·t."
+      }
+    ]
+  },
+  {
+    "slug": "impuls",
+    "name": "Impuls",
+    "latex": "p = m \\cdot v",
+    "symbol": "p = m·v",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Der Impuls ist das Produkt aus Masse und Geschwindigkeit — das Maß für den \"Schwung\" eines bewegten Körpers.",
+    "einheiten": "p in kg·m/s = [N·s] · m in Kilogramm [kg] · v in m/s",
+    "variablen": [
+      {
+        "symbol": "p",
+        "bedeutung": "Impuls (vektorielle Größe)",
+        "einheit": "kg·m/s"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "v",
+        "bedeutung": "Geschwindigkeit",
+        "einheit": "m/s"
+      }
+    ],
+    "hintergrund": "Newton formulierte sein zweites Gesetz ursprünglich über den Impuls: F = dp/dt — die Kraft ist die zeitliche Änderung des Impulses. Daraus folgt der Kraftstoß F·Δt = Δp: Eine kleine Kraft über lange Zeit ändert den Impuls genauso wie eine große Kraft über kurze Zeit. Das ist das Prinzip von Airbag und Knautschzone.",
+    "beispiel": "Ein Fußball (m = 0,43 kg) fliegt mit v = 25 m/s: p = 0,43 × 25 ≈ 10,8 kg·m/s.",
+    "anwendung": "Crashtest-Auswertung, Airbag-Auslegung, Raketenantrieb (Rückstoß), Ballsport-Analyse",
+    "quellen": [
+      "Newton, I. (1687). Principia Mathematica. London: Royal Society."
+    ],
+    "verwandte": [
+      "impulserhaltung",
+      "newton-zweites-gesetz",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Impuls"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "p=m*v",
+      "p=mv",
+      "Impuls Formel",
+      "Impuls berechnen",
+      "Kraftstoß Formel",
+      "momentum formula",
+      "Impuls Physik Einheit"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/impuls",
+    "herleitung": {
+      "gueltigkeit": "Die klassische Form p = m·v gilt für Geschwindigkeiten weit unter der Lichtgeschwindigkeit. Der Impuls ist ein Vektor — Richtung und Vorzeichen müssen mitgeführt werden.",
+      "schritte": [
+        "Newton: F = dp/dt — Kraft ändert den Impuls.",
+        "Für konstante Masse ist p = m·v die Größe, deren Ableitung m·a ergibt."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Geschwindigkeit aus dem Impuls",
+        "latex": "v = \\frac{p}{m}",
+        "hinweis": "Bei gleichem Impuls ist der leichtere Körper schneller."
+      },
+      {
+        "ziel": "Kraftstoß",
+        "latex": "F \\cdot \\Delta t = \\Delta p",
+        "hinweis": "Lange Einwirkzeit senkt die nötige Kraft — Prinzip von Airbag und Knautschzone."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Impuls mit kinetischer Energie verwechseln.",
+        "korrektur": "p = m·v ist linear in v und vektoriell; E_kin = ½mv² ist quadratisch und skalar."
+      },
+      {
+        "fehler": "Vorzeichen bei entgegengesetzten Bewegungen ignorieren.",
+        "korrektur": "Eine Richtung als positiv festlegen und Gegenrichtung negativ einsetzen."
+      },
+      {
+        "fehler": "Die Einheit als Newton angeben.",
+        "korrektur": "Impuls hat kg·m/s (= N·s); Newton ist die Einheit der Kraft."
+      }
+    ]
+  },
+  {
+    "slug": "impulserhaltung",
+    "name": "Impulserhaltungssatz",
+    "latex": "m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'",
+    "symbol": "p_vor = p_nach",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "In einem abgeschlossenen System bleibt der Gesamtimpuls erhalten — das zentrale Werkzeug für alle Stoßaufgaben.",
+    "einheiten": "m in kg · v in m/s · Impulse in kg·m/s",
+    "variablen": [
+      {
+        "symbol": "m₁, m₂",
+        "bedeutung": "Massen der Stoßpartner",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "v₁, v₂",
+        "bedeutung": "Geschwindigkeiten vor dem Stoß",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "v₁', v₂'",
+        "bedeutung": "Geschwindigkeiten nach dem Stoß",
+        "einheit": "m/s"
+      }
+    ],
+    "hintergrund": "Die Impulserhaltung folgt aus dem dritten Newtonschen Gesetz (actio = reactio): Die inneren Kräfte eines Stoßes heben sich paarweise auf. Sie gilt für jeden Stoß — elastisch wie unelastisch. Die kinetische Energie bleibt dagegen nur beim elastischen Stoß erhalten; beim unelastischen wird ein Teil in Verformung und Wärme umgewandelt.",
+    "beispiel": "Unelastischer Stoß: Ein Wagen (m₁ = 2 kg, v₁ = 3 m/s) trifft einen ruhenden Wagen (m₂ = 1 kg) und kuppelt an: v' = (2×3 + 1×0)/(2+1) = 2 m/s.",
+    "anwendung": "Unfallrekonstruktion, Billard und Ballsport, Raketengleichung, Teilchenphysik (Streuexperimente)",
+    "quellen": [
+      "Feynman, R., Leighton, R., & Sands, M. (1963). The Feynman Lectures on Physics."
+    ],
+    "verwandte": [
+      "impuls",
+      "newton-zweites-gesetz",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Impulserhaltungssatz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "m1v1+m2v2=m1v1'+m2v2'",
+      "Impulserhaltungssatz Formel",
+      "Impulserhaltung Stoß",
+      "elastischer Stoß Formel",
+      "unelastischer Stoß Formel",
+      "conservation of momentum",
+      "Stoßgesetze Physik"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/impulserhaltung",
+    "herleitung": {
+      "gueltigkeit": "Gilt in abgeschlossenen Systemen, auf die keine äußeren Kräfte wirken — beim kurzen Stoß in sehr guter Näherung. Die kinetische Energie bleibt nur beim elastischen Stoß zusätzlich erhalten.",
+      "schritte": [
+        "Während des Stoßes gilt F₁ = −F₂, also Δp₁ = −Δp₂.",
+        "Die Impulsänderungen kompensieren sich: p_ges vor = p_ges nach."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Endgeschwindigkeit beim unelastischen Stoß",
+        "latex": "v' = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}",
+        "hinweis": "Beide Körper bewegen sich nach dem Stoß gemeinsam weiter."
+      },
+      {
+        "ziel": "Rückstoßgeschwindigkeit",
+        "latex": "v_2' = -\\frac{m_1 v_1'}{m_2}",
+        "hinweis": "Aus p_ges = 0: Was nach vorn fliegt, stößt den Rest nach hinten."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Vorzeichen bei entgegengesetzten Geschwindigkeiten weglassen.",
+        "korrektur": "Eine Richtung als positiv definieren; Gegenverkehr bekommt negatives v."
+      },
+      {
+        "fehler": "Beim unelastischen Stoß zusätzlich Energieerhaltung der kinetischen Energie fordern.",
+        "korrektur": "Kinetische Energie geht dort teilweise in Verformung und Wärme über — nur der Impuls bleibt."
+      },
+      {
+        "fehler": "Massen nach dem Ankuppeln nicht addieren.",
+        "korrektur": "Nach dem unelastischen Stoß bewegt sich die Gesamtmasse m₁+m₂ gemeinsam."
+      },
+      {
+        "fehler": "Impulserhaltung anwenden, obwohl äußere Kräfte dominieren.",
+        "korrektur": "Nur beim kurzen Stoß oder im abgeschlossenen System zulässig."
+      }
+    ]
+  },
+  {
+    "slug": "arbeit-mechanisch",
+    "name": "Mechanische Arbeit",
+    "latex": "W = F \\cdot s \\cdot \\cos(\\alpha)",
+    "symbol": "W = F·s·cos(α)",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Mechanische Arbeit wird verrichtet, wenn eine Kraft einen Körper längs eines Weges verschiebt — nur die Kraftkomponente in Wegrichtung zählt.",
+    "einheiten": "W in Joule [J] = [N·m] · F in Newton [N] · s in Metern [m] · α in Grad [°]",
+    "variablen": [
+      {
+        "symbol": "W",
+        "bedeutung": "Mechanische Arbeit",
+        "einheit": "J (Joule)"
+      },
+      {
+        "symbol": "F",
+        "bedeutung": "Wirkende Kraft",
+        "einheit": "N"
+      },
+      {
+        "symbol": "s",
+        "bedeutung": "Zurückgelegter Weg",
+        "einheit": "m"
+      },
+      {
+        "symbol": "α",
+        "bedeutung": "Winkel zwischen Kraft- und Wegrichtung",
+        "einheit": "°"
+      }
+    ],
+    "hintergrund": "Arbeit ist die Energieübertragung durch Kraft längs eines Weges: W = F⃗·s⃗ (Skalarprodukt). Zeigt die Kraft in Wegrichtung (α = 0°), gilt einfach W = F·s. Steht sie senkrecht zum Weg (α = 90°), wird keine Arbeit verrichtet — deshalb leistet die Zentripetalkraft auf einer Kreisbahn keine Arbeit. Sonderformen: Hubarbeit W = m·g·h, Spannarbeit W = ½kx².",
+    "beispiel": "Eine Kiste wird mit F = 50 N genau in Wegrichtung (α = 0°) über s = 10 m gezogen: W = 50 × 10 × cos(0°) = 500 J.",
+    "anwendung": "Hubarbeit an Kränen, Wirkungsgradanalyse, Bremsarbeit, Physiologie (Treppensteigen)",
+    "quellen": [
+      "Halliday, D., Resnick, R., & Walker, J. (2017). Halliday Physik. Wiley-VCH."
+    ],
+    "verwandte": [
+      "leistung-mechanisch",
+      "energie-kinetisch",
+      "energie-potentiell"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Arbeit_(Physik)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "W=F*s",
+      "W=Fs cos alpha",
+      "W = F·s·cos(α)",
+      "Arbeit Formel Physik",
+      "mechanische Arbeit berechnen",
+      "Hubarbeit Formel",
+      "work formula physics",
+      "Kraft mal Weg"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/arbeit-mechanisch",
+    "herleitung": {
+      "gueltigkeit": "Gilt für konstante Kräfte längs gerader Wege; bei veränderlicher Kraft wird integriert (W = ∫F ds). Kräfte senkrecht zum Weg verrichten keine Arbeit.",
+      "schritte": [
+        "Zerlege die Kraft: Anteil in Wegrichtung ist F·cos(α).",
+        "Arbeit = wirksame Kraft mal Weg: W = F·cos(α)·s."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kraft aus Arbeit und Weg (α = 0°)",
+        "latex": "F = \\frac{W}{s}",
+        "hinweis": "Nur wenn die Kraft parallel zum Weg wirkt."
+      },
+      {
+        "ziel": "Hubarbeit",
+        "latex": "W_{Hub} = m \\cdot g \\cdot h",
+        "hinweis": "Spezialfall: Die Kraft ist die Gewichtskraft, der Weg die Hubhöhe."
+      },
+      {
+        "ziel": "Weg aus Arbeit und Kraft",
+        "latex": "s = \\frac{W}{F \\cos(\\alpha)}",
+        "hinweis": "Bei α = 90° ist die Formel nicht anwendbar — es wird keine Arbeit verrichtet."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Winkel ignorieren und immer W = F·s rechnen.",
+        "korrektur": "Nur die Komponente in Wegrichtung zählt: W = F·s·cos(α)."
+      },
+      {
+        "fehler": "Der Normalkraft oder Zentripetalkraft Arbeit zuschreiben.",
+        "korrektur": "Kräfte senkrecht zum Weg (α = 90°) verrichten keine Arbeit."
+      },
+      {
+        "fehler": "Arbeit und Leistung gleichsetzen.",
+        "korrektur": "Arbeit ist Energieübertrag (J), Leistung ist Arbeit pro Zeit (W)."
+      }
+    ]
+  },
+  {
+    "slug": "leistung-mechanisch",
+    "name": "Mechanische Leistung",
+    "latex": "P = \\frac{W}{t}",
+    "symbol": "P = W/t",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Die Leistung gibt an, wie schnell Arbeit verrichtet wird: verrichtete Arbeit geteilt durch die benötigte Zeit.",
+    "einheiten": "P in Watt [W] = [J/s] · W in Joule [J] · t in Sekunden [s]",
+    "variablen": [
+      {
+        "symbol": "P",
+        "bedeutung": "Leistung",
+        "einheit": "W (Watt)"
+      },
+      {
+        "symbol": "W",
+        "bedeutung": "Verrichtete Arbeit",
+        "einheit": "J"
+      },
+      {
+        "symbol": "t",
+        "bedeutung": "Benötigte Zeit",
+        "einheit": "s"
+      }
+    ],
+    "hintergrund": "Die Einheit Watt erinnert an James Watt, der Dampfmaschinen mit der Zugkraft von Pferden verglich — daher stammt die alte Einheit Pferdestärke (1 PS = 735,5 W). Bei konstanter Kraft in Bewegungsrichtung gilt auch P = F·v, nützlich für Fahrwiderstände. Dieselbe Formel P = E/t verbindet mechanische und elektrische Leistung.",
+    "beispiel": "Beim Treppensteigen verrichtet eine Person W = 3.000 J Hubarbeit in t = 60 s: P = 3.000/60 = 50 W.",
+    "anwendung": "Motorleistung, Sportdiagnostik (Wattmessung beim Radfahren), Aufzugsauslegung, Pumpenleistung",
+    "quellen": [
+      "Tipler, P.A., & Mosca, G. (2015). Physik für Wissenschaftler und Ingenieure. Springer Spektrum."
+    ],
+    "verwandte": [
+      "arbeit-mechanisch",
+      "elektrische-leistung",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Leistung_(Physik)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P=W/t",
+      "P = W durch t",
+      "P=F*v",
+      "Leistung Formel Physik",
+      "mechanische Leistung berechnen",
+      "Watt berechnen",
+      "power formula",
+      "PS in Watt"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/leistung-mechanisch",
+    "herleitung": {
+      "gueltigkeit": "P = W/t liefert die mittlere Leistung im Zeitraum t. Die Momentanleistung ist P = F·v und schwankt, wenn Kraft oder Geschwindigkeit sich ändern.",
+      "schritte": [
+        "Definition: P = W/t mit W in Joule und t in Sekunden.",
+        "Mit W = F·s wird daraus P = F·(s/t) = F·v."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Arbeit aus Leistung und Zeit",
+        "latex": "W = P \\cdot t",
+        "hinweis": "Grundlage der Energieabrechnung: kWh = kW mal Stunden."
+      },
+      {
+        "ziel": "Momentanleistung aus Kraft und Geschwindigkeit",
+        "latex": "P = F \\cdot v",
+        "hinweis": "Erklärt, warum bei hoher Geschwindigkeit mehr Motorleistung nötig ist."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Leistung mit Arbeit oder Energie verwechseln.",
+        "korrektur": "Leistung ist die Rate in Watt; Energie ist Leistung mal Zeit."
+      },
+      {
+        "fehler": "Zeit in Minuten einsetzen.",
+        "korrektur": "Für Watt muss t in Sekunden stehen: 5 min = 300 s."
+      },
+      {
+        "fehler": "kWh als Leistungseinheit behandeln.",
+        "korrektur": "Die Kilowattstunde ist eine Energieeinheit (1 kWh = 3,6×10⁶ J)."
+      }
+    ]
+  },
+  {
+    "slug": "zentripetalkraft-kreisbewegung",
+    "name": "Zentripetalkraft (Kreisbewegung)",
+    "latex": "F_z = \\frac{m \\cdot v^2}{r}",
+    "symbol": "Fz = m·v²/r",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Die Zentripetalkraft hält einen Körper auf seiner Kreisbahn — sie zeigt stets zum Mittelpunkt und wächst quadratisch mit der Bahngeschwindigkeit.",
+    "einheiten": "F_z in Newton [N] · m in kg · v in m/s · r in Metern [m]",
+    "variablen": [
+      {
+        "symbol": "F_z",
+        "bedeutung": "Zentripetalkraft (zum Mittelpunkt gerichtet)",
+        "einheit": "N"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse des Körpers",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "v",
+        "bedeutung": "Bahngeschwindigkeit",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Radius der Kreisbahn",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Eine Kreisbewegung ist beschleunigt, obwohl der Geschwindigkeitsbetrag konstant bleibt: Die Richtung ändert sich ständig. Die Zentripetalbeschleunigung a_z = v²/r liefert mit F = m·a die Formel. Mit der Winkelgeschwindigkeit ω = v/r gilt auch F_z = m·ω²·r. Die \"Zentrifugalkraft\" ist nur eine Scheinkraft im mitrotierenden Bezugssystem.",
+    "beispiel": "Ein Körper (m = 0,5 kg) kreist mit v = 4 m/s auf einer Bahn mit r = 2 m: F_z = 0,5 × 4² / 2 = 4 N.",
+    "anwendung": "Kurvenfahrt und Kurvenüberhöhung, Satellitenbahnen, Zentrifugen, Kettenkarussell, Teilchenbeschleuniger",
+    "quellen": [
+      "Huygens, C. (1673). Horologium Oscillatorium. Paris: Muguet."
+    ],
+    "verwandte": [
+      "newton-zweites-gesetz",
+      "gravitationsgesetz",
+      "harmonische-schwingung-federpendel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Zentripetalkraft"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "F=m*v^2/r",
+      "Fz=mv²/r",
+      "F = m ω² r",
+      "Zentripetalkraft Formel",
+      "Radialkraft berechnen",
+      "Kreisbewegung Formel",
+      "centripetal force formula",
+      "Zentrifugalkraft Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/zentripetalkraft-kreisbewegung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für gleichförmige Kreisbewegung mit konstantem Geschwindigkeitsbetrag. Die Zentripetalkraft ist keine eigene Kraftart — sie muss von realen Kräften wie Seilkraft, Reibung oder Gravitation aufgebracht werden.",
+      "schritte": [
+        "Geometrisch folgt für die Zentripetalbeschleunigung a_z = v²/r.",
+        "Mit F = m·a ergibt sich F_z = m·v²/r."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Bahngeschwindigkeit aus der Kraft",
+        "latex": "v = \\sqrt{\\frac{F_z \\cdot r}{m}}",
+        "hinweis": "So bestimmst du die maximale Kurvengeschwindigkeit aus der Haftreibung."
+      },
+      {
+        "ziel": "Form mit Winkelgeschwindigkeit",
+        "latex": "F_z = m \\omega^2 r",
+        "hinweis": "Mit ω = 2π/T praktisch, wenn Umlaufzeit oder Drehzahl gegeben sind."
+      },
+      {
+        "ziel": "Radius aus Kraft und Geschwindigkeit",
+        "latex": "r = \\frac{m v^2}{F_z}",
+        "hinweis": "Kleinere Kraft bei gleichem Tempo bedeutet größeren Kurvenradius."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Zentripetalkraft als zusätzliche Kraft ins Freikörperbild einzeichnen.",
+        "korrektur": "Sie ist die Resultierende der realen Kräfte in Richtung Mittelpunkt."
+      },
+      {
+        "fehler": "Zentripetal- und Zentrifugalkraft verwechseln.",
+        "korrektur": "Die Zentrifugalkraft ist eine Scheinkraft im mitrotierenden System — im Inertialsystem existiert nur F_z nach innen."
+      },
+      {
+        "fehler": "v nicht quadrieren.",
+        "korrektur": "F_z wächst quadratisch: doppeltes Tempo braucht vierfache Kraft."
+      }
+    ]
+  },
+  {
+    "slug": "harmonische-schwingung-federpendel",
+    "name": "Federpendel (Schwingungsdauer)",
+    "latex": "T = 2\\pi \\sqrt{\\frac{m}{k}}",
+    "symbol": "T = 2π·√(m/k)",
+    "kategorie": "physik",
+    "unterkategorie": "Schwingungen und Wellen",
+    "beschreibung": "Die Schwingungsdauer eines Federpendels hängt nur von Masse und Federkonstante ab — nicht von der Amplitude.",
+    "einheiten": "T in Sekunden [s] · m in kg · k in N/m",
+    "variablen": [
+      {
+        "symbol": "T",
+        "bedeutung": "Schwingungsdauer (Periodendauer)",
+        "einheit": "s"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Schwingende Masse",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Federkonstante",
+        "einheit": "N/m"
+      }
+    ],
+    "hintergrund": "Die rücktreibende Kraft F = −k·x (Hooke) führt auf die Differentialgleichung m·ẍ = −k·x mit der Lösung x(t) = A·cos(ω·t), ω = √(k/m). Daraus folgt T = 2π/ω = 2π·√(m/k). Bemerkenswert: T ist amplitudenunabhängig (Isochronie) und — anders als beim Fadenpendel — auch unabhängig vom Ort, da g nicht vorkommt.",
+    "beispiel": "Eine Masse m = 0,25 kg hängt an einer Feder mit k = 100 N/m: T = 2π × √(0,25/100) = 2π × 0,05 ≈ 0,31 s.",
+    "anwendung": "Schwingungstilger in Hochhäusern, Fahrzeugfederung, Kraftmessung, Uhrenbau (Unruh)",
+    "quellen": [
+      "Demtröder, W. (2021). Experimentalphysik 1: Mechanik und Wärme. Springer."
+    ],
+    "verwandte": [
+      "hookes-gesetz",
+      "wellengleichung",
+      "zentripetalkraft-kreisbewegung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Federpendel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "T=2*pi*sqrt(m/k)",
+      "T=2π√(m/k)",
+      "Schwingungsdauer Federpendel",
+      "Federpendel Formel",
+      "harmonische Schwingung Formel",
+      "Periodendauer Feder",
+      "spring pendulum period",
+      "Eigenfrequenz Feder"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/harmonische-schwingung-federpendel",
+    "herleitung": {
+      "gueltigkeit": "Gilt, solange die Feder dem Hookeschen Gesetz folgt (elastischer Bereich) und Reibung vernachlässigbar ist. Bei großer Dämpfung sinkt die Amplitude, die Periodendauer ändert sich leicht.",
+      "schritte": [
+        "Newton + Hooke: m·ẍ = −k·x, gelöst durch x(t) = A·cos(ωt) mit ω = √(k/m).",
+        "Aus T = 2π/ω folgt T = 2π·√(m/k)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Federkonstante aus der Periodendauer",
+        "latex": "k = \\frac{4\\pi^2 m}{T^2}",
+        "hinweis": "So bestimmt man k experimentell aus einer Schwingungsmessung."
+      },
+      {
+        "ziel": "Masse aus der Periodendauer",
+        "latex": "m = \\frac{k T^2}{4\\pi^2}",
+        "hinweis": "Prinzip von Massenmessgeräten in der Schwerelosigkeit."
+      },
+      {
+        "ziel": "Frequenz",
+        "latex": "f = \\frac{1}{2\\pi}\\sqrt{\\frac{k}{m}}",
+        "hinweis": "Steifere Feder oder kleinere Masse erhöhen die Frequenz."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Annehmen, dass eine größere Amplitude die Periodendauer verlängert.",
+        "korrektur": "T ist amplitudenunabhängig (Isochronie) — nur m und k zählen."
+      },
+      {
+        "fehler": "Die Fadenpendel-Formel T = 2π√(l/g) verwenden.",
+        "korrektur": "Beim Federpendel stehen m und k unter der Wurzel, g kommt nicht vor."
+      },
+      {
+        "fehler": "m und k unter der Wurzel vertauschen.",
+        "korrektur": "Schwerere Masse schwingt langsamer: m steht im Zähler."
+      }
+    ]
+  },
+  {
+    "slug": "wellengleichung",
+    "name": "Wellengleichung (c = λ·f)",
+    "latex": "c = \\lambda \\cdot f",
+    "symbol": "c = λ·f",
+    "kategorie": "physik",
+    "unterkategorie": "Schwingungen und Wellen",
+    "beschreibung": "Die Grundgleichung der Wellenlehre verknüpft Ausbreitungsgeschwindigkeit, Wellenlänge und Frequenz jeder Welle.",
+    "einheiten": "c in m/s · λ in Metern [m] · f in Hertz [Hz] = [1/s]",
+    "variablen": [
+      {
+        "symbol": "c",
+        "bedeutung": "Ausbreitungsgeschwindigkeit der Welle",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "λ",
+        "bedeutung": "Wellenlänge",
+        "einheit": "m"
+      },
+      {
+        "symbol": "f",
+        "bedeutung": "Frequenz",
+        "einheit": "Hz"
+      }
+    ],
+    "hintergrund": "In einer Periodendauer T = 1/f wandert die Welle genau eine Wellenlänge weiter: c = λ/T = λ·f. Die Geschwindigkeit c ist eine Eigenschaft des Mediums (Schall in Luft: 343 m/s bei 20 °C, Licht im Vakuum: 3×10⁸ m/s). Beim Medienwechsel bleibt f gleich, λ ändert sich — die Grundlage der Brechung.",
+    "beispiel": "Der Kammerton a¹ (f = 440 Hz) in Luft (c = 343 m/s): λ = 343/440 ≈ 0,78 m.",
+    "anwendung": "Funktechnik (Antennenlänge), Musikinstrumente, Ultraschalldiagnostik, Radar- und Lichtwellenleiter",
+    "quellen": [
+      "Demtröder, W. (2021). Experimentalphysik 1: Mechanik und Wärme. Springer."
+    ],
+    "verwandte": [
+      "harmonische-schwingung-federpendel",
+      "brechungsgesetz-snellius",
+      "de-broglie-wellenlaenge"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Welle"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "c=lambda*f",
+      "c=λf",
+      "v = λ·f",
+      "Wellengleichung Formel",
+      "Wellenlänge berechnen",
+      "Frequenz Wellenlänge Formel",
+      "wave equation formula",
+      "Ausbreitungsgeschwindigkeit Welle"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/wellengleichung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für jede periodische Welle — mechanisch wie elektromagnetisch. Die Geschwindigkeit c ist eine Eigenschaft des Mediums; in dispersiven Medien hängt sie zusätzlich von der Frequenz ab.",
+      "schritte": [
+        "Geschwindigkeit = Strecke pro Zeit: c = λ/T.",
+        "Mit f = 1/T folgt c = λ·f."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Wellenlänge aus Geschwindigkeit und Frequenz",
+        "latex": "\\lambda = \\frac{c}{f}",
+        "hinweis": "Hohe Frequenz bedeutet kurze Wellenlänge — bei fester Ausbreitungsgeschwindigkeit."
+      },
+      {
+        "ziel": "Frequenz aus Geschwindigkeit und Wellenlänge",
+        "latex": "f = \\frac{c}{\\lambda}",
+        "hinweis": "Beim Medienwechsel bleibt f konstant, λ passt sich an."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Nanometer nicht in Meter umrechnen.",
+        "korrektur": "1 nm = 10⁻⁹ m — sonst ist das Ergebnis um Größenordnungen falsch."
+      },
+      {
+        "fehler": "Annehmen, dass beim Übergang in ein anderes Medium die Frequenz wechselt.",
+        "korrektur": "Die Frequenz bleibt erhalten; c und λ ändern sich gemeinsam."
+      },
+      {
+        "fehler": "Schall- und Lichtgeschwindigkeit verwechseln.",
+        "korrektur": "Schall in Luft: 343 m/s; Licht im Vakuum: 3×10⁸ m/s."
+      }
+    ]
+  },
+  {
+    "slug": "dichte",
+    "name": "Dichte",
+    "latex": "\\rho = \\frac{m}{V}",
+    "symbol": "ρ = m/V",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Die Dichte ist die Masse pro Volumen — die zentrale Stoffkonstante für Schwimmen, Sinken und Materialbestimmung.",
+    "einheiten": "ρ in kg/m³ (oder g/cm³; 1 g/cm³ = 1.000 kg/m³) · m in kg · V in m³",
+    "variablen": [
+      {
+        "symbol": "ρ",
+        "bedeutung": "Dichte (rho)",
+        "einheit": "kg/m³"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "V",
+        "bedeutung": "Volumen",
+        "einheit": "m³"
+      }
+    ],
+    "hintergrund": "Schon Archimedes nutzte die Dichte, um den Goldgehalt einer Königskrone zu prüfen (Verdrängungsmethode). Ein Körper schwimmt, wenn seine mittlere Dichte kleiner ist als die der Flüssigkeit. Wichtige Werte: Wasser 1.000 kg/m³, Eis 917 kg/m³ (deshalb schwimmt es), Aluminium 2.700 kg/m³, Eisen 7.870 kg/m³, Gold 19.300 kg/m³.",
+    "beispiel": "Ein Aluminiumwürfel hat m = 270 g = 0,27 kg und V = 100 cm³ = 10⁻⁴ m³: ρ = 0,27/10⁻⁴ = 2.700 kg/m³ = 2,7 g/cm³.",
+    "anwendung": "Materialprüfung, Auftrieb und Schiffbau, Dichtebestimmung im Labor (Pyknometer), Meteorologie (Luftschichtung)",
+    "quellen": [
+      "Demtröder, W. (2021). Experimentalphysik 1: Mechanik und Wärme. Springer."
+    ],
+    "verwandte": [
+      "druck",
+      "ideales-gasgesetz",
+      "waermekapazitaet"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Dichte"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "rho=m/V",
+      "ρ=m/V",
+      "p=m/V Dichte",
+      "Dichte Formel",
+      "Dichte berechnen",
+      "Masse Volumen Formel",
+      "density formula",
+      "g/cm3 in kg/m3"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/dichte",
+    "herleitung": {
+      "gueltigkeit": "Gilt für homogene Stoffe; bei Gemischen und porösen Körpern beschreibt ρ = m/V nur die mittlere Dichte. Bei Gasen hängt die Dichte stark von Druck und Temperatur ab.",
+      "schritte": [
+        "Doppeltes Volumen desselben Stoffes trägt doppelte Masse: m ∝ V.",
+        "Der Proportionalitätsfaktor ist die Dichte: ρ = m/V."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Masse aus Dichte und Volumen",
+        "latex": "m = \\rho \\cdot V",
+        "hinweis": "So schätzt man Gewichte, ohne zu wiegen — etwa von Wasser im Aquarium."
+      },
+      {
+        "ziel": "Volumen aus Masse und Dichte",
+        "latex": "V = \\frac{m}{\\rho}",
+        "hinweis": "Grundlage der Verdrängungsmethode nach Archimedes."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "g/cm³ und kg/m³ vermischen.",
+        "korrektur": "Faktor 1.000: 1 g/cm³ = 1.000 kg/m³."
+      },
+      {
+        "fehler": "Dichte mit Gewicht oder Masse gleichsetzen.",
+        "korrektur": "Dichte ist massebezogen aufs Volumen — ein kleines Goldstück ist dichter, aber leichter als ein Eisbrocken."
+      },
+      {
+        "fehler": "Volumen in cm³ mit Masse in kg kombinieren.",
+        "korrektur": "Einheiten konsistent wählen: kg mit m³ oder g mit cm³."
+      }
+    ]
+  },
+  {
+    "slug": "druck",
+    "name": "Druck",
+    "latex": "p = \\frac{F}{A}",
+    "symbol": "p = F/A",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Druck ist Kraft pro Fläche: Dieselbe Kraft wirkt auf kleiner Fläche stark konzentriert, auf großer Fläche verteilt.",
+    "einheiten": "p in Pascal [Pa] = [N/m²] · F in Newton [N] · A in m² (1 bar = 100.000 Pa)",
+    "variablen": [
+      {
+        "symbol": "p",
+        "bedeutung": "Druck",
+        "einheit": "Pa (Pascal)"
+      },
+      {
+        "symbol": "F",
+        "bedeutung": "Senkrecht wirkende Kraft",
+        "einheit": "N"
+      },
+      {
+        "symbol": "A",
+        "bedeutung": "Fläche, auf die die Kraft wirkt",
+        "einheit": "m²"
+      }
+    ],
+    "hintergrund": "Blaise Pascal zeigte im 17. Jahrhundert, dass sich Druck in Flüssigkeiten allseitig ausbreitet — die Grundlage der Hydraulik. Der Schweredruck in einer Flüssigkeit wächst mit der Tiefe: p = ρ·g·h. Der normale Luftdruck auf Meereshöhe beträgt 101.325 Pa ≈ 1 bar; pro 10 m Wassertiefe kommt etwa 1 bar hinzu.",
+    "beispiel": "Eine Person (F = 600 N) steht auf Absätzen mit A = 0,003 m²: p = 600/0,003 = 200.000 Pa = 2 bar — mehr als ein Elefantenfuß erzeugt.",
+    "anwendung": "Hydraulische Pressen und Bremsen, Reifendruck, Tauchphysik, Blutdruckmessung, Wetterkarten",
+    "quellen": [
+      "Pascal, B. (1663). Traités de l'équilibre des liqueurs. Paris: Desprez."
+    ],
+    "verwandte": [
+      "dichte",
+      "ideales-gasgesetz",
+      "arbeit-mechanisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Druck_(Physik)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "p=F/A",
+      "P = F durch A",
+      "Druck Formel",
+      "Druck berechnen",
+      "Pascal Formel",
+      "Schweredruck Formel",
+      "pressure formula",
+      "bar in Pascal"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/druck",
+    "herleitung": {
+      "gueltigkeit": "p = F/A gilt für eine senkrecht und gleichmäßig auf die Fläche wirkende Kraft. In ruhenden Flüssigkeiten und Gasen wirkt Druck allseitig; der Schweredruck p = ρgh kommt mit der Tiefe hinzu.",
+      "schritte": [
+        "Dieselbe Kraft wirkt auf kleiner Fläche konzentrierter: Wirkung ∝ F/A.",
+        "Definition: p = F/A mit der Einheit Pascal (1 Pa = 1 N/m²)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kraft aus Druck und Fläche",
+        "latex": "F = p \\cdot A",
+        "hinweis": "Prinzip der Hydraulik: Großer Kolben, große Kraft bei gleichem Druck."
+      },
+      {
+        "ziel": "Fläche aus Kraft und Druck",
+        "latex": "A = \\frac{F}{p}",
+        "hinweis": "So dimensioniert man Auflageflächen gegen Einsinken."
+      },
+      {
+        "ziel": "Schweredruck",
+        "latex": "p = \\rho \\cdot g \\cdot h",
+        "hinweis": "Pro 10 m Wassertiefe rund 1 bar zusätzlich."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Druck und Kraft gleichsetzen.",
+        "korrektur": "Druck ist Kraft pro Fläche — dieselbe Kraft kann harmlos oder schneidend wirken."
+      },
+      {
+        "fehler": "Flächen in cm² einsetzen, Ergebnis als Pascal deuten.",
+        "korrektur": "1 m² = 10.000 cm² — Fläche zuerst in m² umrechnen."
+      },
+      {
+        "fehler": "bar und Pascal verwechseln.",
+        "korrektur": "1 bar = 100.000 Pa = 1.000 hPa."
+      }
+    ]
+  },
+  {
+    "slug": "zerfallsgesetz",
+    "name": "Radioaktives Zerfallsgesetz",
+    "latex": "N(t) = N_0 \\cdot e^{-\\lambda t}",
+    "symbol": "N(t) = N₀·e^(−λt)",
+    "kategorie": "physik",
+    "unterkategorie": "Kernphysik",
+    "beschreibung": "Das Zerfallsgesetz beschreibt die exponentielle Abnahme der unzerfallenen Atomkerne einer radioaktiven Substanz.",
+    "einheiten": "N(t), N₀ dimensionslos (Anzahl Kerne) · λ in 1/s · t in Sekunden [s]",
+    "variablen": [
+      {
+        "symbol": "N(t)",
+        "bedeutung": "Anzahl unzerfallener Kerne zur Zeit t",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "N₀",
+        "bedeutung": "Anfangsanzahl der Kerne (t = 0)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "λ",
+        "bedeutung": "Zerfallskonstante (stoffspezifisch)",
+        "einheit": "1/s"
+      },
+      {
+        "symbol": "t",
+        "bedeutung": "Zeit",
+        "einheit": "s"
+      }
+    ],
+    "hintergrund": "Rutherford und Soddy erkannten um 1902: Pro Zeiteinheit zerfällt ein fester Bruchteil der vorhandenen Kerne — das führt zwingend auf eine Exponentialfunktion. Die Halbwertszeit hängt mit der Zerfallskonstante über T½ = ln(2)/λ zusammen. Nach n Halbwertszeiten ist noch der Bruchteil (1/2)ⁿ übrig. Die Aktivität A = λ·N wird in Becquerel gemessen.",
+    "beispiel": "Iod-131 hat T½ = 8,02 d, also λ = ln(2)/8,02 ≈ 0,0864 d⁻¹. Nach t = 24,1 d (3 Halbwertszeiten): N = N₀ × e^(−0,0864 × 24,1) ≈ 0,125·N₀ — noch ein Achtel.",
+    "anwendung": "Radiokarbonmethode (C-14-Datierung), Nuklearmedizin (Dosisplanung), Endlagerplanung, Geochronologie",
+    "quellen": [
+      "Rutherford, E., & Soddy, F. (1902). The Cause and Nature of Radioactivity. Philosophical Magazine."
+    ],
+    "verwandte": [
+      "masse-energie-aequivalenz",
+      "photoeffekt-einstein",
+      "heisenberg-unschaerfe"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Zerfallsgesetz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "N(t)=N0*e^(-lambda*t)",
+      "N=N0e^-λt",
+      "Zerfallsgesetz Formel",
+      "Halbwertszeit Formel",
+      "radioaktiver Zerfall berechnen",
+      "Zerfallskonstante",
+      "radioactive decay law",
+      "exponentieller Zerfall"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/zerfallsgesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt statistisch für große Kernzahlen — für den einzelnen Kern ist nur eine Zerfallswahrscheinlichkeit angebbar. λ ist stoffspezifisch und unabhängig von Temperatur, Druck oder chemischer Bindung.",
+      "schritte": [
+        "Ansatz: dN/dt = −λ·N (Zerfallsrate proportional zum Bestand).",
+        "Integration liefert N(t) = N₀·e^(−λt)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Halbwertszeit aus der Zerfallskonstante",
+        "latex": "T_{1/2} = \\frac{\\ln 2}{\\lambda}",
+        "hinweis": "Folgt aus N = N₀/2; ln 2 ≈ 0,693."
+      },
+      {
+        "ziel": "Zeit aus dem Restanteil",
+        "latex": "t = -\\frac{\\ln(N/N_0)}{\\lambda}",
+        "hinweis": "Grundgleichung jeder radiometrischen Altersbestimmung."
+      },
+      {
+        "ziel": "Form mit Halbwertszeit",
+        "latex": "N(t) = N_0 \\cdot \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}",
+        "hinweis": "Oft schneller: Anzahl der Halbwertszeiten abzählen."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Annehmen, nach zwei Halbwertszeiten sei alles zerfallen.",
+        "korrektur": "Jede Halbwertszeit halbiert nur den Rest: nach zwei bleiben 25 %."
+      },
+      {
+        "fehler": "λ und T½ verwechseln oder direkt ineinander einsetzen.",
+        "korrektur": "Sie sind über T½ = ln(2)/λ verknüpft — nicht Kehrwerte allein."
+      },
+      {
+        "fehler": "Einheiten von λ und t mischen (z. B. λ pro Tag, t in Jahren).",
+        "korrektur": "λ·t muss dimensionslos sein — gleiche Zeiteinheit verwenden."
+      },
+      {
+        "fehler": "Lineares Abklingen unterstellen.",
+        "korrektur": "Der Zerfall ist exponentiell — gleiche Zeitspannen bedeuten gleiche Faktoren, nicht gleiche Differenzen."
+      }
+    ]
+  },
+  {
+    "slug": "masse-energie-aequivalenz",
+    "name": "Masse-Energie-Äquivalenz (E = mc²)",
+    "latex": "E = m \\cdot c^2",
+    "symbol": "E = mc²",
+    "kategorie": "physik",
+    "unterkategorie": "Relativitätstheorie",
+    "beschreibung": "Einsteins berühmteste Gleichung: Masse und Energie sind äquivalent — jede Masse entspricht einer gewaltigen Ruheenergie.",
+    "einheiten": "E in Joule [J] · m in kg · c = 299.792.458 m/s ≈ 3×10⁸ m/s",
+    "variablen": [
+      {
+        "symbol": "E",
+        "bedeutung": "Ruheenergie",
+        "einheit": "J"
+      },
+      {
+        "symbol": "m",
+        "bedeutung": "Masse (Ruhemasse)",
+        "einheit": "kg"
+      },
+      {
+        "symbol": "c",
+        "bedeutung": "Lichtgeschwindigkeit im Vakuum (3×10⁸ m/s)",
+        "einheit": "m/s"
+      }
+    ],
+    "hintergrund": "Albert Einstein leitete die Äquivalenz 1905 aus der speziellen Relativitätstheorie ab. Weil c² riesig ist (9×10¹⁶ m²/s²), steckt in winzigen Massen enorme Energie. Bei Kernspaltung und Kernfusion wird der Massendefekt frei: Die Produkte sind leichter als die Ausgangskerne, die Differenz erscheint als Energie. Die Sonne verliert so rund 4 Millionen Tonnen Masse pro Sekunde.",
+    "beispiel": "Vollständige Umwandlung von m = 1 g = 0,001 kg: E = 0,001 × (3×10⁸)² = 9×10¹³ J = 25 GWh — der Jahresstromverbrauch von rund 7.000 Haushalten.",
+    "anwendung": "Kernkraftwerke, Kernfusion (Sonne, ITER), PET-Diagnostik (Paarvernichtung), Teilchenphysik",
+    "quellen": [
+      "Einstein, A. (1905). Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig? Annalen der Physik."
+    ],
+    "verwandte": [
+      "zerfallsgesetz",
+      "energie-kinetisch",
+      "photoeffekt-einstein"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://doi.org/10.1002/andp.19053231314"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E=mc^2",
+      "E=mc²",
+      "E = m*c*c",
+      "Masse-Energie-Äquivalenz",
+      "Einstein Formel",
+      "Ruheenergie berechnen",
+      "mass energy equivalence",
+      "Massendefekt Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/masse-energie-aequivalenz",
+    "herleitung": {
+      "gueltigkeit": "E = mc² gibt die Ruheenergie einer Masse an. Für bewegte Teilchen gilt die Gesamtenergie E = γmc²; die kinetische Energie ist die Differenz E_kin = (γ−1)mc².",
+      "schritte": [
+        "Einstein 1905: Gibt ein Körper die Energie ΔE ab, sinkt seine Masse um Δm = ΔE/c².",
+        "Umgekehrt entspricht jeder Masse die Ruheenergie E = mc²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Massendefekt aus der freigesetzten Energie",
+        "latex": "m = \\frac{E}{c^2}",
+        "hinweis": "Wegen c² = 9×10¹⁶ m²/s² sind die Massenänderungen winzig."
+      },
+      {
+        "ziel": "Energie in Elektronenvolt",
+        "latex": "E\\,[\\text{eV}] = \\frac{E\\,[\\text{J}]}{1{,}602 \\times 10^{-19}}",
+        "hinweis": "In der Kern- und Teilchenphysik üblich: MeV statt Joule."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "c nicht quadrieren oder mit 3×10⁸ statt 9×10¹⁶ rechnen.",
+        "korrektur": "c² = (3×10⁸)² = 9×10¹⁶ m²/s² — der Exponent verdoppelt sich."
+      },
+      {
+        "fehler": "Glauben, bei Kernspaltung verschwinde die ganze Masse.",
+        "korrektur": "Nur der Massendefekt (unter 0,1 %) wird in Energie umgesetzt."
+      },
+      {
+        "fehler": "E = mc² als kinetische Energie deuten.",
+        "korrektur": "Es ist die Ruheenergie; Bewegungsenergie kommt über den γ-Faktor hinzu."
+      }
+    ]
+  },
+  {
+    "slug": "kondensator-kapazitaet",
+    "name": "Kapazität eines Kondensators",
+    "latex": "C = \\frac{Q}{U}",
+    "symbol": "C = Q/U",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrizitätslehre",
+    "beschreibung": "Die Kapazität gibt an, wie viel Ladung ein Kondensator pro Volt Spannung speichert.",
+    "einheiten": "C in Farad [F] = [C/V] · Q in Coulomb [C] · U in Volt [V]",
+    "variablen": [
+      {
+        "symbol": "C",
+        "bedeutung": "Kapazität",
+        "einheit": "F (Farad)"
+      },
+      {
+        "symbol": "Q",
+        "bedeutung": "Gespeicherte Ladung",
+        "einheit": "C (Coulomb)"
+      },
+      {
+        "symbol": "U",
+        "bedeutung": "Anliegende Spannung",
+        "einheit": "V"
+      }
+    ],
+    "hintergrund": "Q und U sind beim Kondensator proportional; die Konstante C hängt nur von der Bauform ab. Für den Plattenkondensator gilt C = ε₀·ε_r·A/d — große Plattenfläche und kleiner Abstand erhöhen die Kapazität, ein Dielektrikum (ε_r > 1) verstärkt sie zusätzlich. Ein Farad ist riesig; übliche Werte liegen im Mikro-, Nano- und Pikofarad-Bereich.",
+    "beispiel": "Ein Kondensator speichert Q = 6×10⁻⁴ C bei U = 12 V: C = 6×10⁻⁴/12 = 5×10⁻⁵ F = 50 µF.",
+    "anwendung": "Glättung in Netzteilen, Kamerablitz, Timer-Schaltungen (RC-Glied), Touchscreens, DRAM-Speicherzellen",
+    "quellen": [
+      "Griffiths, D.J. (2017). Introduction to Electrodynamics. Cambridge."
+    ],
+    "verwandte": [
+      "kondensator-energie",
+      "coulomb-gesetz",
+      "ohmsches-gesetz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Kondensator_(Elektrotechnik)"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "C=Q/U",
+      "Q=C*U",
+      "Kapazität Formel",
+      "Kondensator Ladung berechnen",
+      "Plattenkondensator Formel",
+      "Farad Formel",
+      "capacitance formula",
+      "C = epsilon0 A/d"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kondensator-kapazitaet",
+    "herleitung": {
+      "gueltigkeit": "C = Q/U gilt für jeden Kondensator im elektrostatischen Gleichgewicht. Die Bauformformel C = ε₀ε_r·A/d gilt für den Plattenkondensator mit homogenem Feld (Randeffekte vernachlässigt).",
+      "schritte": [
+        "Mehr Ladung auf den Platten erzeugt ein proportional stärkeres Feld und damit höhere Spannung: Q ∝ U.",
+        "Definition des Faktors: C = Q/U, Einheit Farad = Coulomb/Volt."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Ladung aus Kapazität und Spannung",
+        "latex": "Q = C \\cdot U",
+        "hinweis": "Die Ladung wächst linear mit der angelegten Spannung."
+      },
+      {
+        "ziel": "Spannung aus Ladung und Kapazität",
+        "latex": "U = \\frac{Q}{C}",
+        "hinweis": "Kleine Kapazität heißt: Wenig Ladung erzeugt schon hohe Spannung."
+      },
+      {
+        "ziel": "Plattenkondensator",
+        "latex": "C = \\varepsilon_0 \\varepsilon_r \\frac{A}{d}",
+        "hinweis": "Große Fläche, kleiner Abstand und Dielektrikum erhöhen C."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "µF, nF und pF nicht in Farad umrechnen.",
+        "korrektur": "µ = 10⁻⁶, n = 10⁻⁹, p = 10⁻¹² — vor dem Einsetzen umrechnen."
+      },
+      {
+        "fehler": "Kapazität mit Ladung verwechseln.",
+        "korrektur": "C ist das Speichervermögen pro Volt, Q die tatsächlich gespeicherte Ladung."
+      },
+      {
+        "fehler": "Beim Verdoppeln des Plattenabstands doppelte Kapazität erwarten.",
+        "korrektur": "C ∝ 1/d — doppelter Abstand halbiert die Kapazität."
+      }
+    ]
+  },
+  {
+    "slug": "kondensator-energie",
+    "name": "Energie im Kondensator",
+    "latex": "E = \\frac{1}{2} C U^2",
+    "symbol": "E = ½CU²",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrizitätslehre",
+    "beschreibung": "Die im elektrischen Feld eines Kondensators gespeicherte Energie wächst quadratisch mit der Spannung.",
+    "einheiten": "E in Joule [J] · C in Farad [F] · U in Volt [V]",
+    "variablen": [
+      {
+        "symbol": "E",
+        "bedeutung": "Gespeicherte elektrische Energie",
+        "einheit": "J"
+      },
+      {
+        "symbol": "C",
+        "bedeutung": "Kapazität",
+        "einheit": "F"
+      },
+      {
+        "symbol": "U",
+        "bedeutung": "Ladespannung",
+        "einheit": "V"
+      }
+    ],
+    "hintergrund": "Beim Aufladen muss jede weitere Ladungsportion gegen die schon vorhandene Spannung transportiert werden. Die Ladearbeit ist die Fläche unter der Q-U-Geraden: W = ½·Q·U. Mit Q = C·U folgen die drei äquivalenten Formen E = ½CU² = ½QU = Q²/(2C). Der Faktor ½ unterscheidet die Kondensator-Energie von der Energie E = Q·U einer Ladung, die eine feste Spannung durchläuft.",
+    "beispiel": "Ein Blitzkondensator mit C = 1.000 µF wird auf U = 300 V geladen: E = ½ × 10⁻³ × 300² = ½ × 10⁻³ × 9×10⁴ = 45 J.",
+    "anwendung": "Kamerablitz, Defibrillator, Zwischenspeicher in Elektronik, Superkondensatoren (Rekuperation)",
+    "quellen": [
+      "Griffiths, D.J. (2017). Introduction to Electrodynamics. Cambridge."
+    ],
+    "verwandte": [
+      "kondensator-kapazitaet",
+      "elektrische-leistung",
+      "energie-potentiell"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://en.wikipedia.org/wiki/Capacitor"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E=1/2*C*U^2",
+      "E=0.5CU²",
+      "W = ½CU²",
+      "Kondensator Energie Formel",
+      "Energie elektrisches Feld Kondensator",
+      "capacitor energy formula",
+      "E=Q^2/2C",
+      "Ladearbeit Kondensator"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kondensator-energie",
+    "herleitung": {
+      "gueltigkeit": "Gilt für ideale Kondensatoren ohne Leckströme. Beim Laden über einen Widerstand wird zusätzlich die gleiche Energiemenge im Widerstand als Wärme frei — der Ladewirkungsgrad ist maximal 50 %.",
+      "schritte": [
+        "Jede Ladungsportion dQ wird gegen die Momentanspannung u = q/C transportiert: dW = u·dq.",
+        "Integration von 0 bis Q: W = Q²/(2C) = ½CU² = ½QU."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Spannung aus der Energie",
+        "latex": "U = \\sqrt{\\frac{2E}{C}}",
+        "hinweis": "Für doppelte Energie braucht man nur das √2-Fache der Spannung."
+      },
+      {
+        "ziel": "Form mit Ladung",
+        "latex": "E = \\frac{Q^2}{2C}",
+        "hinweis": "Praktisch, wenn die Ladung statt der Spannung gegeben ist."
+      },
+      {
+        "ziel": "Kapazität aus Energie und Spannung",
+        "latex": "C = \\frac{2E}{U^2}",
+        "hinweis": "So dimensioniert man Pufferkondensatoren für einen Energiebedarf."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Faktor ½ weglassen und E = CU² rechnen.",
+        "korrektur": "Die Spannung wächst erst beim Laden — im Mittel wirkt nur U/2."
+      },
+      {
+        "fehler": "E = ½CU² mit E = QU verwechseln.",
+        "korrektur": "E = QU gilt für Ladung durch eine feste Spannung; am Kondensator steigt U mit."
+      },
+      {
+        "fehler": "U nicht quadrieren.",
+        "korrektur": "Die Energie wächst quadratisch mit der Spannung — deshalb lädt man Blitzkondensatoren auf hohe Spannungen."
+      }
+    ]
+  },
+  {
+    "slug": "linsengleichung",
+    "name": "Linsengleichung (Abbildungsgleichung)",
+    "latex": "\\frac{1}{f} = \\frac{1}{g} + \\frac{1}{b}",
+    "symbol": "1/f = 1/g + 1/b",
+    "kategorie": "physik",
+    "unterkategorie": "Optik",
+    "beschreibung": "Die Linsengleichung verknüpft Brennweite, Gegenstandsweite und Bildweite einer dünnen Linse — die Grundgleichung der optischen Abbildung.",
+    "einheiten": "f, g, b in Metern [m] oder Zentimetern [cm] — alle in derselben Einheit",
+    "variablen": [
+      {
+        "symbol": "f",
+        "bedeutung": "Brennweite der Linse",
+        "einheit": "m oder cm"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Gegenstandsweite (Objekt bis Linse)",
+        "einheit": "m oder cm"
+      },
+      {
+        "symbol": "b",
+        "bedeutung": "Bildweite (Linse bis Bild)",
+        "einheit": "m oder cm"
+      }
+    ],
+    "hintergrund": "Die Gleichung folgt geometrisch aus den Strahlensätzen für Parallel-, Mittelpunkt- und Brennpunktstrahl. Vorzeichenkonvention (dünne Linse): g > 0 für reelle Gegenstände, b > 0 für reelle Bilder hinter der Linse, b < 0 für virtuelle Bilder (Lupe: g < f), f > 0 für Sammellinsen, f < 0 für Zerstreuungslinsen. Der Abbildungsmaßstab ist B/G = b/g.",
+    "beispiel": "Sammellinse f = 10 cm, Gegenstand bei g = 30 cm: 1/b = 1/10 − 1/30 = 2/30, also b = 15 cm — reelles, umgekehrtes Bild.",
+    "anwendung": "Kamera und Objektivdesign, Brillenanpassung, Mikroskop und Fernrohr, Projektoren, Auge (Akkommodation)",
+    "quellen": [
+      "Hecht, E. (2017). Optics, 5th Ed. Pearson."
+    ],
+    "verwandte": [
+      "brechungsgesetz-snellius",
+      "wellengleichung",
+      "de-broglie-wellenlaenge"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Linsengleichung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "1/f=1/g+1/b",
+      "Linsengleichung Formel",
+      "Abbildungsgleichung Linse",
+      "Brennweite berechnen",
+      "Bildweite berechnen",
+      "dünne Linse Formel",
+      "thin lens equation",
+      "Sammellinse Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/linsengleichung",
+    "herleitung": {
+      "gueltigkeit": "Gilt für dünne Linsen und achsennahe Strahlen (paraxiale Näherung). Vorzeichenkonvention: g > 0 für reelle Gegenstände, b > 0 für reelle Bilder, b < 0 für virtuelle Bilder, f < 0 für Zerstreuungslinsen.",
+      "schritte": [
+        "Ähnliche Dreiecke liefern B/G = b/g und B/G = (b−f)/f.",
+        "Gleichsetzen und Umformen führt auf 1/f = 1/g + 1/b."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Bildweite aus Brennweite und Gegenstandsweite",
+        "latex": "b = \\frac{f \\cdot g}{g - f}",
+        "hinweis": "Für g < f wird b negativ — das Bild ist virtuell (Lupe)."
+      },
+      {
+        "ziel": "Brennweite aus g und b",
+        "latex": "f = \\frac{g \\cdot b}{g + b}",
+        "hinweis": "So bestimmt man die Brennweite experimentell (Bessel-Verfahren als Alternative)."
+      },
+      {
+        "ziel": "Abbildungsmaßstab",
+        "latex": "\\frac{B}{G} = \\frac{b}{g}",
+        "hinweis": "Bildgröße zu Gegenstandsgröße verhält sich wie Bildweite zu Gegenstandsweite."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Am Ende den Kehrwert vergessen: 1/b als b ausgeben.",
+        "korrektur": "Erst 1/b berechnen, dann invertieren."
+      },
+      {
+        "fehler": "Die Vorzeichenkonvention ignorieren.",
+        "korrektur": "b < 0 heißt virtuelles Bild, f < 0 Zerstreuungslinse — Vorzeichen tragen die Physik."
+      },
+      {
+        "fehler": "g und b in verschiedenen Einheiten einsetzen.",
+        "korrektur": "Alle Weiten in derselben Einheit (cm oder m) verwenden."
+      },
+      {
+        "fehler": "Erwarten, dass bei g = f ein Bild entsteht.",
+        "korrektur": "Für g = f liegt das Bild im Unendlichen — die Strahlen verlaufen parallel."
+      }
+    ]
+  },
+  {
+    "slug": "schiefer-wurf",
+    "name": "Schiefer Wurf (Wurfparabel)",
+    "latex": "x = v_0 \\cos\\alpha \\cdot t \\qquad y = v_0 \\sin\\alpha \\cdot t - \\frac{1}{2} g t^2",
+    "symbol": "x = v₀·cosα·t; y = v₀·sinα·t − ½gt²",
+    "kategorie": "physik",
+    "unterkategorie": "Kinematik",
+    "beschreibung": "Der schiefe Wurf zerlegt die Bewegung in eine gleichförmige horizontale und eine beschleunigte vertikale Komponente, zusammen ergibt sich die Wurfparabel.",
+    "einheiten": "x, y in m · v₀ in m/s · α in Grad [°] · t in s · g = 9,81 m/s²",
+    "variablen": [
+      {
+        "symbol": "x",
+        "bedeutung": "Horizontale Position zur Zeit t",
+        "einheit": "m"
+      },
+      {
+        "symbol": "y",
+        "bedeutung": "Höhe über dem Abwurfpunkt",
+        "einheit": "m"
+      },
+      {
+        "symbol": "v₀",
+        "bedeutung": "Abwurfgeschwindigkeit",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "α",
+        "bedeutung": "Abwurfwinkel zur Horizontalen",
+        "einheit": "°"
+      },
+      {
+        "symbol": "t",
+        "bedeutung": "Zeit seit dem Abwurf",
+        "einheit": "s"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Fallbeschleunigung (9,81 m/s²)",
+        "einheit": "m/s²"
+      }
+    ],
+    "hintergrund": "Galilei erkannte das Superpositionsprinzip: Horizontal- und Vertikalbewegung laufen unabhängig voneinander ab. Horizontal wirkt keine Kraft (gleichförmige Bewegung), vertikal wirkt nur die Schwerkraft (freier Fall). Eliminiert man t, entsteht die Bahngleichung y(x) = x·tanα − g·x²/(2v₀²cos²α), eine nach unten geöffnete Parabel. Ohne Luftwiderstand ist die Wurfweite W = v₀²·sin(2α)/g bei 45° maximal, die Steighöhe beträgt H = v₀²·sin²α/(2g).",
+    "beispiel": "Ball mit v₀ = 20 m/s unter α = 45° abgeworfen: Wurfweite W = v₀²·sin(2α)/g = 400 × 1/9,81 ≈ 40,8 m, maximale Höhe H = v₀²·sin²α/(2g) = 400 × 0,5/19,62 ≈ 10,2 m.",
+    "anwendung": "Ballsport (Abwurf- und Abschlagwinkel), Weitsprung und Kugelstoßen, Wasserfontänen, Ballistik, Bewässerungstechnik",
+    "quellen": [
+      "Tipler, P.A., & Mosca, G. (2015). Physik für Wissenschaftler und Ingenieure. Springer Spektrum."
+    ],
+    "verwandte": [
+      "freier-fall",
+      "gleichmaessig-beschleunigte-bewegung",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Schr%C3%A4ger_Wurf"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Wurfparabel Formel",
+      "schräger Wurf",
+      "Wurfweite berechnen",
+      "projectile motion",
+      "v0 cos alpha t",
+      "Wurfweite v0^2 sin(2a)/g",
+      "Abwurfwinkel 45 Grad",
+      "horizontaler Wurf Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/schiefer-wurf",
+    "herleitung": {
+      "gueltigkeit": "Gilt ohne Luftwiderstand bei konstanter Fallbeschleunigung. Die Formeln für Wurfweite und Steighöhe setzen gleiche Abwurf- und Landehöhe voraus; bei erhöhtem Abwurfpunkt muss die Flugzeit aus y(t) = 0 bestimmt werden.",
+      "schritte": [
+        "Horizontal wirkt keine Kraft: gleichförmige Bewegung x = v₀·cosα·t.",
+        "Vertikal wirkt nur die Schwerkraft: y = v₀·sinα·t − ½gt² wie beim freien Fall mit Anfangsgeschwindigkeit."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Wurfweite",
+        "latex": "W = \\frac{v_0^2 \\sin(2\\alpha)}{g}",
+        "hinweis": "Maximal bei α = 45°, weil sin(2α) dort 1 wird."
+      },
+      {
+        "ziel": "Steighöhe",
+        "latex": "H = \\frac{v_0^2 \\sin^2\\alpha}{2g}",
+        "hinweis": "Am höchsten Punkt ist die vertikale Geschwindigkeit null."
+      },
+      {
+        "ziel": "Flugzeit",
+        "latex": "t = \\frac{2 v_0 \\sin\\alpha}{g}",
+        "hinweis": "Gilt für gleiche Abwurf- und Landehöhe (doppelte Steigzeit)."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "v₀ komplett in eine Richtung einsetzen statt in Komponenten zu zerlegen.",
+        "korrektur": "Immer zerlegen: horizontal v₀·cosα, vertikal v₀·sinα."
+      },
+      {
+        "fehler": "Taschenrechner steht auf Radiant, der Winkel wird aber in Grad eingegeben.",
+        "korrektur": "Vor dem Rechnen den Winkelmodus prüfen (DEG für Gradangaben)."
+      },
+      {
+        "fehler": "Die 45°-Regel für maximale Weite auch bei erhöhtem Abwurfpunkt anwenden.",
+        "korrektur": "Bei ungleicher Abwurf- und Landehöhe ist der optimale Winkel kleiner als 45°."
+      },
+      {
+        "fehler": "Horizontal eine Beschleunigung ansetzen.",
+        "korrektur": "Ohne Luftwiderstand bleibt die Horizontalgeschwindigkeit konstant."
+      }
+    ]
+  },
+  {
+    "slug": "auftrieb-archimedes",
+    "name": "Auftriebskraft (Archimedes)",
+    "latex": "F_A = \\rho_{Fl} \\cdot V \\cdot g",
+    "symbol": "F_A = ρ·V·g",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Die Auftriebskraft nach Archimedes ist gleich der Gewichtskraft des verdrängten Fluids, sie entscheidet über Schwimmen, Schweben und Sinken.",
+    "einheiten": "F_A in N · ρ_Fl in kg/m³ · V in m³ · g = 9,81 m/s²",
+    "variablen": [
+      {
+        "symbol": "F_A",
+        "bedeutung": "Auftriebskraft (nach oben gerichtet)",
+        "einheit": "N"
+      },
+      {
+        "symbol": "ρ_Fl",
+        "bedeutung": "Dichte des Fluids (Wasser: 1000 kg/m³)",
+        "einheit": "kg/m³"
+      },
+      {
+        "symbol": "V",
+        "bedeutung": "Verdrängtes Volumen (eingetauchter Teil)",
+        "einheit": "m³"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Fallbeschleunigung (9,81 m/s²)",
+        "einheit": "m/s²"
+      }
+    ],
+    "hintergrund": "Archimedes von Syrakus formulierte das Prinzip um 250 v. Chr. Der Auftrieb entsteht, weil der Druck im Fluid mit der Tiefe zunimmt: Auf die Unterseite eines Körpers wirkt ein größerer Druck als auf die Oberseite, die Differenz ergibt genau die Gewichtskraft des verdrängten Fluids. Der Dichtevergleich entscheidet: ρ_Körper < ρ_Fluid schwimmt, gleich groß schwebt, größer sinkt. Beim Schwimmen taucht der Körper genau so weit ein, dass F_A = F_G gilt.",
+    "beispiel": "Ein Körper verdrängt V = 2 L = 0,002 m³ Wasser (ρ = 1000 kg/m³): F_A = 1000 × 0,002 × 9,81 = 19,62 N. Ein 5-kg-Stein (F_G = 49,05 N) wiegt unter Wasser scheinbar nur 29,43 N.",
+    "anwendung": "Schiffbau (Verdrängung und Ladelinie), U-Boote und Ballasttanks, Heißluftballons, Aräometer zur Dichtemessung, Eisberge",
+    "quellen": [
+      "Halliday, D., Resnick, R., & Walker, J. (2017). Halliday Physik. Wiley-VCH."
+    ],
+    "verwandte": [
+      "druck",
+      "dichte",
+      "newton-zweites-gesetz"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Archimedisches_Prinzip"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "FA=rho*V*g",
+      "Auftrieb Formel",
+      "Archimedisches Prinzip",
+      "buoyancy formula",
+      "Auftriebskraft berechnen",
+      "schwimmen schweben sinken",
+      "verdrängtes Volumen",
+      "Auftrieb Wasser"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/auftrieb-archimedes",
+    "herleitung": {
+      "gueltigkeit": "Gilt in ruhenden Fluiden (Flüssigkeiten und Gasen) für vollständig benetzte Körper. V ist nur das eingetauchte Volumen, ρ_Fl die Dichte des Fluids, nicht die des Körpers.",
+      "schritte": [
+        "Auf die Unterseite eines Würfels (Fläche A, Höhe Δh) wirkt der um ρ·g·Δh größere Druck.",
+        "Die Kraftdifferenz ist F_A = ρ·g·Δh·A = ρ·V·g, die Gewichtskraft des verdrängten Fluids."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Verdrängtes Volumen",
+        "latex": "V = \\frac{F_A}{\\rho_{Fl} \\cdot g}",
+        "hinweis": "So folgt aus gemessenem Auftrieb das Volumen unregelmäßiger Körper."
+      },
+      {
+        "ziel": "Fluiddichte",
+        "latex": "\\rho_{Fl} = \\frac{F_A}{V \\cdot g}",
+        "hinweis": "Prinzip des Aräometers zur Dichtemessung."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Dichte des Körpers statt der des Fluids einsetzen.",
+        "korrektur": "In der Formel steht immer die Fluiddichte; die Körperdichte entscheidet nur über Schwimmen oder Sinken."
+      },
+      {
+        "fehler": "Beim schwimmenden Körper das Gesamtvolumen statt des eingetauchten Volumens verwenden.",
+        "korrektur": "Nur der eingetauchte Teil verdrängt Fluid und erzeugt Auftrieb."
+      },
+      {
+        "fehler": "Volumen in Litern direkt einsetzen.",
+        "korrektur": "Erst umrechnen: 1 L = 0,001 m³, sonst ist das Ergebnis um den Faktor 1000 falsch."
+      },
+      {
+        "fehler": "Auftrieb in Gasen vergessen.",
+        "korrektur": "Auch Luft erzeugt Auftrieb, das trägt Heißluftballons und verfälscht Präzisionswägungen."
+      }
+    ]
+  },
+  {
+    "slug": "dopplereffekt",
+    "name": "Dopplereffekt (Akustik)",
+    "latex": "f_B = f_Q \\cdot \\frac{c \\pm v_B}{c \\mp v_Q}",
+    "symbol": "f_B = f_Q·(c ± v_B)/(c ∓ v_Q)",
+    "kategorie": "physik",
+    "unterkategorie": "Schwingungen und Wellen",
+    "beschreibung": "Der Dopplereffekt beschreibt die Frequenzverschiebung, wenn sich Quelle oder Beobachter relativ zueinander bewegen: Annäherung erhöht, Entfernung senkt die wahrgenommene Frequenz.",
+    "einheiten": "f_B, f_Q in Hz · c = 343 m/s (Luft, 20 °C) · v_B, v_Q in m/s",
+    "variablen": [
+      {
+        "symbol": "f_B",
+        "bedeutung": "Vom Beobachter wahrgenommene Frequenz",
+        "einheit": "Hz"
+      },
+      {
+        "symbol": "f_Q",
+        "bedeutung": "Von der Quelle ausgesendete Frequenz",
+        "einheit": "Hz"
+      },
+      {
+        "symbol": "c",
+        "bedeutung": "Schallgeschwindigkeit (Luft: 343 m/s)",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "v_B",
+        "bedeutung": "Geschwindigkeit des Beobachters",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "v_Q",
+        "bedeutung": "Geschwindigkeit der Quelle",
+        "einheit": "m/s"
+      }
+    ],
+    "hintergrund": "Christian Doppler beschrieb den Effekt 1842. Bewegt sich die Quelle auf den Beobachter zu, werden die Wellenfronten gestaucht (kürzere Wellenlänge, höhere Frequenz), beim Entfernen gedehnt. Vorzeichenregel: oberes Zeichen bei Annäherung, unteres beim Entfernen; die bewegte Quelle wirkt im Nenner, der bewegte Beobachter im Zähler, die beiden Fälle sind nicht symmetrisch. Für Licht gilt der relativistische Dopplereffekt, die Grundlage der Rotverschiebung in der Astronomie.",
+    "beispiel": "Krankenwagen (f_Q = 700 Hz) nähert sich mit v_Q = 30 m/s (c = 343 m/s): f_B = 700 × 343/(343 − 30) ≈ 767 Hz. Beim Entfernen: f_B = 700 × 343/373 ≈ 644 Hz.",
+    "anwendung": "Radar-Geschwindigkeitsmessung, Doppler-Sonographie (Blutfluss), Astronomie (Rot- und Blauverschiebung), Sirenen, Fledermaus-Echoortung",
+    "quellen": [
+      "Doppler, C. (1842). Über das farbige Licht der Doppelsterne. Abhandlungen der Königl. Böhm. Gesellschaft der Wissenschaften."
+    ],
+    "verwandte": [
+      "wellengleichung",
+      "doppelspalt-interferenz",
+      "brechungsgesetz-snellius"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Doppler-Effekt"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Dopplereffekt Formel",
+      "f beobachtet Formel",
+      "Doppler effect formula",
+      "Frequenzverschiebung bewegte Quelle",
+      "Martinshorn Frequenz",
+      "Dopplerverschiebung",
+      "f = f0 c/(c-v)"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/dopplereffekt",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Schall in einem ruhenden Medium, solange Quelle und Beobachter langsamer als die Schallgeschwindigkeit sind. Für Licht gilt stattdessen die relativistische Doppler-Formel ohne Medium.",
+      "schritte": [
+        "Zwischen zwei Wellenbergen legt die Quelle v_Q·T_Q zurück, die Wellenlänge wird λ = (c − v_Q)·T_Q.",
+        "Der ruhende Beobachter hört f_B = c/λ = f_Q·c/(c − v_Q); ein bewegter Beobachter ändert zusätzlich den Zähler."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Quellengeschwindigkeit",
+        "latex": "v_Q = c \\left(1 - \\frac{f_Q}{f_B}\\right)",
+        "hinweis": "Für die sich nähernde Quelle bei ruhendem Beobachter, so arbeitet die Radarfalle."
+      },
+      {
+        "ziel": "Sendefrequenz",
+        "latex": "f_Q = f_B \\cdot \\frac{c - v_Q}{c}",
+        "hinweis": "Rückrechnung von der gehörten auf die tatsächliche Frequenz."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Fälle bewegte Quelle und bewegter Beobachter für austauschbar halten.",
+        "korrektur": "Die Quelle wirkt im Nenner, der Beobachter im Zähler; nur für v << c stimmen beide näherungsweise überein."
+      },
+      {
+        "fehler": "Vorzeichen falsch wählen, sodass die Frequenz beim Nähern sinkt.",
+        "korrektur": "Plausibilitätscheck: Annäherung erhöht die Frequenz immer, Entfernen senkt sie."
+      },
+      {
+        "fehler": "Geschwindigkeiten in km/h einsetzen.",
+        "korrektur": "Alle Geschwindigkeiten in m/s umrechnen (durch 3,6 teilen), c = 343 m/s."
+      }
+    ]
+  },
+  {
+    "slug": "fadenpendel",
+    "name": "Fadenpendel (Schwingungsdauer)",
+    "latex": "T = 2\\pi \\sqrt{\\frac{l}{g}}",
+    "symbol": "T = 2π·√(l/g)",
+    "kategorie": "physik",
+    "unterkategorie": "Schwingungen und Wellen",
+    "beschreibung": "Die Schwingungsdauer eines Fadenpendels hängt nur von der Fadenlänge und der Fallbeschleunigung ab, nicht von der Masse und bei kleinen Winkeln auch nicht von der Amplitude.",
+    "einheiten": "T in s · l in m · g = 9,81 m/s²",
+    "variablen": [
+      {
+        "symbol": "T",
+        "bedeutung": "Schwingungsdauer (volle Hin- und Herbewegung)",
+        "einheit": "s"
+      },
+      {
+        "symbol": "l",
+        "bedeutung": "Pendellänge (Aufhängung bis Schwerpunkt)",
+        "einheit": "m"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Fallbeschleunigung (9,81 m/s²)",
+        "einheit": "m/s²"
+      }
+    ],
+    "hintergrund": "Galilei bemerkte um 1600 die Isochronie kleiner Pendelschwingungen. Die Formel folgt aus der Kleinwinkelnäherung sin φ ≈ φ: Die rücktreibende Kraft F = −m·g·sin φ wird dann proportional zur Auslenkung, eine harmonische Schwingung. Die Masse kürzt sich heraus, deshalb schwingen schwere und leichte Pendel gleicher Länge gleich schnell. Für Winkel über etwa 10° wird T merklich größer, als die Formel angibt. Umgekehrt lässt sich g präzise aus l und T bestimmen.",
+    "beispiel": "Ein Fadenpendel mit l = 1 m: T = 2π·√(1/9,81) = 2π × 0,319 ≈ 2,0 s. Für T = 1 s (halbe Dauer) braucht es nur l = 0,25 m, denn T wächst mit √l.",
+    "anwendung": "Pendeluhren, Bestimmung der Fallbeschleunigung g im Praktikum, Foucaultsches Pendel (Erdrotation), Schaukeln, Seismometer",
+    "quellen": [
+      "Demtröder, W. (2018). Experimentalphysik 1: Mechanik und Wärme. Springer."
+    ],
+    "verwandte": [
+      "harmonische-schwingung-federpendel",
+      "schwingkreis-thomson",
+      "freier-fall"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Mathematisches_Pendel"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "T=2pi*sqrt(l/g)",
+      "T = 2π√(l/g)",
+      "Fadenpendel Formel",
+      "Pendel Schwingungsdauer",
+      "mathematisches Pendel",
+      "pendulum period formula",
+      "Pendellänge berechnen",
+      "g mit Pendel bestimmen"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/fadenpendel",
+    "herleitung": {
+      "gueltigkeit": "Gilt für kleine Auslenkungen (unter etwa 10°), punktförmige Pendelmasse und masselosen Faden. Bei großen Amplituden wird die Schwingungsdauer messbar länger; die Masse geht nie ein.",
+      "schritte": [
+        "Rücktreibende Kraft F = −m·g·sin φ ≈ −m·g·φ = −(m·g/l)·s mit der Bogenlänge s.",
+        "Vergleich mit dem Federpendel: Richtgröße D = m·g/l, also T = 2π√(m/D) = 2π√(l/g), die Masse kürzt sich."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Pendellänge",
+        "latex": "l = \\frac{g \\cdot T^2}{4\\pi^2}",
+        "hinweis": "Ein Sekundenpendel (T = 2 s) ist 0,994 m lang."
+      },
+      {
+        "ziel": "Fallbeschleunigung",
+        "latex": "g = \\frac{4\\pi^2 \\cdot l}{T^2}",
+        "hinweis": "Standard-Praktikumsmethode zur g-Bestimmung."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Pendelmasse in die Rechnung einbeziehen.",
+        "korrektur": "T hängt nur von l und g ab, schwere und leichte Pendel schwingen gleich."
+      },
+      {
+        "fehler": "Eine halbe Schwingung (hin) als volle Periode stoppen.",
+        "korrektur": "T ist die Zeit für hin und zurück; im Versuch 10 Perioden stoppen und teilen."
+      },
+      {
+        "fehler": "Die Formel bei großen Auslenkungen (über 10°) anwenden.",
+        "korrektur": "Dann gilt die Kleinwinkelnäherung nicht mehr, T wird länger als berechnet."
+      },
+      {
+        "fehler": "l bis zum Fadenende statt bis zum Schwerpunkt der Masse messen.",
+        "korrektur": "Die Pendellänge reicht von der Aufhängung bis zum Schwerpunkt der Kugel."
+      }
+    ]
+  },
+  {
+    "slug": "reibungskraft",
+    "name": "Gleitreibungskraft",
+    "latex": "F_R = \\mu \\cdot F_N",
+    "symbol": "F_R = μ·F_N",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Die Gleitreibungskraft ist proportional zur Normalkraft, die Reibungszahl μ charakterisiert die Materialpaarung und die Kraft wirkt stets gegen die Bewegungsrichtung.",
+    "einheiten": "F_R in N · μ dimensionslos · F_N in N",
+    "variablen": [
+      {
+        "symbol": "F_R",
+        "bedeutung": "Reibungskraft (gegen die Bewegung gerichtet)",
+        "einheit": "N"
+      },
+      {
+        "symbol": "μ",
+        "bedeutung": "Reibungszahl der Materialpaarung",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "F_N",
+        "bedeutung": "Normalkraft (senkrecht zur Auflagefläche)",
+        "einheit": "N"
+      }
+    ],
+    "hintergrund": "Die Reibungsgesetze gehen auf Leonardo da Vinci, Guillaume Amontons (1699) und Charles-Augustin de Coulomb zurück: Die Reibung ist in guter Näherung unabhängig von der Auflagefläche und proportional zur Normalkraft. Man unterscheidet Haftreibung (μ_H, verhindert das Losrutschen), Gleitreibung (μ_G < μ_H) und Rollreibung (deutlich kleiner). Auf der horizontalen Ebene ist F_N = m·g, an der schiefen Ebene nur noch F_N = m·g·cos α.",
+    "beispiel": "Kiste (m = 20 kg) wird über den Boden gezogen (Gleitreibungszahl μ = 0,4): F_N = 20 × 9,81 = 196,2 N, also F_R = 0,4 × 196,2 ≈ 78,5 N.",
+    "anwendung": "Bremsweg von Fahrzeugen, Reifen- und Fahrbahnentwicklung, schiefe Ebene, Maschinenbau (Lager, Schmierung), Wintersport",
+    "quellen": [
+      "Popov, V.L. (2015). Kontaktmechanik und Reibung. Springer Vieweg."
+    ],
+    "verwandte": [
+      "newton-zweites-gesetz",
+      "arbeit-mechanisch",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Reibung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "FR=mu*FN",
+      "F = μ·N",
+      "Reibungskraft Formel",
+      "Gleitreibung berechnen",
+      "Haftreibung Formel",
+      "friction formula",
+      "Reibungszahl Tabelle",
+      "Reibung schiefe Ebene"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/reibungskraft",
+    "herleitung": {
+      "gueltigkeit": "Gilt für trockene Gleitreibung fester Körper. Die Haftreibung ist keine feste Kraft, sondern ein Maximalwert F_H ≤ μ_H·F_N; μ hängt von der Materialpaarung ab, kaum von Fläche und Geschwindigkeit.",
+      "schritte": [
+        "Messungen (Amontons, Coulomb): F_R wächst linear mit F_N und ist nahezu flächenunabhängig.",
+        "Die Proportionalitätskonstante μ = F_R/F_N charakterisiert die Materialpaarung."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Reibungszahl",
+        "latex": "\\mu = \\frac{F_R}{F_N}",
+        "hinweis": "Messbar über die Zugkraft bei gleichförmiger Bewegung."
+      },
+      {
+        "ziel": "Normalkraft",
+        "latex": "F_N = \\frac{F_R}{\\mu}",
+        "hinweis": "Auf horizontaler Ebene gilt F_N = m·g, an der schiefen Ebene F_N = m·g·cos α."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Masse statt der Normalkraft einsetzen.",
+        "korrektur": "Erst F_N = m·g (bzw. m·g·cos α) berechnen, dann mit μ multiplizieren."
+      },
+      {
+        "fehler": "An der schiefen Ebene F_N = m·g verwenden.",
+        "korrektur": "Dort trägt nur die Komponente senkrecht zur Ebene: F_N = m·g·cos α."
+      },
+      {
+        "fehler": "Haft- und Gleitreibung gleichsetzen.",
+        "korrektur": "μ_H > μ_G: Losreißen braucht mehr Kraft als Weitergleiten."
+      },
+      {
+        "fehler": "Annehmen, eine größere Auflagefläche erhöhe die Reibung.",
+        "korrektur": "In guter Näherung ist die trockene Reibung flächenunabhängig, es zählt die Normalkraft."
+      }
+    ]
+  },
+  {
+    "slug": "transformator",
+    "name": "Transformator (Übersetzung)",
+    "latex": "\\frac{U_1}{U_2} = \\frac{n_1}{n_2} = \\frac{I_2}{I_1}",
+    "symbol": "U₁/U₂ = n₁/n₂ = I₂/I₁",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Beim idealen Transformator verhalten sich die Spannungen wie die Windungszahlen, die Stromstärken übersetzen sich umgekehrt, die Leistung bleibt erhalten.",
+    "einheiten": "U₁, U₂ in V · n₁, n₂ dimensionslos · I₁, I₂ in A",
+    "variablen": [
+      {
+        "symbol": "U₁, U₂",
+        "bedeutung": "Spannung an Primär- bzw. Sekundärspule",
+        "einheit": "V"
+      },
+      {
+        "symbol": "n₁, n₂",
+        "bedeutung": "Windungszahlen der beiden Spulen",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "I₁, I₂",
+        "bedeutung": "Stromstärke in Primär- bzw. Sekundärkreis",
+        "einheit": "A"
+      }
+    ],
+    "hintergrund": "Der Transformator beruht auf der elektromagnetischen Induktion: Der Wechselstrom der Primärspule erzeugt im gemeinsamen Eisenkern einen wechselnden magnetischen Fluss, der in jeder Windung der Sekundärspule dieselbe Spannung induziert. Deshalb skaliert U mit der Windungszahl. Aus der Energieerhaltung P₁ = P₂ folgt die umgekehrte Stromübersetzung. Reale Transformatoren erreichen Wirkungsgrade über 95 %, funktionieren aber nur mit Wechselspannung.",
+    "beispiel": "Klingeltrafo: n₁ = 1.000, n₂ = 50 Windungen an U₁ = 230 V: U₂ = 230 × 50/1.000 = 11,5 V. Die Stromstärke übersetzt sich umgekehrt: I₂ = 20 × I₁.",
+    "anwendung": "Stromnetz (Hochspannungs-Fernübertragung), Ladegeräte und Netzteile, Schweißtransformatoren, Mikrofonübertrager, Zündspulen",
+    "quellen": [
+      "Halliday, D., Resnick, R., & Walker, J. (2017). Halliday Physik. Wiley-VCH."
+    ],
+    "verwandte": [
+      "induktion-faraday",
+      "elektrische-leistung",
+      "selbstinduktion-spule"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Transformator"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "U1/U2=n1/n2",
+      "Transformator Formel",
+      "Übersetzungsverhältnis Trafo",
+      "Windungszahl berechnen",
+      "transformer equation",
+      "Primärspule Sekundärspule",
+      "Trafo Spannung Strom"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/transformator",
+    "herleitung": {
+      "gueltigkeit": "Gilt für den idealen, verlustfreien Transformator mit vollständiger magnetischer Kopplung und nur bei Wechselspannung. Die Stromregel setzt einen belasteten Sekundärkreis voraus; reale Trafos haben Kupfer- und Eisenverluste.",
+      "schritte": [
+        "Induktionsgesetz je Spule: U₁ = n₁·dΦ/dt und U₂ = n₂·dΦ/dt, der Quotient liefert U₁/U₂ = n₁/n₂.",
+        "Verlustfreiheit P₁ = P₂ bedeutet U₁·I₁ = U₂·I₂, also I₂/I₁ = U₁/U₂ = n₁/n₂."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Sekundärspannung",
+        "latex": "U_2 = U_1 \\cdot \\frac{n_2}{n_1}",
+        "hinweis": "Mehr Sekundärwindungen bedeuten höhere Spannung (Hochtransformieren)."
+      },
+      {
+        "ziel": "Windungszahl",
+        "latex": "n_2 = n_1 \\cdot \\frac{U_2}{U_1}",
+        "hinweis": "Auslegung einer Sekundärwicklung für eine Zielspannung."
+      },
+      {
+        "ziel": "Primärstrom",
+        "latex": "I_1 = I_2 \\cdot \\frac{n_2}{n_1}",
+        "hinweis": "Hohe Spannung heißt kleiner Strom, der Kern der Fernübertragung."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Ströme wie die Spannungen übersetzen.",
+        "korrektur": "Ströme übersetzen sich umgekehrt: I₂/I₁ = n₁/n₂, sonst wäre Energie erzeugt worden."
+      },
+      {
+        "fehler": "Einen Transformator an Gleichspannung rechnen.",
+        "korrektur": "Ohne Flussänderung keine Induktion: Trafos funktionieren nur mit Wechselspannung."
+      },
+      {
+        "fehler": "Das Verhältnis falsch herum ansetzen.",
+        "korrektur": "Merkhilfe: mehr Windungen, mehr Spannung; U und n stehen auf derselben Seite."
+      }
+    ]
+  },
+  {
+    "slug": "schwingkreis-thomson",
+    "name": "Thomsonsche Schwingungsgleichung",
+    "latex": "T = 2\\pi \\sqrt{L \\cdot C}",
+    "symbol": "T = 2π·√(L·C)",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Die Thomsonsche Schwingungsgleichung gibt die Periodendauer eines elektromagnetischen Schwingkreises aus Spule und Kondensator an, das elektrische Gegenstück zum Federpendel.",
+    "einheiten": "T in s · L in H (Henry) · C in F (Farad)",
+    "variablen": [
+      {
+        "symbol": "T",
+        "bedeutung": "Periodendauer der elektromagnetischen Schwingung",
+        "einheit": "s"
+      },
+      {
+        "symbol": "L",
+        "bedeutung": "Induktivität der Spule",
+        "einheit": "H (Henry)"
+      },
+      {
+        "symbol": "C",
+        "bedeutung": "Kapazität des Kondensators",
+        "einheit": "F (Farad)"
+      }
+    ],
+    "hintergrund": "William Thomson (Lord Kelvin) leitete die Formel 1853 her. Im Schwingkreis pendelt die Energie zwischen dem elektrischen Feld des Kondensators (½CU²) und dem Magnetfeld der Spule (½LI²), völlig analog zum Wechsel von Spann- und Bewegungsenergie beim Federpendel. Die Eigenfrequenz ist f = 1/(2π√(LC)). Reale Kreise sind durch den ohmschen Widerstand gedämpft und brauchen eine Rückkopplung, um ungedämpft weiterzuschwingen.",
+    "beispiel": "Schwingkreis mit L = 10 mH und C = 100 nF: T = 2π·√(0,01 × 10⁻⁷) = 2π × 3,16×10⁻⁵ ≈ 2×10⁻⁴ s, also f = 1/T ≈ 5 kHz.",
+    "anwendung": "Radio- und Senderabstimmung, Schwingquarz-Ersatzschaltungen, Induktionskochfelder, Metalldetektoren, Funktechnik (Filter)",
+    "quellen": [
+      "Thomson, W. (1853). On Transient Electric Currents. Philosophical Magazine."
+    ],
+    "verwandte": [
+      "kondensator-kapazitaet",
+      "selbstinduktion-spule",
+      "harmonische-schwingung-federpendel"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Schwingkreis"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "T=2pi*sqrt(LC)",
+      "Thomson Gleichung",
+      "Schwingkreis Formel",
+      "LC circuit formula",
+      "Eigenfrequenz Schwingkreis",
+      "f=1/(2pi sqrt(LC))",
+      "Resonanzfrequenz LC"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/schwingkreis-thomson",
+    "herleitung": {
+      "gueltigkeit": "Gilt für den idealen, ungedämpften LC-Kreis. Ein ohmscher Widerstand dämpft die Schwingung und verschiebt die Frequenz leicht nach unten; für dauerhafte Schwingung ist eine Rückkopplung (Entdämpfung) nötig.",
+      "schritte": [
+        "Maschenregel: U_C + U_L = 0, also Q/C + L·(d²Q/dt²) = 0.",
+        "Das ist die Schwingungsgleichung mit ω² = 1/(LC), also T = 2π/ω = 2π√(LC)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Eigenfrequenz",
+        "latex": "f = \\frac{1}{2\\pi \\sqrt{L C}}",
+        "hinweis": "Kleinere L oder C bedeuten höhere Frequenz."
+      },
+      {
+        "ziel": "Kapazität",
+        "latex": "C = \\frac{1}{4\\pi^2 f^2 L}",
+        "hinweis": "So wird ein Drehkondensator zum Sendersuchen dimensioniert."
+      },
+      {
+        "ziel": "Induktivität",
+        "latex": "L = \\frac{T^2}{4\\pi^2 C}",
+        "hinweis": "Aus gemessener Periodendauer und bekannter Kapazität."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "mH, µF oder nF direkt einsetzen.",
+        "korrektur": "Erst in Henry und Farad umrechnen, sonst ist das Ergebnis um Zehnerpotenzen falsch."
+      },
+      {
+        "fehler": "Frequenz f und Kreisfrequenz ω verwechseln.",
+        "korrektur": "ω = 1/√(LC), aber f = ω/(2π); der Faktor 2π entscheidet."
+      },
+      {
+        "fehler": "Die Wurzel beim Umstellen nach L oder C vergessen.",
+        "korrektur": "T² bilden: L und C gehen nur unter der Wurzel ein, also quadratisch umstellen."
+      }
+    ]
+  },
+  {
+    "slug": "kepler-drittes-gesetz",
+    "name": "Drittes Keplersches Gesetz",
+    "latex": "\\frac{T^2}{a^3} = \\frac{4\\pi^2}{G \\cdot M}",
+    "symbol": "T²/a³ = 4π²/(G·M)",
+    "kategorie": "physik",
+    "unterkategorie": "Gravitation",
+    "beschreibung": "Die Quadrate der Umlaufzeiten verhalten sich wie die dritten Potenzen der großen Bahnhalbachsen, der Quotient T²/a³ ist für alle Körper um denselben Zentralkörper gleich.",
+    "einheiten": "T in s · a in m · G = 6,674×10⁻¹¹ N·m²/kg² · M in kg",
+    "variablen": [
+      {
+        "symbol": "T",
+        "bedeutung": "Umlaufzeit des Himmelskörpers",
+        "einheit": "s"
+      },
+      {
+        "symbol": "a",
+        "bedeutung": "Große Halbachse der Bahn",
+        "einheit": "m"
+      },
+      {
+        "symbol": "G",
+        "bedeutung": "Gravitationskonstante (6,674×10⁻¹¹)",
+        "einheit": "N·m²/kg²"
+      },
+      {
+        "symbol": "M",
+        "bedeutung": "Masse des Zentralkörpers",
+        "einheit": "kg"
+      }
+    ],
+    "hintergrund": "Johannes Kepler fand das Gesetz 1618 empirisch aus Tycho Brahes Beobachtungsdaten. Newton leitete es später aus seinem Gravitationsgesetz her: Für Kreisbahnen liefert Gravitationskraft = Zentripetalkraft direkt G·M·m/r² = m·ω²·r und damit T²/r³ = 4π²/(G·M). Praktisch wichtig: Misst man T und a eines Satelliten oder Mondes, folgt daraus die Masse des Zentralkörpers, so wurden Sonnen- und Planetenmassen bestimmt.",
+    "beispiel": "Mars: a = 1,524 AE. In Einheiten der Erdbahn gilt T = √(a³) = √(1,524³) = √3,54 ≈ 1,88 Jahre. Geostationäre Satelliten (T = 1 Sterntag) kreisen bei a ≈ 42.160 km.",
+    "anwendung": "Satellitenbahnen (GPS, geostationär), Massenbestimmung von Sternen und Planeten, Exoplaneten-Nachweis, Missionsplanung in der Raumfahrt",
+    "quellen": [
+      "Kepler, J. (1619). Harmonices Mundi. Linz.",
+      "Newton, I. (1687). Principia Mathematica. London: Royal Society."
+    ],
+    "verwandte": [
+      "gravitationsgesetz",
+      "zentripetalkraft-kreisbewegung",
+      "winkelgeschwindigkeit-kreisfrequenz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Keplersche_Gesetze",
+      "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "T^2/a^3=const",
+      "T² a³ Gesetz",
+      "drittes Keplersches Gesetz Formel",
+      "Kepler 3 Formel",
+      "Umlaufzeit Satellit berechnen",
+      "Kepler's third law",
+      "geostationärer Satellit Höhe"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/kepler-drittes-gesetz",
+    "herleitung": {
+      "gueltigkeit": "Gilt für Umläufe um denselben Zentralkörper, wenn dessen Masse M die des Trabanten weit übersteigt. a ist die große Halbachse der Ellipse; für Kreisbahnen ist a der Bahnradius.",
+      "schritte": [
+        "Kräftegleichheit: G·M·m/r² = m·ω²·r mit ω = 2π/T.",
+        "Auflösen ergibt T² = 4π²·r³/(G·M), also T²/r³ = 4π²/(G·M) = konstant."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Masse des Zentralkörpers",
+        "latex": "M = \\frac{4\\pi^2 a^3}{G \\cdot T^2}",
+        "hinweis": "So werden Sonnen- und Planetenmassen aus Bahndaten bestimmt."
+      },
+      {
+        "ziel": "Umlaufzeit",
+        "latex": "T = 2\\pi \\sqrt{\\frac{a^3}{G M}}",
+        "hinweis": "Größere Bahnen bedeuten überproportional längere Umläufe."
+      },
+      {
+        "ziel": "Bahnhalbachse",
+        "latex": "a = \\sqrt[3]{\\frac{G M T^2}{4\\pi^2}}",
+        "hinweis": "Liefert z. B. die Höhe geostationärer Satelliten."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Bei Satelliten die Flughöhe über dem Boden als Bahnradius verwenden.",
+        "korrektur": "Der Erdradius (6.371 km) muss zur Höhe addiert werden: r = R_E + h."
+      },
+      {
+        "fehler": "Umlaufzeiten in Tagen oder Jahren in die SI-Form einsetzen.",
+        "korrektur": "Für die Form mit G und M muss T in Sekunden stehen; AE-Jahre-Einheiten nur beim reinen Verhältnis im Sonnensystem."
+      },
+      {
+        "fehler": "Bahnen um verschiedene Zentralkörper vergleichen.",
+        "korrektur": "T²/a³ ist nur für denselben Zentralkörper konstant, die Konstante enthält dessen Masse."
+      }
+    ]
+  },
+  {
+    "slug": "drehmoment",
+    "name": "Drehmoment",
+    "latex": "M = F \\cdot r \\cdot \\sin(\\theta)",
+    "symbol": "M = F·r·sin(θ)",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Das Drehmoment ist das Produkt aus Kraft und Hebelarm, es beschreibt die Dreh- und Kippwirkung einer Kraft um eine Achse.",
+    "einheiten": "M in N·m · F in N · r in m · θ in Grad [°]",
+    "variablen": [
+      {
+        "symbol": "M",
+        "bedeutung": "Drehmoment um die Drehachse",
+        "einheit": "N·m"
+      },
+      {
+        "symbol": "F",
+        "bedeutung": "Angreifende Kraft",
+        "einheit": "N"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Abstand Drehachse zu Angriffspunkt",
+        "einheit": "m"
+      },
+      {
+        "symbol": "θ",
+        "bedeutung": "Winkel zwischen r und F",
+        "einheit": "°"
+      }
+    ],
+    "hintergrund": "Das Hebelgesetz geht auf Archimedes zurück: Kraft mal Kraftarm gleich Last mal Lastarm (F₁·r₁ = F₂·r₂). Vektoriell ist das Drehmoment das Kreuzprodukt M⃗ = r⃗ × F⃗; nur die Kraftkomponente senkrecht zum Hebelarm dreht, daher der Faktor sin θ. Ein Körper ist im Drehgleichgewicht, wenn die Summe aller Drehmomente null ist. Für Drehbewegungen spielt das Drehmoment die Rolle der Kraft: M = J·α mit dem Trägheitsmoment J.",
+    "beispiel": "Schraubenschlüssel: F = 80 N senkrecht am Hebelarm r = 0,25 m: M = 80 × 0,25 = 20 N·m. Greift die Kraft unter 60° an, wirkt nur M = 80 × 0,25 × sin(60°) ≈ 17,3 N·m.",
+    "anwendung": "Schraubverbindungen (Drehmomentschlüssel), Motoren (Nm-Angabe), Hebel und Flaschenzüge, Wippe, Statik von Balken und Kränen",
+    "quellen": [
+      "Tipler, P.A., & Mosca, G. (2015). Physik für Wissenschaftler und Ingenieure. Springer Spektrum."
+    ],
+    "verwandte": [
+      "newton-zweites-gesetz",
+      "kreuzprodukt",
+      "arbeit-mechanisch"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Drehmoment"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "M=F*r",
+      "M = F·r·sinθ",
+      "Drehmoment Formel",
+      "Hebelgesetz Formel",
+      "torque formula",
+      "Kraftarm Lastarm",
+      "Newtonmeter berechnen",
+      "Drehmoment Schraubenschlüssel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/drehmoment",
+    "herleitung": {
+      "gueltigkeit": "Gilt für starre Körper mit fester Drehachse. Es zählt nur die Kraftkomponente senkrecht zum Hebelarm; r ist der Abstand von der Drehachse zur Wirkungslinie der Kraft.",
+      "schritte": [
+        "Zerlege F: Die Komponente F·sin θ steht senkrecht zum Hebelarm, F·cos θ zieht nur an der Achse.",
+        "Drehwirkung = Hebelarm mal senkrechte Komponente: M = r·F·sin θ; im Gleichgewicht gilt ΣM = 0 (Hebelgesetz)."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Nötige Kraft",
+        "latex": "F = \\frac{M}{r \\cdot \\sin(\\theta)}",
+        "hinweis": "Je länger der Hebel, desto kleiner die nötige Kraft."
+      },
+      {
+        "ziel": "Hebelgesetz",
+        "latex": "F_1 \\cdot r_1 = F_2 \\cdot r_2",
+        "hinweis": "Gleichgewicht zweier Drehmomente um dieselbe Achse."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Faktor sin θ bei schräg angreifender Kraft weglassen.",
+        "korrektur": "Nur die senkrechte Komponente dreht; bei θ = 90° ist sin θ = 1, sonst kleiner."
+      },
+      {
+        "fehler": "r als Abstand zum Angriffspunkt statt zur Wirkungslinie messen.",
+        "korrektur": "Der Hebelarm ist der senkrechte Abstand der Wirkungslinie von der Achse."
+      },
+      {
+        "fehler": "N·m mit Joule gleichsetzen.",
+        "korrektur": "Formal gleiche Einheit, aber Drehmoment ist keine Energie: Kraft senkrecht zum Weg verrichtet hier keine Arbeit."
+      },
+      {
+        "fehler": "Drehsinn ignorieren und alle Momente addieren.",
+        "korrektur": "Links- und rechtsdrehende Momente mit entgegengesetztem Vorzeichen bilanzieren."
+      }
+    ]
+  },
+  {
+    "slug": "bernoulli-gleichung",
+    "name": "Bernoulli-Gleichung",
+    "latex": "p + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{const.}",
+    "symbol": "p + ½ρv² + ρgh = const.",
+    "kategorie": "physik",
+    "unterkategorie": "Mechanik",
+    "beschreibung": "Die Bernoulli-Gleichung ist der Energieerhaltungssatz strömender Fluide: Wo die Geschwindigkeit steigt, sinkt der statische Druck.",
+    "einheiten": "p in Pa · ρ in kg/m³ · v in m/s · g = 9,81 m/s² · h in m",
+    "variablen": [
+      {
+        "symbol": "p",
+        "bedeutung": "Statischer Druck im Fluid",
+        "einheit": "Pa"
+      },
+      {
+        "symbol": "ρ",
+        "bedeutung": "Dichte des Fluids",
+        "einheit": "kg/m³"
+      },
+      {
+        "symbol": "v",
+        "bedeutung": "Strömungsgeschwindigkeit",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "g",
+        "bedeutung": "Fallbeschleunigung (9,81 m/s²)",
+        "einheit": "m/s²"
+      },
+      {
+        "symbol": "h",
+        "bedeutung": "Höhe über dem Bezugsniveau",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Daniel Bernoulli veröffentlichte die Gleichung 1738 in seiner \"Hydrodynamica\". Sie ist die Energiedichte-Bilanz entlang einer Stromlinie: Statischer Druck, Staudruck ½ρv² und Schweredruck ρgh addieren sich zu einer Konstanten. Gültig für stationäre, reibungsfreie, inkompressible Strömung. In der Engstelle eines Rohres steigt v (Kontinuitätsgleichung A₁v₁ = A₂v₂), also fällt dort p, der Venturi-Effekt. Der Sonderfall Ausfluss aus einem Behälter liefert die Torricelli-Formel v = √(2gh).",
+    "beispiel": "Wasser (ρ = 1000 kg/m³) strömt horizontal von v₁ = 2 m/s auf v₂ = 8 m/s in eine Engstelle: p₂ = p₁ + ½ρ(v₁² − v₂²) = 200 kPa + 0,5 × 1000 × (4 − 64) Pa = 170 kPa.",
+    "anwendung": "Tragflächen-Umströmung, Venturi-Düsen und Vergaser, Pitotrohr (Geschwindigkeitsmessung im Flugzeug), Wasserstrahlpumpe, Zerstäuber",
+    "quellen": [
+      "Bernoulli, D. (1738). Hydrodynamica. Straßburg: Dulsecker."
+    ],
+    "verwandte": [
+      "druck",
+      "dichte",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Bernoulli-Gleichung"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "p+1/2rhov^2+rhogh=const",
+      "Bernoulli Formel",
+      "Staudruck Formel",
+      "Bernoulli equation",
+      "Venturi Effekt",
+      "Torricelli Ausflussgeschwindigkeit",
+      "Strömung Druck Geschwindigkeit"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/bernoulli-gleichung",
+    "herleitung": {
+      "gueltigkeit": "Gilt entlang einer Stromlinie für stationäre, reibungsfreie und inkompressible Strömung. Bei starker Viskosität, Turbulenz oder kompressiblen Gasen (hohe Geschwindigkeiten) nur als Näherung brauchbar.",
+      "schritte": [
+        "Die Druckkräfte verrichten am Volumenelement die Arbeit (p₁ − p₂)·V.",
+        "Gleichsetzen mit ΔE_kin + ΔE_pot und Division durch V liefert p + ½ρv² + ρgh = const."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Geschwindigkeit aus Druckdifferenz",
+        "latex": "v = \\sqrt{\\frac{2 (p_1 - p_2)}{\\rho}}",
+        "hinweis": "Horizontale Strömung; Messprinzip des Pitotrohrs."
+      },
+      {
+        "ziel": "Ausflussgeschwindigkeit (Torricelli)",
+        "latex": "v = \\sqrt{2 g h}",
+        "hinweis": "Sonderfall: offener Behälter, Loch in Tiefe h."
+      },
+      {
+        "ziel": "Staudruck",
+        "latex": "q = \\frac{1}{2} \\rho v^2",
+        "hinweis": "Der Anteil, der beim Aufstauen der Strömung als Druck erscheint."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Statischen Druck p und Gesamtdruck verwechseln.",
+        "korrektur": "p ist nur der statische Anteil; die Summe aus p, Staudruck und Schweredruck ist konstant."
+      },
+      {
+        "fehler": "Die Kontinuitätsgleichung vergessen.",
+        "korrektur": "Geschwindigkeiten folgen aus A₁·v₁ = A₂·v₂, erst dann Bernoulli für die Drücke nutzen."
+      },
+      {
+        "fehler": "Die Gleichung bei stark reibungsbehafteter Strömung (enge lange Rohre) anwenden.",
+        "korrektur": "Dort dominieren Reibungsverluste, reale Drücke liegen unter den Bernoulli-Werten."
+      }
+    ]
+  },
+  {
+    "slug": "doppelspalt-interferenz",
+    "name": "Doppelspalt-Interferenz",
+    "latex": "d \\cdot \\sin(\\alpha_k) = k \\cdot \\lambda",
+    "symbol": "d·sin(α_k) = k·λ",
+    "kategorie": "physik",
+    "unterkategorie": "Optik",
+    "beschreibung": "Die Doppelspaltformel gibt die Richtungen der Interferenzmaxima an: Verstärkung entsteht, wenn der Gangunterschied d·sinα ein ganzzahliges Vielfaches der Wellenlänge ist.",
+    "einheiten": "d in m · α_k in Grad [°] · k dimensionslos · λ in m",
+    "variablen": [
+      {
+        "symbol": "d",
+        "bedeutung": "Abstand der beiden Spalte",
+        "einheit": "m"
+      },
+      {
+        "symbol": "α_k",
+        "bedeutung": "Winkel zum Maximum k-ter Ordnung",
+        "einheit": "°"
+      },
+      {
+        "symbol": "k",
+        "bedeutung": "Ordnung des Maximums (0, 1, 2, ...)",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "λ",
+        "bedeutung": "Wellenlänge des Lichts",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Thomas Young zeigte 1801 mit dem Doppelspaltversuch die Wellennatur des Lichts. Von beiden Spalten gehen Elementarwellen aus; ist ihr Gangunterschied k·λ, verstärken sie sich (Maximum), bei (k + ½)·λ löschen sie sich aus (Minimum). Für kleine Winkel gilt die Näherung sin α ≈ tan α = x/L mit dem Schirmabstand L und dem Abstand x des Maximums von der Mitte. Dieselbe Formel beschreibt die Maxima des optischen Gitters, dort mit der Gitterkonstante d.",
+    "beispiel": "Doppelspalt d = 0,1 mm, Laser λ = 600 nm: 1. Maximum bei sin α = λ/d = 6×10⁻³, also α ≈ 0,34°. Auf einem Schirm in L = 2 m Abstand liegt es x ≈ 12 mm neben der Mitte.",
+    "anwendung": "Wellenlängenmessung mit Gitter oder Doppelspalt, Spektroskopie, Strukturanalyse (Röntgenbeugung), Nachweis der Welleneigenschaften von Elektronen",
+    "quellen": [
+      "Young, T. (1804). Experiments and Calculations relative to physical Optics. Philosophical Transactions of the Royal Society."
+    ],
+    "verwandte": [
+      "wellengleichung",
+      "de-broglie-wellenlaenge",
+      "brechungsgesetz-snellius"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://doi.org/10.1098/rstl.1804.0001"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "d*sin(alpha)=k*lambda",
+      "Doppelspalt Formel",
+      "Gangunterschied Formel",
+      "double slit formula",
+      "Interferenz Maxima berechnen",
+      "Gitter Formel Optik",
+      "Young Doppelspaltversuch"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/doppelspalt-interferenz",
+    "herleitung": {
+      "gueltigkeit": "Gilt im Fernfeld (Schirmabstand groß gegen den Spaltabstand) für kohärentes, monochromatisches Licht. Wegen sin α ≤ 1 gibt es nur endlich viele Ordnungen: k ≤ d/λ.",
+      "schritte": [
+        "Für einen fernen Punkt unter dem Winkel α beträgt der Gangunterschied der beiden Strahlen Δs = d·sin α.",
+        "Konstruktive Interferenz verlangt Δs = k·λ, also d·sin α_k = k·λ; Minima liegen bei (k + ½)·λ."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Wellenlänge",
+        "latex": "\\lambda = \\frac{d \\cdot \\sin(\\alpha_k)}{k}",
+        "hinweis": "So wird die Wellenlänge von Licht mit einer Längenmessung bestimmt."
+      },
+      {
+        "ziel": "Maximaposition auf dem Schirm",
+        "latex": "x_k \\approx \\frac{k \\cdot \\lambda \\cdot L}{d}",
+        "hinweis": "Kleinwinkelnäherung sin α ≈ tan α = x/L."
+      },
+      {
+        "ziel": "Spaltabstand",
+        "latex": "d = \\frac{k \\cdot \\lambda}{\\sin(\\alpha_k)}",
+        "hinweis": "Kalibrierung eines unbekannten Doppelspalts oder Gitters."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Kleinwinkelnäherung auch bei großen Winkeln verwenden.",
+        "korrektur": "Ab etwa 10° mit sin α exakt rechnen, tan α weicht dann sichtbar ab."
+      },
+      {
+        "fehler": "Maxima- und Minima-Bedingung vertauschen.",
+        "korrektur": "Maxima bei k·λ, Minima bei (k + ½)·λ Gangunterschied."
+      },
+      {
+        "fehler": "Spaltabstand d mit der Spaltbreite verwechseln.",
+        "korrektur": "d ist der Mittenabstand der Spalte; die Spaltbreite steuert nur die Helligkeitsverteilung."
+      },
+      {
+        "fehler": "nm, µm und mm mischen.",
+        "korrektur": "Alle Längen in Meter umrechnen, erst am Ende zurück in praktische Einheiten."
+      }
+    ]
+  },
+  {
+    "slug": "elektrisches-feld",
+    "name": "Elektrische Feldstärke",
+    "latex": "E = \\frac{F}{q} = \\frac{U}{d}",
+    "symbol": "E = F/q = U/d",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Die elektrische Feldstärke ist die Kraft pro Ladung; im homogenen Feld eines Plattenkondensators gilt zusätzlich E = U/d.",
+    "einheiten": "E in V/m = N/C · F in N · q in C · U in V · d in m",
+    "variablen": [
+      {
+        "symbol": "E",
+        "bedeutung": "Elektrische Feldstärke",
+        "einheit": "V/m = N/C"
+      },
+      {
+        "symbol": "F",
+        "bedeutung": "Kraft auf die Probeladung",
+        "einheit": "N"
+      },
+      {
+        "symbol": "q",
+        "bedeutung": "Probeladung",
+        "einheit": "C"
+      },
+      {
+        "symbol": "U",
+        "bedeutung": "Spannung zwischen den Platten",
+        "einheit": "V"
+      },
+      {
+        "symbol": "d",
+        "bedeutung": "Plattenabstand",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Michael Faraday führte den Feldbegriff ein: Das Feld existiert unabhängig von der Probeladung und vermittelt die Kraft. E = F/q ist die Definition und gilt überall; E = U/d gilt nur im homogenen Feld zwischen parallelen Platten, wo die Feldlinien parallel und gleich dicht verlaufen. Das Feld einer Punktladung folgt dagegen aus dem Coulomb-Gesetz: E = k_e·Q/r². Die Einheiten V/m und N/C sind identisch. Positive Ladungen erfahren die Kraft in Feldrichtung, negative entgegen.",
+    "beispiel": "Plattenkondensator: U = 200 V, Plattenabstand d = 4 mm: E = 200/0,004 = 50.000 V/m. Auf ein Elektron wirkt F = e·E = 1,6×10⁻¹⁹ × 5×10⁴ = 8×10⁻¹⁵ N.",
+    "anwendung": "Plattenkondensator und Millikan-Versuch, Elektronenablenkung (Oszilloskop), Blitzentstehung (Durchbruchfeldstärke Luft ca. 3 kV/mm), Kopierer und Laserdrucker",
+    "quellen": [
+      "Griffiths, D.J. (2017). Introduction to Electrodynamics. Cambridge."
+    ],
+    "verwandte": [
+      "coulomb-gesetz",
+      "kondensator-kapazitaet",
+      "lorentzkraft"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Elektrische_Feldst%C3%A4rke"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E=F/q",
+      "E=U/d",
+      "elektrische Feldstärke Formel",
+      "electric field formula",
+      "Plattenkondensator Feld",
+      "V/m N/C",
+      "Feldstärke Kondensator berechnen",
+      "homogenes elektrisches Feld"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/elektrisches-feld",
+    "herleitung": {
+      "gueltigkeit": "E = F/q ist die allgemeine Definition und gilt in jedem Feld. E = U/d gilt nur im homogenen Feld eines Plattenkondensators, fern der Ränder; für Punktladungen gilt stattdessen E = k_e·Q/r².",
+      "schritte": [
+        "Definition: E = F/q, unabhängig von der Größe der Probeladung.",
+        "Verschieben von q von Platte zu Platte: W = F·d = q·E·d und W = q·U, gleichsetzen liefert E = U/d."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Kraft auf eine Ladung",
+        "latex": "F = q \\cdot E",
+        "hinweis": "Positive Ladungen in Feldrichtung, negative entgegen."
+      },
+      {
+        "ziel": "Spannung",
+        "latex": "U = E \\cdot d",
+        "hinweis": "Nur im homogenen Feld; U wächst linear mit dem Abstand."
+      },
+      {
+        "ziel": "Plattenabstand",
+        "latex": "d = \\frac{U}{E}",
+        "hinweis": "Wichtig für Durchschlagsgrenzen (Luft: ca. 3 kV/mm)."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "E = U/d auch im Feld einer Punktladung verwenden.",
+        "korrektur": "Dort ist das Feld inhomogen; es gilt E = k_e·Q/r²."
+      },
+      {
+        "fehler": "Millimeter nicht in Meter umrechnen.",
+        "korrektur": "d in m einsetzen, sonst ist E um den Faktor 1000 falsch."
+      },
+      {
+        "fehler": "Die Kraftrichtung bei negativen Ladungen falsch angeben.",
+        "korrektur": "Negative Ladungen erfahren die Kraft entgegen der Feldrichtung."
+      }
+    ]
+  },
+  {
+    "slug": "spezifischer-widerstand",
+    "name": "Spezifischer Widerstand (Leiterwiderstand)",
+    "latex": "R = \\rho \\cdot \\frac{l}{A}",
+    "symbol": "R = ρ·l/A",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrizitätslehre",
+    "beschreibung": "Der Widerstand eines Drahtes wächst mit der Länge und sinkt mit dem Querschnitt, der spezifische Widerstand ρ ist die Materialkonstante.",
+    "einheiten": "R in Ω · ρ in Ω·mm²/m · l in m · A in mm²",
+    "variablen": [
+      {
+        "symbol": "R",
+        "bedeutung": "Widerstand des Leiters",
+        "einheit": "Ω"
+      },
+      {
+        "symbol": "ρ",
+        "bedeutung": "Spezifischer Widerstand (Kupfer: 0,0178)",
+        "einheit": "Ω·mm²/m"
+      },
+      {
+        "symbol": "l",
+        "bedeutung": "Länge des Leiters",
+        "einheit": "m"
+      },
+      {
+        "symbol": "A",
+        "bedeutung": "Querschnittsfläche des Leiters",
+        "einheit": "mm²"
+      }
+    ],
+    "hintergrund": "Die Formel präzisiert Ohms Messungen von 1826: Ein doppelt so langer Draht wirkt wie zwei Widerstände in Reihe (R verdoppelt sich), ein doppelter Querschnitt wie zwei parallele Leiter (R halbiert sich). ρ hängt vom Material und von der Temperatur ab: Bei Metallen steigt es mit der Temperatur (ca. +0,4 %/K bei Kupfer), Konstantan ist nahezu temperaturunabhängig. Typische Werte in Ω·mm²/m: Silber 0,016, Kupfer 0,0178, Aluminium 0,027, Eisen ca. 0,10.",
+    "beispiel": "Kupferleitung (ρ = 0,0178 Ω·mm²/m): l = 50 m, A = 1,5 mm²: R = 0,0178 × 50/1,5 ≈ 0,59 Ω.",
+    "anwendung": "Auslegung von Leitungsquerschnitten (Hausinstallation), Heizdrähte, Dehnungsmessstreifen, Widerstandsthermometer (Pt100), Freileitungen",
+    "quellen": [
+      "Halliday, D., Resnick, R., & Walker, J. (2017). Halliday Physik. Wiley-VCH."
+    ],
+    "verwandte": [
+      "ohmsches-gesetz",
+      "widerstand-reihen-parallel",
+      "elektrische-leistung"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Spezifischer_Widerstand"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "R=rho*l/A",
+      "Leiterwiderstand Formel",
+      "spezifischer Widerstand Kupfer",
+      "Drahtwiderstand berechnen",
+      "resistivity formula",
+      "Querschnitt berechnen Kabel",
+      "rho l durch A"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/spezifischer-widerstand",
+    "herleitung": {
+      "gueltigkeit": "Gilt für homogene Leiter mit konstantem Querschnitt bei konstanter Temperatur. Bei Metallen steigt ρ mit der Temperatur (Kupfer: ca. +0,4 % pro K), bei Halbleitern sinkt es.",
+      "schritte": [
+        "Zwei gleiche Drahtstücke hintereinander verdoppeln R, also R ∝ l.",
+        "Zwei gleiche Drähte nebeneinander halbieren R, also R ∝ 1/A; die Materialkonstante ρ liefert R = ρ·l/A."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Querschnitt",
+        "latex": "A = \\frac{\\rho \\cdot l}{R}",
+        "hinweis": "Auslegung von Leitungen auf einen maximal erlaubten Widerstand."
+      },
+      {
+        "ziel": "Länge",
+        "latex": "l = \\frac{R \\cdot A}{\\rho}",
+        "hinweis": "Zum Beispiel Drahtlänge einer Spule aus Widerstandsmessung."
+      },
+      {
+        "ziel": "Materialkonstante",
+        "latex": "\\rho = \\frac{R \\cdot A}{l}",
+        "hinweis": "Materialbestimmung über Widerstand und Geometrie."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "mm² und m² mischen.",
+        "korrektur": "Konsistent bleiben: Mit ρ in Ω·mm²/m gehört A in mm²; mit ρ in Ω·m gehört A in m²."
+      },
+      {
+        "fehler": "Bei Kabeln Hin- und Rückleiter vergessen.",
+        "korrektur": "Für den Spannungsfall zählt die doppelte einfache Länge."
+      },
+      {
+        "fehler": "ρ als Dichte lesen.",
+        "korrektur": "Hier ist ρ der spezifische elektrische Widerstand, eine andere Größe mit gleichem Symbol."
+      },
+      {
+        "fehler": "Die Temperaturabhängigkeit ignorieren.",
+        "korrektur": "Tabellenwerte gelten meist für 20 °C; heiße Leiter haben deutlich mehr Widerstand."
+      }
+    ]
+  },
+  {
+    "slug": "winkelgeschwindigkeit-kreisfrequenz",
+    "name": "Winkelgeschwindigkeit und Kreisfrequenz",
+    "latex": "\\omega = 2\\pi f = \\frac{2\\pi}{T} \\qquad v = \\omega \\cdot r",
+    "symbol": "ω = 2πf; v = ω·r",
+    "kategorie": "physik",
+    "unterkategorie": "Kinematik",
+    "beschreibung": "Die Winkelgeschwindigkeit ω misst den überstrichenen Winkel pro Zeit; über v = ω·r verbindet sie die Drehung mit der Bahngeschwindigkeit.",
+    "einheiten": "ω in rad/s · f in Hz · T in s · v in m/s · r in m",
+    "variablen": [
+      {
+        "symbol": "ω",
+        "bedeutung": "Winkelgeschwindigkeit (Kreisfrequenz)",
+        "einheit": "rad/s"
+      },
+      {
+        "symbol": "f",
+        "bedeutung": "Frequenz (Umdrehungen pro Sekunde)",
+        "einheit": "Hz"
+      },
+      {
+        "symbol": "T",
+        "bedeutung": "Umlaufdauer einer Umdrehung",
+        "einheit": "s"
+      },
+      {
+        "symbol": "v",
+        "bedeutung": "Bahngeschwindigkeit",
+        "einheit": "m/s"
+      },
+      {
+        "symbol": "r",
+        "bedeutung": "Radius der Kreisbahn",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Ein voller Umlauf entspricht dem Winkel 2π im Bogenmaß. Bei f Umdrehungen pro Sekunde überstreicht der Körper also ω = 2πf Radiant pro Sekunde. Alle Punkte eines starren Rades haben dasselbe ω, aber außen liegende Punkte die größere Bahngeschwindigkeit v = ω·r. Bei Schwingungen heißt dieselbe Größe Kreisfrequenz und taucht in x(t) = A·sin(ωt) auf. Drehzahlen in U/min müssen erst durch 60 geteilt werden, um f in Hz zu erhalten.",
+    "beispiel": "Karussell dreht sich einmal in T = 4 s: ω = 2π/4 ≈ 1,57 rad/s. Ein Sitz bei r = 3 m hat die Bahngeschwindigkeit v = ω·r ≈ 4,7 m/s.",
+    "anwendung": "Motordrehzahlen und Getriebe, Zentrifugen, Windkraftanlagen (Blattspitzengeschwindigkeit), Erdrotation und Satelliten, Schwingungslehre",
+    "quellen": [
+      "Demtröder, W. (2018). Experimentalphysik 1: Mechanik und Wärme. Springer."
+    ],
+    "verwandte": [
+      "zentripetalkraft-kreisbewegung",
+      "harmonische-schwingung-federpendel",
+      "kepler-drittes-gesetz"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Winkelgeschwindigkeit"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "omega=2pi*f",
+      "w=2π/T",
+      "v=omega*r",
+      "Winkelgeschwindigkeit Formel",
+      "Kreisfrequenz Formel",
+      "angular velocity formula",
+      "rad/s umrechnen",
+      "Umdrehungen pro Minute in rad/s"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/winkelgeschwindigkeit-kreisfrequenz",
+    "herleitung": {
+      "gueltigkeit": "Gilt für gleichförmige Kreisbewegung und starre Rotation; ω muss im Bogenmaß (rad/s) stehen. Bei Schwingungen heißt dieselbe Größe Kreisfrequenz und beschreibt die Phasenänderung pro Zeit.",
+      "schritte": [
+        "Pro Umlaufzeit T wird der Winkel 2π überstrichen: ω = 2π/T = 2π·f.",
+        "Bogenlänge s = φ·r ableiten: v = ds/dt = (dφ/dt)·r = ω·r."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Frequenz",
+        "latex": "f = \\frac{\\omega}{2\\pi}",
+        "hinweis": "Umrechnung zwischen Kreisfrequenz und Umdrehungen pro Sekunde."
+      },
+      {
+        "ziel": "Radius",
+        "latex": "r = \\frac{v}{\\omega}",
+        "hinweis": "Aus Bahngeschwindigkeit und Drehrate."
+      },
+      {
+        "ziel": "Umlaufdauer",
+        "latex": "T = \\frac{2\\pi}{\\omega}",
+        "hinweis": "Kehrseite der Frequenzbeziehung."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Drehzahlen in U/min direkt als Frequenz verwenden.",
+        "korrektur": "Erst durch 60 teilen: 3000 U/min = 50 Hz."
+      },
+      {
+        "fehler": "ω und f gleichsetzen.",
+        "korrektur": "ω = 2π·f; der Faktor 2π unterscheidet Winkel- von Umdrehungsrate."
+      },
+      {
+        "fehler": "Mit Grad statt Bogenmaß rechnen.",
+        "korrektur": "v = ω·r gilt nur mit ω in rad/s; 360° = 2π rad."
+      },
+      {
+        "fehler": "Allen Punkten eines Rades dieselbe Bahngeschwindigkeit zuschreiben.",
+        "korrektur": "ω ist überall gleich, aber v = ω·r wächst mit dem Radius."
+      }
+    ]
+  },
+  {
+    "slug": "stefan-boltzmann-strahlung",
+    "name": "Stefan-Boltzmann-Gesetz",
+    "latex": "P = \\sigma \\cdot A \\cdot T^4",
+    "symbol": "P = σ·A·T⁴",
+    "kategorie": "physik",
+    "unterkategorie": "Thermodynamik",
+    "beschreibung": "Das Stefan-Boltzmann-Gesetz gibt die Strahlungsleistung eines Schwarzen Körpers an: Sie wächst mit der vierten Potenz der absoluten Temperatur.",
+    "einheiten": "P in W · σ = 5,670×10⁻⁸ W/(m²·K⁴) · A in m² · T in K",
+    "variablen": [
+      {
+        "symbol": "P",
+        "bedeutung": "Abgestrahlte Leistung",
+        "einheit": "W"
+      },
+      {
+        "symbol": "σ",
+        "bedeutung": "Stefan-Boltzmann-Konstante (5,670×10⁻⁸)",
+        "einheit": "W/(m²·K⁴)"
+      },
+      {
+        "symbol": "A",
+        "bedeutung": "Strahlende Oberfläche",
+        "einheit": "m²"
+      },
+      {
+        "symbol": "T",
+        "bedeutung": "Absolute Temperatur",
+        "einheit": "K"
+      }
+    ],
+    "hintergrund": "Josef Stefan fand das Gesetz 1879 empirisch, Ludwig Boltzmann leitete es 1884 thermodynamisch her; heute folgt es aus dem Planckschen Strahlungsgesetz durch Integration über alle Wellenlängen. Reale Oberflächen strahlen schwächer als der ideale Schwarze Körper, korrigiert durch den Emissionsgrad ε ≤ 1: P = ε·σ·A·T⁴. Ein Körper in einer Umgebung der Temperatur T_U strahlt netto P = ε·σ·A·(T⁴ − T_U⁴) ab. Die T⁴-Abhängigkeit macht Strahlung bei hohen Temperaturen zum dominanten Wärmetransport.",
+    "beispiel": "Glühwendel: T = 2500 K, A = 10 mm² = 10⁻⁵ m²: P = 5,67×10⁻⁸ × 10⁻⁵ × 2500⁴ ≈ 22 W. Wegen T⁴ verdoppelt sich P schon bei rund 19 % mehr Temperatur.",
+    "anwendung": "Leuchtmittel und Glühwendeln, Sternleuchtkraft und Oberflächentemperatur, Wärmebildkameras, Klimaphysik (Strahlungsbilanz der Erde), Thermografie",
+    "quellen": [
+      "Stefan, J. (1879). Über die Beziehung zwischen der Wärmestrahlung und der Temperatur. Sitzungsberichte der Akademie der Wissenschaften Wien."
+    ],
+    "verwandte": [
+      "waermekapazitaet",
+      "wirkungsgrad-carnot",
+      "photoeffekt-einstein"
+    ],
+    "abiturRelevant": false,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Stefan-Boltzmann-Gesetz"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "P=sigma*A*T^4",
+      "Stefan Boltzmann Formel",
+      "Strahlungsleistung berechnen",
+      "Stefan-Boltzmann law",
+      "Schwarzer Körper Strahlung",
+      "T hoch 4 Gesetz",
+      "Leuchtkraft Stern Formel"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/stefan-boltzmann-strahlung",
+    "herleitung": {
+      "gueltigkeit": "Gilt exakt für den idealen Schwarzen Körper. Reale Oberflächen brauchen den Emissionsgrad ε ≤ 1 (P = ε·σ·A·T⁴); netto zählt gegenüber der Umgebung die Differenz T⁴ − T_U⁴. T immer in Kelvin.",
+      "schritte": [
+        "Die spektrale Strahlungsdichte des Schwarzen Körpers wird über alle Wellenlängen summiert (Integral).",
+        "Das Integral ergibt P/A ∝ T⁴; die Konstante σ bündelt Naturkonstanten (σ = 2π⁵k⁴/(15h³c²))."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Temperatur",
+        "latex": "T = \\sqrt[4]{\\frac{P}{\\sigma \\cdot A}}",
+        "hinweis": "So werden Oberflächentemperaturen von Sternen bestimmt."
+      },
+      {
+        "ziel": "Fläche",
+        "latex": "A = \\frac{P}{\\sigma \\cdot T^4}",
+        "hinweis": "Liefert z. B. Sternradien aus Leuchtkraft und Temperatur."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Temperaturen in Grad Celsius einsetzen.",
+        "korrektur": "Wegen der vierten Potenz ist Kelvin zwingend: 25 °C = 298 K."
+      },
+      {
+        "fehler": "Die Gegenstrahlung der Umgebung vergessen.",
+        "korrektur": "Netto strahlt ein Körper nur σ·A·(T⁴ − T_U⁴) ab."
+      },
+      {
+        "fehler": "Reale Oberflächen als perfekte Schwarze Körper behandeln.",
+        "korrektur": "Emissionsgrad ε ergänzen; blankes Metall hat ε von nur 0,02 bis 0,1."
+      },
+      {
+        "fehler": "Beim Umstellen nach T die vierte Wurzel vergessen.",
+        "korrektur": "T = (P/(σA))^(1/4), nicht durch 4 teilen."
+      }
+    ]
+  },
+  {
+    "slug": "magnetfeld-spule",
+    "name": "Magnetfeld einer langen Spule",
+    "latex": "B = \\mu_0 \\cdot \\frac{N}{l} \\cdot I",
+    "symbol": "B = μ₀·(N/l)·I",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Das Magnetfeld im Inneren einer langen Spule ist homogen und proportional zur Stromstärke und zur Windungsdichte N/l.",
+    "einheiten": "B in T (Tesla) · μ₀ = 1,257×10⁻⁶ V·s/(A·m) · N dimensionslos · l in m · I in A",
+    "variablen": [
+      {
+        "symbol": "B",
+        "bedeutung": "Magnetische Flussdichte im Spuleninneren",
+        "einheit": "T (Tesla)"
+      },
+      {
+        "symbol": "μ₀",
+        "bedeutung": "Magnetische Feldkonstante (1,257×10⁻⁶)",
+        "einheit": "V·s/(A·m)"
+      },
+      {
+        "symbol": "N",
+        "bedeutung": "Windungszahl",
+        "einheit": "dimensionslos"
+      },
+      {
+        "symbol": "l",
+        "bedeutung": "Länge der Spule",
+        "einheit": "m"
+      },
+      {
+        "symbol": "I",
+        "bedeutung": "Stromstärke",
+        "einheit": "A"
+      }
+    ],
+    "hintergrund": "Die Formel folgt aus dem Ampèreschen Gesetz für eine lange, dicht gewickelte Zylinderspule (Solenoid), deren Länge groß gegen den Durchmesser ist. Im Inneren ist das Feld homogen und unabhängig vom Ort, außen nahezu null. Nicht die absolute Windungszahl zählt, sondern die Windungsdichte n = N/l. Ein Eisenkern verstärkt das Feld um die Permeabilitätszahl μ_r (bei Eisen einige hundert bis tausend): B = μ_r·μ₀·(N/l)·I, das Prinzip des Elektromagneten.",
+    "beispiel": "Spule mit N = 500 Windungen auf l = 25 cm bei I = 2 A: B = 1,257×10⁻⁶ × (500/0,25) × 2 ≈ 5×10⁻³ T = 5 mT, rund das Hundertfache des Erdmagnetfelds.",
+    "anwendung": "Elektromagnete und Relais, MRT-Spulen, Helmholtz-Spulen im Praktikum, Lautsprecher, Teilchenablenkung (e/m-Bestimmung)",
+    "quellen": [
+      "Griffiths, D.J. (2017). Introduction to Electrodynamics. Cambridge."
+    ],
+    "verwandte": [
+      "lorentzkraft",
+      "induktion-faraday",
+      "selbstinduktion-spule"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Zylinderspule"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "B=mu0*n*I",
+      "B=μ0·N/l·I",
+      "Magnetfeld Spule Formel",
+      "Solenoid Feld",
+      "solenoid magnetic field formula",
+      "Flussdichte Spule berechnen",
+      "lange Spule homogenes Feld"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/magnetfeld-spule",
+    "herleitung": {
+      "gueltigkeit": "Gilt für lange, dicht gewickelte Spulen (Länge deutlich größer als der Durchmesser) im Inneren, ohne Kern. Ein Eisenkern verstärkt um μ_r; an den Enden fällt das Feld auf etwa die Hälfte ab.",
+      "schritte": [
+        "Umlaufintegral: Nur die Innenstrecke der Länge l trägt bei, also B·l = μ₀·I_umschlossen.",
+        "Der Weg umschließt N Windungen mit Strom I: B·l = μ₀·N·I, also B = μ₀·(N/l)·I."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Stromstärke",
+        "latex": "I = \\frac{B \\cdot l}{\\mu_0 \\cdot N}",
+        "hinweis": "Auslegung eines Elektromagneten auf eine Zielflussdichte."
+      },
+      {
+        "ziel": "Windungszahl",
+        "latex": "N = \\frac{B \\cdot l}{\\mu_0 \\cdot I}",
+        "hinweis": "Mehr Windungen auf gleicher Länge erhöhen das Feld linear."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Die Formel auf kurze, dicke Spulen anwenden.",
+        "korrektur": "Sie gilt nur für l >> Durchmesser; kurze Spulen haben ein deutlich schwächeres, inhomogenes Feld."
+      },
+      {
+        "fehler": "Windungszahl N und Windungsdichte n = N/l verwechseln.",
+        "korrektur": "In Tabellen steht oft n; dann gilt B = μ₀·n·I ohne weiteres Teilen durch l."
+      },
+      {
+        "fehler": "Spulenlänge in cm einsetzen.",
+        "korrektur": "l in Meter umrechnen, sonst ist B um den Faktor 100 falsch."
+      },
+      {
+        "fehler": "Den Eisenkern vergessen oder μ_r doppelt zählen.",
+        "korrektur": "Mit Kern gilt B = μ_r·μ₀·(N/l)·I, μ_r genau einmal einsetzen."
+      }
+    ]
+  },
+  {
+    "slug": "spannenergie-feder",
+    "name": "Spannenergie einer Feder",
+    "latex": "E_{Spann} = \\frac{1}{2} D s^2",
+    "symbol": "E = ½·D·s²",
+    "kategorie": "physik",
+    "unterkategorie": "Energielehre",
+    "beschreibung": "Die Spannenergie einer Feder wächst quadratisch mit der Auslenkung, sie ist die Fläche unter der Kraft-Weg-Geraden des Hookeschen Gesetzes.",
+    "einheiten": "E_Spann in J · D in N/m · s in m",
+    "variablen": [
+      {
+        "symbol": "E_Spann",
+        "bedeutung": "In der Feder gespeicherte Energie",
+        "einheit": "J"
+      },
+      {
+        "symbol": "D",
+        "bedeutung": "Federkonstante (Federhärte)",
+        "einheit": "N/m"
+      },
+      {
+        "symbol": "s",
+        "bedeutung": "Auslenkung aus der Ruhelage",
+        "einheit": "m"
+      }
+    ],
+    "hintergrund": "Beim Spannen wächst die Federkraft linear von 0 auf D·s (Hookesches Gesetz). Die verrichtete Arbeit ist deshalb nicht Endkraft mal Weg, sondern die Dreiecksfläche unter der F-s-Geraden: W = ½·(D·s)·s = ½·D·s². Der Faktor ½ ist also geometrisch begründet. Beim Federpendel pendelt die Energie periodisch zwischen Spannenergie (Umkehrpunkte) und kinetischer Energie (Nulldurchgang), die Gesamtenergie ½·D·s_max² bleibt erhalten.",
+    "beispiel": "Feder mit D = 400 N/m wird s = 10 cm gespannt: E = ½ × 400 × 0,1² = 2 J. Doppelte Auslenkung (20 cm) speichert wegen s² das Vierfache: 8 J.",
+    "anwendung": "Federpendel und Schwingungsenergie, Stoßdämpfer, Sportbögen und Sprungbretter, mechanische Uhrwerke, Federspeicher in Bremsen",
+    "quellen": [
+      "Tipler, P.A., & Mosca, G. (2015). Physik für Wissenschaftler und Ingenieure. Springer Spektrum."
+    ],
+    "verwandte": [
+      "hookes-gesetz",
+      "energie-potentiell",
+      "energie-kinetisch"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "grundlegend",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Spannarbeit"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "E=1/2*D*s^2",
+      "E=0.5Ds²",
+      "Spannenergie Formel",
+      "Federenergie berechnen",
+      "elastische Energie Feder",
+      "spring potential energy",
+      "halbe D s Quadrat",
+      "Spannarbeit Feder"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/spannenergie-feder",
+    "herleitung": {
+      "gueltigkeit": "Gilt im elastischen Bereich, solange das Hookesche Gesetz F = D·s erfüllt ist. Jenseits der Proportionalitätsgrenze (plastische Verformung) speichert die Feder weniger Energie als berechnet.",
+      "schritte": [
+        "Beim Spannen wächst die Kraft linear von 0 auf F_max = D·s.",
+        "Arbeit = Dreiecksfläche: W = ½·F_max·s = ½·D·s²."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Auslenkung",
+        "latex": "s = \\sqrt{\\frac{2 E}{D}}",
+        "hinweis": "Wurzel nicht vergessen; E geht quadratisch in s ein."
+      },
+      {
+        "ziel": "Federkonstante",
+        "latex": "D = \\frac{2 E}{s^2}",
+        "hinweis": "Bestimmung der Federhärte aus Energie und Weg."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Den Faktor ½ weglassen (E = D·s²).",
+        "korrektur": "Die Kraft wächst von null an, gespeichert wird nur die Dreiecksfläche ½·D·s²."
+      },
+      {
+        "fehler": "E = F·s mit der Endkraft rechnen.",
+        "korrektur": "Das überschätzt um den Faktor 2; korrekt ist die mittlere Kraft ½·F_max."
+      },
+      {
+        "fehler": "Auslenkung in cm einsetzen.",
+        "korrektur": "s in Meter umrechnen; der Fehler geht wegen s² quadratisch ein (Faktor 10.000)."
+      }
+    ]
+  },
+  {
+    "slug": "selbstinduktion-spule",
+    "name": "Selbstinduktion einer Spule",
+    "latex": "U_{ind} = -L \\cdot \\frac{dI}{dt}",
+    "symbol": "U_ind = −L·(dI/dt)",
+    "kategorie": "physik",
+    "unterkategorie": "Elektrodynamik",
+    "beschreibung": "Die Selbstinduktion beschreibt, wie eine Spule auf Änderungen ihres eigenen Stroms mit einer Gegenspannung reagiert, die Induktivität L ist das Maß dafür.",
+    "einheiten": "U_ind in V · L in H (Henry) · dI/dt in A/s",
+    "variablen": [
+      {
+        "symbol": "U_ind",
+        "bedeutung": "Selbstinduktionsspannung",
+        "einheit": "V"
+      },
+      {
+        "symbol": "L",
+        "bedeutung": "Induktivität der Spule",
+        "einheit": "H (Henry)"
+      },
+      {
+        "symbol": "dI/dt",
+        "bedeutung": "Änderungsrate der Stromstärke",
+        "einheit": "A/s"
+      }
+    ],
+    "hintergrund": "Joseph Henry und Michael Faraday entdeckten die Selbstinduktion um 1831/32: Ändert sich der Strom, ändert sich der eigene magnetische Fluss der Spule, und nach dem Induktionsgesetz entsteht eine Spannung, die der Änderung entgegenwirkt (Lenzsche Regel, daher das Minuszeichen). Für die lange Spule gilt L = μ₀·N²·A/l, die Windungszahl geht quadratisch ein. Folgen: verzögerter Stromanstieg beim Einschalten, hohe Spannungsspitzen beim Abschalten und die magnetische Feldenergie E = ½·L·I².",
+    "beispiel": "Spule mit L = 0,5 H: Der Strom fällt beim Abschalten in 10 ms von 2 A auf 0, also dI/dt = −200 A/s: U_ind = −0,5 × (−200) = +100 V Selbstinduktionsspannung.",
+    "anwendung": "Zündspule im Auto, Freilaufdioden in Schaltungen, Drosseln und Schaltnetzteile, Energiespeicher in Spulen, Funkenbildung an Schaltern",
+    "quellen": [
+      "Halliday, D., Resnick, R., & Walker, J. (2017). Halliday Physik. Wiley-VCH."
+    ],
+    "verwandte": [
+      "induktion-faraday",
+      "magnetfeld-spule",
+      "schwingkreis-thomson"
+    ],
+    "abiturRelevant": true,
+    "schwierigkeit": "fortgeschritten",
+    "quellenLinks": [
+      "https://de.wikipedia.org/wiki/Selbstinduktion"
+    ],
+    "dateUpdated": "2026-07-09",
+    "suchbegriffe": [
+      "Uind=-L*dI/dt",
+      "U = -L dI/dt",
+      "Selbstinduktion Formel",
+      "Induktivität Spule",
+      "self inductance formula",
+      "L=mu0 N^2 A/l",
+      "Henry Einheit Spule",
+      "Abschaltspannung Spule"
+    ],
+    "url": "https://quanta-study.de/tafelwerk/selbstinduktion-spule",
+    "herleitung": {
+      "gueltigkeit": "Gilt für konstante Induktivität L, also ohne magnetische Sättigung des Kerns. Die Spannung entsteht nur bei Stromänderung; bei konstantem Strom ist U_ind = 0. Das Minuszeichen drückt die Lenzsche Regel aus.",
+      "schritte": [
+        "Der Gesamtfluss ist proportional zum Strom: N·Φ = L·I (Definition von L).",
+        "Induktionsgesetz: U_ind = −N·dΦ/dt = −L·dI/dt."
+      ]
+    },
+    "umstellungen": [
+      {
+        "ziel": "Induktivität",
+        "latex": "L = \\frac{|U_{ind}|}{|dI/dt|}",
+        "hinweis": "Messvorschrift: Spannung pro Stromänderungsrate."
+      },
+      {
+        "ziel": "Stromänderungsrate",
+        "latex": "\\frac{dI}{dt} = \\frac{|U_{ind}|}{L}",
+        "hinweis": "Begrenzt, wie schnell der Strom in einer Drossel steigen kann."
+      },
+      {
+        "ziel": "Induktivität der langen Spule",
+        "latex": "L = \\mu_0 \\cdot \\frac{N^2 \\cdot A}{l}",
+        "hinweis": "Die Windungszahl geht quadratisch ein."
+      }
+    ],
+    "typischeFehler": [
+      {
+        "fehler": "Das Minuszeichen als bloße Konvention streichen.",
+        "korrektur": "Es kodiert die Lenzsche Regel: Die induzierte Spannung wirkt der Stromänderung entgegen."
+      },
+      {
+        "fehler": "L linear mit der Windungszahl skalieren.",
+        "korrektur": "L ∝ N²: Doppelte Windungszahl bedeutet vierfache Induktivität."
+      },
+      {
+        "fehler": "Eine Induktionsspannung auch bei konstantem Strom erwarten.",
+        "korrektur": "Nur die Änderung dI/dt induziert; im Gleichstrombetrieb wirkt die ideale Spule wie ein Draht."
+      },
+      {
+        "fehler": "Fläche A in cm² einsetzen.",
+        "korrektur": "A in m² umrechnen: 20 cm² = 2×10⁻³ m²."
+      }
+    ]
   }
 ]

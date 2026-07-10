@@ -1,7 +1,7 @@
 {
   "name": "quanta-physik-formeln",
-  "version": "1.0.1",
-  "description": "15 wissenschaftlich aufbereitete Physik-Formeln für Studium und Universität — Mechanik, Thermodynamik, Elektrodynamik, Quantenmechanik, Relativitätstheorie. Mit LaTeX, Variablen, Herleitung und Praxisbeispiel. Von Quanta (quanta-study.de).",
+  "version": "2.0.0",
+  "description": "52 wissenschaftlich aufbereitete Physik-Formeln für Abitur, Studium und Universität — Mechanik, Thermodynamik, Elektrodynamik, Quantenmechanik, Relativitätstheorie, Kinematik, Optik, Kernphysik. Mit LaTeX, Variablen, Herleitung, Umstellungen und typischen Fehlern. Von Quanta (quanta-study.de).",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
